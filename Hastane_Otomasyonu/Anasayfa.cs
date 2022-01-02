@@ -29,7 +29,14 @@ namespace Hastane_Otomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bilgilerinizi Kontrol Edin Hatali Giris Yaptınız!");
+          
+        }
+
+        private void BtnHastaGirisi_Click(object sender, EventArgs e)
+        {
+            HastaGirisiSayfası hst = new HastaGirisiSayfası();
+            hst.Show();
+            this.Hide();
         }
     }
 }

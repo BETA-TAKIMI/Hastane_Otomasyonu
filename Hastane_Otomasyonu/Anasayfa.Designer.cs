@@ -42,9 +42,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(184, 263);
+            this.label1.Location = new System.Drawing.Point(138, 214);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(371, 48);
+            this.label1.Size = new System.Drawing.Size(298, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "BETA HASTANESİ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -54,21 +55,24 @@
             this.BtnHastaGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnHastaGirisi.Location = new System.Drawing.Point(77, 350);
+            this.BtnHastaGirisi.Location = new System.Drawing.Point(58, 284);
+            this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(2);
             this.BtnHastaGirisi.Name = "BtnHastaGirisi";
-            this.BtnHastaGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnHastaGirisi.Size = new System.Drawing.Size(124, 40);
             this.BtnHastaGirisi.TabIndex = 1;
             this.BtnHastaGirisi.Text = "Hasta Girişi";
             this.BtnHastaGirisi.UseVisualStyleBackColor = false;
+            this.BtnHastaGirisi.Click += new System.EventHandler(this.BtnHastaGirisi_Click);
             // 
             // BtnDoktorGirisi
             // 
             this.BtnDoktorGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnDoktorGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDoktorGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnDoktorGirisi.Location = new System.Drawing.Point(298, 350);
+            this.BtnDoktorGirisi.Location = new System.Drawing.Point(224, 284);
+            this.BtnDoktorGirisi.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDoktorGirisi.Name = "BtnDoktorGirisi";
-            this.BtnDoktorGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnDoktorGirisi.Size = new System.Drawing.Size(124, 40);
             this.BtnDoktorGirisi.TabIndex = 2;
             this.BtnDoktorGirisi.Text = "Doktor Girişi";
             this.BtnDoktorGirisi.UseVisualStyleBackColor = false;
@@ -79,9 +83,10 @@
             this.BtnSekreterGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnSekreterGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSekreterGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnSekreterGirisi.Location = new System.Drawing.Point(512, 350);
+            this.BtnSekreterGirisi.Location = new System.Drawing.Point(384, 284);
+            this.BtnSekreterGirisi.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSekreterGirisi.Name = "BtnSekreterGirisi";
-            this.BtnSekreterGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnSekreterGirisi.Size = new System.Drawing.Size(124, 40);
             this.BtnSekreterGirisi.TabIndex = 3;
             this.BtnSekreterGirisi.Text = "Sekreter Girişi";
             this.BtnSekreterGirisi.UseVisualStyleBackColor = false;
@@ -89,24 +94,26 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(281, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(211, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 206);
+            this.pictureBox1.Size = new System.Drawing.Size(202, 167);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // Anasayfa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(771, 474);
+            this.ClientSize = new System.Drawing.Size(578, 385);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSekreterGirisi);
             this.Controls.Add(this.BtnDoktorGirisi);
             this.Controls.Add(this.BtnHastaGirisi);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Anasayfa";
             this.Text = "Anasayfa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
