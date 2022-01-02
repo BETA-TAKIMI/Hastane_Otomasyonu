@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anasayfa));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnHastaGirisi = new System.Windows.Forms.Button();
+            this.BtnDoktorGirisi = new System.Windows.Forms.Button();
+            this.BtnSekreterGirisi = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,42 +49,42 @@
             this.label1.Text = "BETA HASTANESİ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // BtnHastaGirisi
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Location = new System.Drawing.Point(77, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Hasta Girişi";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnHastaGirisi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnHastaGirisi.Location = new System.Drawing.Point(77, 350);
+            this.BtnHastaGirisi.Name = "BtnHastaGirisi";
+            this.BtnHastaGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnHastaGirisi.TabIndex = 1;
+            this.BtnHastaGirisi.Text = "Hasta Girişi";
+            this.BtnHastaGirisi.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // BtnDoktorGirisi
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Location = new System.Drawing.Point(298, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Doktor Girişi";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnDoktorGirisi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnDoktorGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDoktorGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnDoktorGirisi.Location = new System.Drawing.Point(298, 350);
+            this.BtnDoktorGirisi.Name = "BtnDoktorGirisi";
+            this.BtnDoktorGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnDoktorGirisi.TabIndex = 2;
+            this.BtnDoktorGirisi.Text = "Doktor Girişi";
+            this.BtnDoktorGirisi.UseVisualStyleBackColor = false;
+            this.BtnDoktorGirisi.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // BtnSekreterGirisi
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Location = new System.Drawing.Point(512, 350);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Sekreter Girişi";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnSekreterGirisi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnSekreterGirisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSekreterGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnSekreterGirisi.Location = new System.Drawing.Point(512, 350);
+            this.BtnSekreterGirisi.Name = "BtnSekreterGirisi";
+            this.BtnSekreterGirisi.Size = new System.Drawing.Size(166, 49);
+            this.BtnSekreterGirisi.TabIndex = 3;
+            this.BtnSekreterGirisi.Text = "Sekreter Girişi";
+            this.BtnSekreterGirisi.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -102,9 +102,9 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(771, 474);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnSekreterGirisi);
+            this.Controls.Add(this.BtnDoktorGirisi);
+            this.Controls.Add(this.BtnHastaGirisi);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Name = "Anasayfa";
@@ -118,9 +118,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnHastaGirisi;
+        private System.Windows.Forms.Button BtnDoktorGirisi;
+        private System.Windows.Forms.Button BtnSekreterGirisi;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

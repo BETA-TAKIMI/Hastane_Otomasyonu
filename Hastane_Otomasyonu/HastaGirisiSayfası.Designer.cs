@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HastaGirisiSayfası));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnGiris = new System.Windows.Forms.Button();
+            this.BtnKayitOl = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.TxtTC = new System.Windows.Forms.TextBox();
+            this.TxtSifre = new System.Windows.Forms.TextBox();
+            this.BtnSifremiUnuttum = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnGiris
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Location = new System.Drawing.Point(194, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(378, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnGiris.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnGiris.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGiris.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnGiris.Location = new System.Drawing.Point(194, 282);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.Size = new System.Drawing.Size(378, 49);
+            this.BtnGiris.TabIndex = 6;
+            this.BtnGiris.Text = "Giriş Yap";
+            this.BtnGiris.UseVisualStyleBackColor = false;
+            this.BtnGiris.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // BtnKayitOl
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Location = new System.Drawing.Point(194, 337);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 49);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Kayıt Ol";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnKayitOl.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnKayitOl.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnKayitOl.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnKayitOl.Location = new System.Drawing.Point(194, 337);
+            this.BtnKayitOl.Name = "BtnKayitOl";
+            this.BtnKayitOl.Size = new System.Drawing.Size(182, 49);
+            this.BtnKayitOl.TabIndex = 7;
+            this.BtnKayitOl.Text = "Kayıt Ol";
+            this.BtnKayitOl.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -88,33 +88,33 @@
             this.label2.Text = "Şifre";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // TxtTC
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(194, 172);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(378, 32);
-            this.textBox1.TabIndex = 10;
+            this.TxtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTC.Location = new System.Drawing.Point(194, 172);
+            this.TxtTC.Name = "TxtTC";
+            this.TxtTC.Size = new System.Drawing.Size(378, 32);
+            this.TxtTC.TabIndex = 10;
             // 
-            // textBox2
+            // TxtSifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(194, 244);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 32);
-            this.textBox2.TabIndex = 11;
+            this.TxtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSifre.Location = new System.Drawing.Point(194, 244);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(378, 32);
+            this.TxtSifre.TabIndex = 11;
             // 
-            // button3
+            // BtnSifremiUnuttum
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Location = new System.Drawing.Point(390, 337);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 49);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Şifremi Unuttum";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnSifremiUnuttum.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnSifremiUnuttum.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSifremiUnuttum.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnSifremiUnuttum.Location = new System.Drawing.Point(390, 337);
+            this.BtnSifremiUnuttum.Name = "BtnSifremiUnuttum";
+            this.BtnSifremiUnuttum.Size = new System.Drawing.Size(182, 49);
+            this.BtnSifremiUnuttum.TabIndex = 12;
+            this.BtnSifremiUnuttum.Text = "Şifremi Unuttum";
+            this.BtnSifremiUnuttum.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -132,13 +132,13 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(775, 461);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BtnSifremiUnuttum);
+            this.Controls.Add(this.TxtSifre);
+            this.Controls.Add(this.TxtTC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnKayitOl);
+            this.Controls.Add(this.BtnGiris);
             this.Name = "HastaGirisiSayfası";
             this.Text = "Hasta Girişi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -148,13 +148,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnGiris;
+        private System.Windows.Forms.Button BtnKayitOl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox TxtTC;
+        private System.Windows.Forms.TextBox TxtSifre;
+        private System.Windows.Forms.Button BtnSifremiUnuttum;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
