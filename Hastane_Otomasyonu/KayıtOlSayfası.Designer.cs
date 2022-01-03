@@ -56,7 +56,7 @@
             this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnHastaGirisi.Location = new System.Drawing.Point(9, 10);
-            this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(2);
             this.BtnHastaGirisi.Name = "BtnHastaGirisi";
             this.BtnHastaGirisi.Size = new System.Drawing.Size(119, 29);
             this.BtnHastaGirisi.TabIndex = 19;
@@ -68,7 +68,7 @@
             // 
             this.TxtSyd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSyd.Location = new System.Drawing.Point(153, 106);
-            this.TxtSyd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSyd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSyd.Name = "TxtSyd";
             this.TxtSyd.Size = new System.Drawing.Size(284, 27);
             this.TxtSyd.TabIndex = 18;
@@ -78,7 +78,7 @@
             // 
             this.TxtAd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAd.Location = new System.Drawing.Point(153, 48);
-            this.TxtAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtAd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(284, 27);
             this.TxtAd.TabIndex = 17;
@@ -112,10 +112,10 @@
             this.BtnKaydiTamamla.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnKaydiTamamla.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnKaydiTamamla.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnKaydiTamamla.Location = new System.Drawing.Point(472, 551);
-            this.BtnKaydiTamamla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKaydiTamamla.Location = new System.Drawing.Point(472, 530);
+            this.BtnKaydiTamamla.Margin = new System.Windows.Forms.Padding(2);
             this.BtnKaydiTamamla.Name = "BtnKaydiTamamla";
-            this.BtnKaydiTamamla.Size = new System.Drawing.Size(119, 29);
+            this.BtnKaydiTamamla.Size = new System.Drawing.Size(119, 50);
             this.BtnKaydiTamamla.TabIndex = 20;
             this.BtnKaydiTamamla.Text = "Kaydı Tamamla";
             this.BtnKaydiTamamla.UseVisualStyleBackColor = false;
@@ -125,7 +125,7 @@
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtYas.Location = new System.Drawing.Point(153, 225);
-            this.TxtYas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtYas.Margin = new System.Windows.Forms.Padding(2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(284, 27);
             this.TxtYas.TabIndex = 24;
@@ -134,7 +134,7 @@
             // 
             this.TxtTc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTc.Location = new System.Drawing.Point(153, 167);
-            this.TxtTc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTc.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTc.Name = "TxtTc";
             this.TxtTc.Size = new System.Drawing.Size(284, 27);
             this.TxtTc.TabIndex = 23;
@@ -167,7 +167,7 @@
             // 
             this.TxtHskd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHskd.Location = new System.Drawing.Point(153, 334);
-            this.TxtHskd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtHskd.Margin = new System.Windows.Forms.Padding(2);
             this.TxtHskd.Name = "TxtHskd";
             this.TxtHskd.Size = new System.Drawing.Size(284, 27);
             this.TxtHskd.TabIndex = 28;
@@ -199,7 +199,7 @@
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMail.Location = new System.Drawing.Point(153, 451);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(284, 27);
             this.TxtMail.TabIndex = 32;
@@ -231,7 +231,7 @@
             // 
             this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSfre.Location = new System.Drawing.Point(153, 511);
-            this.TxtSfre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSfre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(284, 27);
             this.TxtSfre.TabIndex = 34;
@@ -254,7 +254,7 @@
             this.CmbBxCnsyt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbBxCnsyt.FormattingEnabled = true;
             this.CmbBxCnsyt.Location = new System.Drawing.Point(153, 283);
-            this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(2);
             this.CmbBxCnsyt.Name = "CmbBxCnsyt";
             this.CmbBxCnsyt.Size = new System.Drawing.Size(284, 27);
             this.CmbBxCnsyt.TabIndex = 37;
@@ -263,7 +263,7 @@
             // 
             this.MskTxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MskTxtTelefon.Location = new System.Drawing.Point(153, 397);
-            this.MskTxtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MskTxtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.MskTxtTelefon.Mask = "(999) 000-0000";
             this.MskTxtTelefon.Name = "MskTxtTelefon";
             this.MskTxtTelefon.Size = new System.Drawing.Size(284, 27);
@@ -295,7 +295,7 @@
             this.Controls.Add(this.TxtAd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "KayıtOlSayfası";
             this.Text = "Kayıt Ol";
             this.ResumeLayout(false);

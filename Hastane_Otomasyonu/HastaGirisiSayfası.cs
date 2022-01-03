@@ -64,5 +64,15 @@ namespace Hastane_Otomasyonu
             hst.Show();
             this.Hide();
         }
+
+        private void HastaGirisiSayfası_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,6 +52,9 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoktorGirisiSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="KayıtOlSayfası.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorGirisiSayfası.resx">
+      <DependentUpon>DoktorGirisiSayfası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HastaGirisiSayfası.resx">
       <DependentUpon>HastaGirisiSayfası.cs</DependentUpon>
