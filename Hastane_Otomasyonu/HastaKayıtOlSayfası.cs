@@ -12,11 +12,11 @@ using System.Data.SqlClient;
 
 namespace Hastane_Otomasyonu
 {
-    public partial class KayıtOlSayfası : Form
+    public partial class HastaKayıtOlSayfası : Form
     {
         SqlCommand komut;
 
-        public KayıtOlSayfası()
+        public HastaKayıtOlSayfası()
         {
             InitializeComponent();
         }

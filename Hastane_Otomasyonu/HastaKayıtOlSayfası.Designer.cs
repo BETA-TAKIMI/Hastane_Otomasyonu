@@ -1,6 +1,6 @@
 ﻿namespace Hastane_Otomasyonu
 {
-    partial class KayıtOlSayfası
+    partial class HastaKayıtOlSayfası
     {
         /// <summary>
         /// Required designer variable.
@@ -269,7 +269,7 @@
             this.MskTxtTelefon.Size = new System.Drawing.Size(284, 27);
             this.MskTxtTelefon.TabIndex = 38;
             // 
-            // KayıtOlSayfası
+            // HastaKayıtOlSayfası
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,8 +296,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "KayıtOlSayfası";
-            this.Text = "Kayıt Ol";
+            this.Name = "HastaKayıtOlSayfası";
+            this.Text = "Hasta Kayıt Ol";
             this.ResumeLayout(false);
             this.PerformLayout();
 

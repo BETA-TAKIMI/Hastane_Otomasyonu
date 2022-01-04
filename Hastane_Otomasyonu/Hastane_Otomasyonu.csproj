@@ -61,11 +61,17 @@
     <Compile Include="DoktorGirişSayfasi.Designer.cs">
       <DependentUpon>DoktorGirişSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="KayıtOlSayfası.cs">
+    <Compile Include="DoktorKayitOlSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KayıtOlSayfası.Designer.cs">
-      <DependentUpon>KayıtOlSayfası.cs</DependentUpon>
+    <Compile Include="DoktorKayitOlSayfasi.Designer.cs">
+      <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayıtOlSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayıtOlSayfası.Designer.cs">
+      <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
     </Compile>
     <Compile Include="HastaGirisiSayfası.cs">
       <SubType>Form</SubType>
@@ -81,11 +87,14 @@
     <EmbeddedResource Include="DoktorGirişSayfasi.resx">
       <DependentUpon>DoktorGirişSayfasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoktorKayitOlSayfasi.resx">
+      <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HastaGirisiSayfası.resx">
       <DependentUpon>HastaGirisiSayfası.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KayıtOlSayfası.resx">
-      <DependentUpon>KayıtOlSayfası.cs</DependentUpon>
+    <EmbeddedResource Include="HastaKayıtOlSayfası.resx">
+      <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

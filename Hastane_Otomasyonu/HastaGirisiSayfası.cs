@@ -60,7 +60,7 @@ namespace Hastane_Otomasyonu
 
         private void BtnKayitOl_Click(object sender, EventArgs e)
         {
-            KayıtOlSayfası hst = new KayıtOlSayfası();
+            HastaKayıtOlSayfası hst = new HastaKayıtOlSayfası();
             hst.Show();
             this.Hide();
         }
