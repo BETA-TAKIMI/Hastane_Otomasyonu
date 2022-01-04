@@ -52,14 +52,11 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DoktorGirisiSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoktorGirişSayfasi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DoktorGirişSayfasi.Designer.cs">
-      <DependentUpon>DoktorGirişSayfasi.cs</DependentUpon>
+    <Compile Include="DoktorGirisiSayfasi.Designer.cs">
+      <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="DoktorKayitOlSayfasi.cs">
       <SubType>Form</SubType>
@@ -84,8 +81,8 @@
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoktorGirişSayfasi.resx">
-      <DependentUpon>DoktorGirişSayfasi.cs</DependentUpon>
+    <EmbeddedResource Include="DoktorGirisiSayfasi.resx">
+      <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoktorKayitOlSayfasi.resx">
       <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
