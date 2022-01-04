@@ -24,12 +24,14 @@ namespace Hastane_Otomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            DoktorGirisiSayfasi hst = new DoktorGirisiSayfasi();
+            hst.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void BtnHastaGirisi_Click(object sender, EventArgs e)
@@ -38,5 +40,7 @@ namespace Hastane_Otomasyonu
             hst.Show();
             this.Hide();
         }
+       
+       
     }
 }
