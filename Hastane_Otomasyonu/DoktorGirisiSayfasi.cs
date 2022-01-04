@@ -24,9 +24,9 @@ namespace Hastane_Otomasyonu
             try
             {
                 baglanti.Open();
-                String Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
-                SqlParameter prm1 = new SqlParameter("HastaTCNo", TxtTC.Text.Trim());
-                SqlParameter prm2 = new SqlParameter("HastaSifre", TxtSfre.Text.Trim());
+                String Sql = "select*from tbl_doktor where DoktorTCNo=@DoktorTCNo AND DoktorSifre=@DoktorSifre";
+                SqlParameter prm1 = new SqlParameter("DoktorTCNo", TxtTC.Text.Trim());
+                SqlParameter prm2 = new SqlParameter("DoktorSifre", TxtSfre.Text.Trim());
                 SqlCommand komut = new SqlCommand(Sql, baglanti);
                 komut.Parameters.Add(prm1);
                 komut.Parameters.Add(prm2);
@@ -35,7 +35,7 @@ namespace Hastane_Otomasyonu
                 da.Fill(dt);
                 //if (dt.Rows.Count > 0)
                 //{
-                //    FrmHastaDetay frm = new FrmHastaDetay();
+                //    FrmDoktorDetay frm = new FrmDoktorDetay();
                 //    frm.Show();
                 //    this.Hide();
 
