@@ -117,6 +117,7 @@
             this.BtnKayitOl.TabIndex = 15;
             this.BtnKayitOl.Text = "Kayıt Ol";
             this.BtnKayitOl.UseVisualStyleBackColor = false;
+            this.BtnKayitOl.Click += new System.EventHandler(this.BtnKayitOl_Click);
             // 
             // BtnGiris
             // 
@@ -132,7 +133,7 @@
             this.BtnGiris.UseVisualStyleBackColor = false;
             this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
-            // DoktorGirişSayfasi
+            // DoktorGirisiSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +147,7 @@
             this.Controls.Add(this.TcLabel);
             this.Controls.Add(this.BtnKayitOl);
             this.Controls.Add(this.BtnGiris);
-            this.Name = "DoktorGirişSayfasi";
+            this.Name = "DoktorGirisiSayfasi";
             this.Text = "Doktor Girişi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

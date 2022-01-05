@@ -47,5 +47,12 @@ namespace Hastane_Otomasyonu
             }
 
         }
+
+        private void BtnKayitOl_Click(object sender, EventArgs e)
+        {
+            DoktorKayitOlSayfasi dr = new DoktorKayitOlSayfasi();
+            dr.Show();
+            this.Hide();
+        }
     }
 }
