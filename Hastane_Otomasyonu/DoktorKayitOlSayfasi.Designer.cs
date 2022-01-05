@@ -43,7 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.BtnKaydiTamamla = new System.Windows.Forms.Button();
-            this.BtnHastaGirisi = new System.Windows.Forms.Button();
+            this.BtnDoktorGirisi = new System.Windows.Forms.Button();
             this.TxtSyd = new System.Windows.Forms.TextBox();
             this.TxtAd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -211,18 +211,19 @@
             this.BtnKaydiTamamla.UseVisualStyleBackColor = false;
             this.BtnKaydiTamamla.Click += new System.EventHandler(this.BtnKaydiTamamla_Click);
             // 
-            // BtnHastaGirisi
+            // BtnDoktorGirisi
             // 
-            this.BtnHastaGirisi.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnHastaGirisi.Location = new System.Drawing.Point(8, 11);
-            this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnHastaGirisi.Name = "BtnHastaGirisi";
-            this.BtnHastaGirisi.Size = new System.Drawing.Size(119, 29);
-            this.BtnHastaGirisi.TabIndex = 43;
-            this.BtnHastaGirisi.Text = "Doktor Girişi";
-            this.BtnHastaGirisi.UseVisualStyleBackColor = false;
+            this.BtnDoktorGirisi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnDoktorGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDoktorGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BtnDoktorGirisi.Location = new System.Drawing.Point(8, 11);
+            this.BtnDoktorGirisi.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDoktorGirisi.Name = "BtnDoktorGirisi";
+            this.BtnDoktorGirisi.Size = new System.Drawing.Size(119, 29);
+            this.BtnDoktorGirisi.TabIndex = 43;
+            this.BtnDoktorGirisi.Text = "Doktor Girişi";
+            this.BtnDoktorGirisi.UseVisualStyleBackColor = false;
+            this.BtnDoktorGirisi.Click += new System.EventHandler(this.BtnHastaGirisi_Click);
             // 
             // TxtSyd
             // 
@@ -308,7 +309,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnKaydiTamamla);
-            this.Controls.Add(this.BtnHastaGirisi);
+            this.Controls.Add(this.BtnDoktorGirisi);
             this.Controls.Add(this.TxtSyd);
             this.Controls.Add(this.TxtAd);
             this.Controls.Add(this.label2);
@@ -337,7 +338,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnKaydiTamamla;
-        private System.Windows.Forms.Button BtnHastaGirisi;
+        private System.Windows.Forms.Button BtnDoktorGirisi;
         private System.Windows.Forms.TextBox TxtSyd;
         private System.Windows.Forms.TextBox TxtAd;
         private System.Windows.Forms.Label label2;

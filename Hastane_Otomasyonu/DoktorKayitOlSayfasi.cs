@@ -44,5 +44,12 @@ namespace Hastane_Otomasyonu
 
             baglanti.Close();
         }
+
+        private void BtnHastaGirisi_Click(object sender, EventArgs e)
+        {
+            DoktorGirisiSayfasi frm = new DoktorGirisiSayfasi();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
