@@ -209,6 +209,7 @@
             this.BtnKaydiTamamla.TabIndex = 44;
             this.BtnKaydiTamamla.Text = "Kaydı Tamamla";
             this.BtnKaydiTamamla.UseVisualStyleBackColor = false;
+            this.BtnKaydiTamamla.Click += new System.EventHandler(this.BtnKaydiTamamla_Click);
             // 
             // BtnHastaGirisi
             // 
