@@ -16,5 +16,15 @@ namespace Hastane_Otomasyonu
         {
             InitializeComponent();
         }
+
+        private void TxtTC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSfre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

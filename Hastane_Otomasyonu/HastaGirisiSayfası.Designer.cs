@@ -101,6 +101,7 @@
             this.TxtTC.Name = "TxtTC";
             this.TxtTC.Size = new System.Drawing.Size(284, 27);
             this.TxtTC.TabIndex = 10;
+            this.TxtTC.TextChanged += new System.EventHandler(this.TxtTC_TextChanged);
             // 
             // TxtSfre
             // 
@@ -110,6 +111,7 @@
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(284, 27);
             this.TxtSfre.TabIndex = 11;
+            this.TxtSfre.TextChanged += new System.EventHandler(this.TxtSfre_TextChanged);
             // 
             // BtnSifremiUnuttum
             // 
@@ -135,6 +137,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // HastaGirisiSayfası
             // 
