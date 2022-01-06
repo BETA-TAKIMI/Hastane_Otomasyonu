@@ -40,7 +40,12 @@ namespace Hastane_Otomasyonu
             hst.Show();
             this.Hide();
         }
-       
-       
+
+        private void BtnSekreterGirisi_Click(object sender, EventArgs e)
+        {
+            SekreterGirisiSayfasi hst = new SekreterGirisiSayfasi();
+            hst.Show();
+            this.Hide();
+        }
     }
 }

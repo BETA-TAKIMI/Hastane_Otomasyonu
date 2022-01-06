@@ -29,7 +29,7 @@ namespace Hastane_Otomasyonu
             komut1 = new SqlCommand(sorgu, baglanti);
 
             komut1.Parameters.AddWithValue("@Doktorİsim", TxtAd.Text);
-            komut1.Parameters.AddWithValue("@DoktorSoyİsim", TxtSyd.Text);
+            komut1.Parameters.AddWithValue("@DoktorSoyİsim",TxtSyd.Text);
             komut1.Parameters.AddWithValue("@DoktorTCNo", TxtTc.Text);
             komut1.Parameters.AddWithValue("@DoktorYas", TxtYas.Text);
             komut1.Parameters.AddWithValue("@DoktorCinsiyet", CmbBxCnsyt.Text);
