@@ -132,6 +132,7 @@
             this.BtnGiris.TabIndex = 14;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = false;
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
             // SekreterGirisiSayfasi
             // 

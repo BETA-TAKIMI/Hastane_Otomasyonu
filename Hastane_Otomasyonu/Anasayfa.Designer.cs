@@ -90,6 +90,7 @@
             this.BtnSekreterGirisi.TabIndex = 3;
             this.BtnSekreterGirisi.Text = "Sekreter Girişi";
             this.BtnSekreterGirisi.UseVisualStyleBackColor = false;
+            this.BtnSekreterGirisi.Click += new System.EventHandler(this.BtnSekreterGirisi_Click);
             // 
             // pictureBox1
             // 
