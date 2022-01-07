@@ -236,10 +236,10 @@
             this.BtnDoktorGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnDoktorGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDoktorGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnDoktorGirisi.Location = new System.Drawing.Point(8, 14);
+            this.BtnDoktorGirisi.Location = new System.Drawing.Point(11, 11);
             this.BtnDoktorGirisi.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDoktorGirisi.Name = "BtnDoktorGirisi";
-            this.BtnDoktorGirisi.Size = new System.Drawing.Size(119, 52);
+            this.BtnDoktorGirisi.Size = new System.Drawing.Size(117, 52);
             this.BtnDoktorGirisi.TabIndex = 65;
             this.BtnDoktorGirisi.Text = "Sekreter Girişi";
             this.BtnDoktorGirisi.UseVisualStyleBackColor = false;
@@ -262,6 +262,7 @@
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(284, 27);
             this.TxtAd.TabIndex = 63;
+            this.TxtAd.TextChanged += new System.EventHandler(this.TxtAd_TextChanged);
             // 
             // label2
             // 

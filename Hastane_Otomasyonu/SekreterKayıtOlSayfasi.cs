@@ -26,5 +26,10 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
+        private void TxtAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
