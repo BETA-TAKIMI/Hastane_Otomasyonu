@@ -45,7 +45,9 @@ namespace Hastane_Otomasyonu
 
         private void BtnDoktorGirisi_Click(object sender, EventArgs e)
         {
-
+            SekreterGirisiSayfasi frm = new SekreterGirisiSayfasi();
+            frm.Show();
+            this.Hide();
         }
 
         private void TxtAd_TextChanged(object sender, EventArgs e)
