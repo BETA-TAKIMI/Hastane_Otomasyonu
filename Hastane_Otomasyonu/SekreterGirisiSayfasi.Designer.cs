@@ -119,6 +119,7 @@
             this.BtnKayitOl.TabIndex = 15;
             this.BtnKayitOl.Text = "Kayıt Ol";
             this.BtnKayitOl.UseVisualStyleBackColor = false;
+            this.BtnKayitOl.Click += new System.EventHandler(this.BtnKayitOl_Click);
             // 
             // BtnGiris
             // 

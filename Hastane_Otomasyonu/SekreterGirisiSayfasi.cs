@@ -56,5 +56,13 @@ namespace Hastane_Otomasyonu
                 MessageBox.Show("Hatalı Giriş.....");
             }
         }
+
+        private void BtnKayitOl_Click(object sender, EventArgs e)
+        {
+            SekreterKayıtOlSayfasi frm = new SekreterKayıtOlSayfasi();
+               frm.Show();
+               this.Hide();
+
+        }
     }
 }
