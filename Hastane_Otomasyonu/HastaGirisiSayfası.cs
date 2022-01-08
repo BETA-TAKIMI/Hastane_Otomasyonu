@@ -72,7 +72,9 @@ namespace Hastane_Otomasyonu
 
         private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
         {
-
+            HastaSifremiUnuttumSayfasi hst = new HastaSifremiUnuttumSayfasi();
+            hst.Show();
+            this.Hide();
         }
 
         private void TxtTC_TextChanged(object sender, EventArgs e)
