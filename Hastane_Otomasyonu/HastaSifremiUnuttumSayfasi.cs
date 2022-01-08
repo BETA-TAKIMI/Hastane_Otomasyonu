@@ -32,6 +32,9 @@ namespace Hastane_Otomasyonu
                 SqlCommand komut = new SqlCommand("update tbl_hastalar set HastaTCNo='" + TxtTC.Text + "',HastaSifre='" + TxtSfre.Text + "' where HastaTCNo='" + TxtTC.Text + "'", baglanti);
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Şifre Güncellendi...");
+                HastaGirisiSayfası hst = new HastaGirisiSayfası();
+                hst.Show();
+                this.Hide();
 
                 baglanti.Close();
 
