@@ -17,7 +17,7 @@ namespace Hastane_Otomasyonu
             InitializeComponent();
         }
 
-        private void BtnKayitOl_Click(object sender, EventArgs e)
+        private void BtnGuncelle_Click(object sender, EventArgs e)
         {
 
         }

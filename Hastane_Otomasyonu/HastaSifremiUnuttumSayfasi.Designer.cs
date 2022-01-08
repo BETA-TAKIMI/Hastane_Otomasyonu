@@ -89,7 +89,7 @@
             this.BtnGuncelle.TabIndex = 15;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnKayitOl_Click);
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnVazgec
             // 
