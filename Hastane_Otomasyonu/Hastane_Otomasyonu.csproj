@@ -64,6 +64,12 @@
     <Compile Include="DoktorKayitOlSayfasi.Designer.cs">
       <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="HastaSifremiUnuttumSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaSifremiUnuttumSayfasi.Designer.cs">
+      <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="SekreterKayıtOlSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HastaKayıtOlSayfası.resx">
       <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaSifremiUnuttumSayfasi.resx">
+      <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
