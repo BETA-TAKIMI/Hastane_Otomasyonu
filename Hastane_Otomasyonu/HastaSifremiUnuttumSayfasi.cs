@@ -38,5 +38,12 @@ namespace Hastane_Otomasyonu
 
             }
         }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            HastaGirisiSayfası hst = new HastaGirisiSayfası();
+            hst.Show();
+            this.Hide();
+        }
     }
 }

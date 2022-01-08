@@ -103,6 +103,7 @@
             this.BtnVazgec.TabIndex = 20;
             this.BtnVazgec.Text = "Vazgeç";
             this.BtnVazgec.UseVisualStyleBackColor = false;
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // HastaSifremiUnuttumSayfasi
             // 
