@@ -52,52 +52,52 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoktorGirisiSayfasi.cs">
+    <Compile Include="Doktor\DoktorGirisiSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoktorGirisiSayfasi.Designer.cs">
+    <Compile Include="Doktor\DoktorGirisiSayfasi.Designer.cs">
       <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoktorKayitOlSayfasi.cs">
+    <Compile Include="Doktor\DoktorKayitOlSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoktorKayitOlSayfasi.Designer.cs">
+    <Compile Include="Doktor\DoktorKayitOlSayfasi.Designer.cs">
       <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoktorSifremiUnuttumSayfasi.cs">
+    <Compile Include="Doktor\DoktorSifremiUnuttumSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoktorSifremiUnuttumSayfasi.Designer.cs">
+    <Compile Include="Doktor\DoktorSifremiUnuttumSayfasi.Designer.cs">
       <DependentUpon>DoktorSifremiUnuttumSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaSifremiUnuttumSayfasi.cs">
+    <Compile Include="Hasta\HastaSifremiUnuttumSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HastaSifremiUnuttumSayfasi.Designer.cs">
+    <Compile Include="Hasta\HastaSifremiUnuttumSayfasi.Designer.cs">
       <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="SekreterKayıtOlSayfasi.cs">
+    <Compile Include="Sekreter\SekreterKayıtOlSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SekreterKayıtOlSayfasi.Designer.cs">
+    <Compile Include="Sekreter\SekreterKayıtOlSayfasi.Designer.cs">
       <DependentUpon>SekreterKayıtOlSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="SekreterGirisiSayfasi.cs">
+    <Compile Include="Sekreter\SekreterGirisiSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SekreterGirisiSayfasi.Designer.cs">
+    <Compile Include="Sekreter\SekreterGirisiSayfasi.Designer.cs">
       <DependentUpon>SekreterGirisiSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaKayıtOlSayfası.cs">
+    <Compile Include="Hasta\HastaKayıtOlSayfası.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HastaKayıtOlSayfası.Designer.cs">
+    <Compile Include="Hasta\HastaKayıtOlSayfası.Designer.cs">
       <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaGirisiSayfası.cs">
+    <Compile Include="Hasta\HastaGirisiSayfası.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HastaGirisiSayfası.Designer.cs">
+    <Compile Include="Hasta\HastaGirisiSayfası.Designer.cs">
       <DependentUpon>HastaGirisiSayfası.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -105,22 +105,22 @@
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoktorGirisiSayfasi.resx">
+    <EmbeddedResource Include="Doktor\DoktorGirisiSayfasi.resx">
       <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoktorKayitOlSayfasi.resx">
+    <EmbeddedResource Include="Doktor\DoktorKayitOlSayfasi.resx">
       <DependentUpon>DoktorKayitOlSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoktorSifremiUnuttumSayfasi.resx">
+    <EmbeddedResource Include="Doktor\DoktorSifremiUnuttumSayfasi.resx">
       <DependentUpon>DoktorSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HastaGirisiSayfası.resx">
+    <EmbeddedResource Include="Hasta\HastaGirisiSayfası.resx">
       <DependentUpon>HastaGirisiSayfası.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HastaKayıtOlSayfası.resx">
+    <EmbeddedResource Include="Hasta\HastaKayıtOlSayfası.resx">
       <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HastaSifremiUnuttumSayfasi.resx">
+    <EmbeddedResource Include="Hasta\HastaSifremiUnuttumSayfasi.resx">
       <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -132,10 +132,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SekreterGirisiSayfasi.resx">
+    <EmbeddedResource Include="Sekreter\SekreterGirisiSayfasi.resx">
       <DependentUpon>SekreterGirisiSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SekreterKayıtOlSayfasi.resx">
+    <EmbeddedResource Include="Sekreter\SekreterKayıtOlSayfasi.resx">
       <DependentUpon>SekreterKayıtOlSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
