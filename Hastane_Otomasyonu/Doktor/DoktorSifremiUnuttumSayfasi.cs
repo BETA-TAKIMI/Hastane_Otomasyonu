@@ -44,7 +44,9 @@ namespace Hastane_Otomasyonu
 
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
-
+            DoktorGirisiSayfasi hst = new DoktorGirisiSayfasi();
+            hst.Show();
+            this.Hide();
         }
     }
 }
