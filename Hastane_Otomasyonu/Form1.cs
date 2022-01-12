@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hastane_Otomasyonu
 {
-    public partial class Form3 : Form
+    public partial class Form1 : Form
     {
-        public Form3()
+        public Form1()
         {
             InitializeComponent();
         }

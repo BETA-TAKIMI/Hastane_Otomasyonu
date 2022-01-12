@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Hastane_Otomasyonu
 {
-    public partial class HastaGirisiSayfası : Form
+    public partial class SekreterSifremiUnuttumSayfasi : Form
     {
-        public HastaGirisiSayfası()
+        public SekreterSifremiUnuttumSayfasi()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnGuncelle_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void BtnVazgec_Click(object sender, EventArgs e)
         {
 
         }
