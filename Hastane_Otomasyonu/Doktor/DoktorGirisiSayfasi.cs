@@ -54,5 +54,12 @@ namespace Hastane_Otomasyonu
             dr.Show();
             this.Hide();
         }
+
+        private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            DoktorSifremiUnuttumSayfasi hst = new DoktorSifremiUnuttumSayfasi();
+            hst.Show();
+            this.Hide();
+        }
     }
 }
