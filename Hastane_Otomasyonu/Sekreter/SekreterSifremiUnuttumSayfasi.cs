@@ -44,7 +44,9 @@ namespace Hastane_Otomasyonu
 
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
-
+            SekreterGirisiSayfasi hst = new SekreterGirisiSayfasi();
+            hst.Show();
+            this.Hide();
         }
     }
 }
