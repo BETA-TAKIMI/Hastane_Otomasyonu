@@ -64,5 +64,12 @@ namespace Hastane_Otomasyonu
                this.Hide();
 
         }
+
+        private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            SekreterSifremiUnuttumSayfasi frm = new SekreterSifremiUnuttumSayfasi();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
