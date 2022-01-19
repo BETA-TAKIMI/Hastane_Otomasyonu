@@ -52,6 +52,12 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.Designer.cs">
+      <DependentUpon>DoktorProfilSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doktor\DoktorGirisiSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\DoktorProfilSayfasi.resx">
+      <DependentUpon>DoktorProfilSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorGirisiSayfasi.resx">
       <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
