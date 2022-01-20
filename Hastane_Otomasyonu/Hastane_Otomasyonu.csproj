@@ -82,6 +82,12 @@
     <Compile Include="Hasta\HastaProfilSayfasi.Designer.cs">
       <DependentUpon>HastaProfilSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sekreter\SekreterProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sekreter\SekreterProfilSayfasi.Designer.cs">
+      <DependentUpon>SekreterProfilSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sekreter\SekreterSifremiUnuttumSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sekreter\SekreterProfilSayfasi.resx">
+      <DependentUpon>SekreterProfilSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sekreter\SekreterSifremiUnuttumSayfasi.resx">
       <DependentUpon>SekreterSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
