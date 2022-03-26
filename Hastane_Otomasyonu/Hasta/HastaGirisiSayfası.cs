@@ -30,8 +30,7 @@ namespace Hastane_Otomasyonu
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 baglanti.Open();
                 String Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
                 SqlParameter prm1 = new SqlParameter("HastaTCNo", TxtTC.Text.Trim());
@@ -42,18 +41,18 @@ namespace Hastane_Otomasyonu
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(komut);
                 da.Fill(dt);
-                //if (dt.Rows.Count > 0)
-                //{
-                //    FrmHastaDetay frm = new FrmHastaDetay();
-                //    frm.Show();
-                //    this.Hide();
+                if (dt.Rows.Count > 0)
+                {
+                    HastaProfilSayfasi frm = new HastaProfilSayfasi();
+                    frm.Show();
+                    this.Hide();
 
-                //}
-            }
-            catch (Exception)
-            {
+                }
+                else
+                {
                 MessageBox.Show("Hatalı Giriş.....");
-            }
+                }
+                baglanti.Close();
 
 
         }
