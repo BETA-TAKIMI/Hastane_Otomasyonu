@@ -47,7 +47,8 @@
             this.TxtSfre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.MskTxtTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.CmbBxCnsyt = new System.Windows.Forms.ComboBox();
+            this.checkBoxErkek = new System.Windows.Forms.CheckBox();
+            this.checkBoxKadin = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BtnHastaGirisi
@@ -250,15 +251,27 @@
             this.MskTxtTelefon.Size = new System.Drawing.Size(377, 32);
             this.MskTxtTelefon.TabIndex = 38;
             // 
-            // CmbBxCnsyt
+            // checkBoxErkek
             // 
-            this.CmbBxCnsyt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbBxCnsyt.FormattingEnabled = true;
-            this.CmbBxCnsyt.Location = new System.Drawing.Point(204, 348);
-            this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CmbBxCnsyt.Name = "CmbBxCnsyt";
-            this.CmbBxCnsyt.Size = new System.Drawing.Size(377, 32);
-            this.CmbBxCnsyt.TabIndex = 37;
+            this.checkBoxErkek.AutoSize = true;
+            this.checkBoxErkek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxErkek.Location = new System.Drawing.Point(411, 351);
+            this.checkBoxErkek.Name = "checkBoxErkek";
+            this.checkBoxErkek.Size = new System.Drawing.Size(73, 24);
+            this.checkBoxErkek.TabIndex = 59;
+            this.checkBoxErkek.Text = "Erkek";
+            this.checkBoxErkek.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKadin
+            // 
+            this.checkBoxKadin.AutoSize = true;
+            this.checkBoxKadin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxKadin.Location = new System.Drawing.Point(316, 351);
+            this.checkBoxKadin.Name = "checkBoxKadin";
+            this.checkBoxKadin.Size = new System.Drawing.Size(73, 24);
+            this.checkBoxKadin.TabIndex = 58;
+            this.checkBoxKadin.Text = "Kadın";
+            this.checkBoxKadin.UseVisualStyleBackColor = true;
             // 
             // HastaKayıtOlSayfası
             // 
@@ -266,8 +279,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 726);
+            this.Controls.Add(this.checkBoxErkek);
+            this.Controls.Add(this.checkBoxKadin);
             this.Controls.Add(this.MskTxtTelefon);
-            this.Controls.Add(this.CmbBxCnsyt);
             this.Controls.Add(this.TxtSfre);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TxtMail);
@@ -315,6 +329,7 @@
         private System.Windows.Forms.TextBox TxtSfre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox MskTxtTelefon;
-        private System.Windows.Forms.ComboBox CmbBxCnsyt;
+        private System.Windows.Forms.CheckBox checkBoxErkek;
+        private System.Windows.Forms.CheckBox checkBoxKadin;
     }
 }
