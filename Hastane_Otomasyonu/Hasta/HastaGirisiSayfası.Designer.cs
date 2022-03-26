@@ -45,7 +45,7 @@
             this.BtnGiris.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnGiris.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGiris.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnGiris.Location = new System.Drawing.Point(139, 247);
+            this.BtnGiris.Location = new System.Drawing.Point(143, 269);
             this.BtnGiris.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.Size = new System.Drawing.Size(284, 40);
@@ -59,10 +59,10 @@
             this.BtnKayitOl.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnKayitOl.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnKayitOl.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnKayitOl.Location = new System.Drawing.Point(139, 292);
+            this.BtnKayitOl.Location = new System.Drawing.Point(143, 317);
             this.BtnKayitOl.Margin = new System.Windows.Forms.Padding(2);
             this.BtnKayitOl.Name = "BtnKayitOl";
-            this.BtnKayitOl.Size = new System.Drawing.Size(136, 40);
+            this.BtnKayitOl.Size = new System.Drawing.Size(136, 46);
             this.BtnKayitOl.TabIndex = 7;
             this.BtnKayitOl.Text = "Kayıt Ol";
             this.BtnKayitOl.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             this.TcLabel.AutoSize = true;
             this.TcLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TcLabel.ForeColor = System.Drawing.Color.Black;
-            this.TcLabel.Location = new System.Drawing.Point(134, 131);
+            this.TcLabel.Location = new System.Drawing.Point(146, 135);
             this.TcLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TcLabel.Name = "TcLabel";
-            this.TcLabel.Size = new System.Drawing.Size(112, 19);
+            this.TcLabel.Size = new System.Drawing.Size(136, 24);
             this.TcLabel.TabIndex = 8;
             this.TcLabel.Text = "T.C. Kimlik No";
             this.TcLabel.Click += new System.EventHandler(this.label1_Click);
@@ -85,10 +85,10 @@
             // 
             this.SifreLabel.AutoSize = true;
             this.SifreLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SifreLabel.Location = new System.Drawing.Point(134, 189);
+            this.SifreLabel.Location = new System.Drawing.Point(146, 196);
             this.SifreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SifreLabel.Name = "SifreLabel";
-            this.SifreLabel.Size = new System.Drawing.Size(41, 19);
+            this.SifreLabel.Size = new System.Drawing.Size(50, 24);
             this.SifreLabel.TabIndex = 9;
             this.SifreLabel.Text = "Şifre";
             this.SifreLabel.Click += new System.EventHandler(this.label2_Click);
@@ -96,20 +96,20 @@
             // TxtTC
             // 
             this.TxtTC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTC.Location = new System.Drawing.Point(139, 153);
+            this.TxtTC.Location = new System.Drawing.Point(143, 159);
             this.TxtTC.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTC.Name = "TxtTC";
-            this.TxtTC.Size = new System.Drawing.Size(284, 27);
+            this.TxtTC.Size = new System.Drawing.Size(284, 32);
             this.TxtTC.TabIndex = 10;
             this.TxtTC.TextChanged += new System.EventHandler(this.TxtTC_TextChanged);
             // 
             // TxtSfre
             // 
             this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSfre.Location = new System.Drawing.Point(139, 211);
+            this.TxtSfre.Location = new System.Drawing.Point(143, 221);
             this.TxtSfre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSfre.Name = "TxtSfre";
-            this.TxtSfre.Size = new System.Drawing.Size(284, 27);
+            this.TxtSfre.Size = new System.Drawing.Size(284, 32);
             this.TxtSfre.TabIndex = 11;
             this.TxtSfre.TextChanged += new System.EventHandler(this.TxtSfre_TextChanged);
             // 
@@ -118,10 +118,10 @@
             this.BtnSifremiUnuttum.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnSifremiUnuttum.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSifremiUnuttum.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnSifremiUnuttum.Location = new System.Drawing.Point(287, 292);
+            this.BtnSifremiUnuttum.Location = new System.Drawing.Point(291, 317);
             this.BtnSifremiUnuttum.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSifremiUnuttum.Name = "BtnSifremiUnuttum";
-            this.BtnSifremiUnuttum.Size = new System.Drawing.Size(136, 40);
+            this.BtnSifremiUnuttum.Size = new System.Drawing.Size(136, 46);
             this.BtnSifremiUnuttum.TabIndex = 12;
             this.BtnSifremiUnuttum.Text = "Şifremi Unuttum";
             this.BtnSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(232, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(236, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 106);
@@ -141,7 +141,7 @@
             // 
             // HastaGirisiSayfası
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(581, 375);

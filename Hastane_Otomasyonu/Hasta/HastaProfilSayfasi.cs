@@ -21,5 +21,10 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
+        private void HastaProfilSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
