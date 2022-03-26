@@ -21,34 +21,32 @@ namespace Hastane_Otomasyonu
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-            try
-            {
-                baglanti.Open();
-                String Sql = "select*from tbl_doktor where DoktorTCNo=@DoktorTCNo AND DoktorSifre=@DoktorSifre";
-                SqlParameter prm1 = new SqlParameter("DoktorTCNo", TxtTC.Text.Trim());
-                SqlParameter prm2 = new SqlParameter("DoktorSifre", TxtSfre.Text.Trim());
-                SqlCommand komut = new SqlCommand(Sql, baglanti);
-                komut.Parameters.Add(prm1);
-                komut.Parameters.Add(prm2);
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(komut);
-                da.Fill(dt);
-                //if (dt.Rows.Count > 0)
-                //{
-                //    FrmDoktorDetay frm = new FrmDoktorDetay();
-                //    frm.Show();
-                //    this.Hide();
 
-                //}
+            baglanti.Open();
+            String Sql = "select*from tbl_doktorlar where DoktorTCNo=@DoktorTCNo AND DoktorSifre=@DoktorSifre";
+            SqlParameter prm1 = new SqlParameter("DoktorTCNo", TxtTC.Text.Trim());
+            SqlParameter prm2 = new SqlParameter("DoktorSifre", TxtSfre.Text.Trim());
+            SqlCommand komut = new SqlCommand(Sql, baglanti);
+            komut.Parameters.Add(prm1);
+            komut.Parameters.Add(prm2);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                DoktorProfilSayfasi frm = new DoktorProfilSayfasi();
+                frm.Show();
+                this.Hide();
+
             }
-            catch (Exception)
+            else
             {
                 MessageBox.Show("Hatalı Giriş.....");
             }
-
+            baglanti.Close();
         }
 
-        private void BtnKayitOl_Click(object sender, EventArgs e)
+                private void BtnKayitOl_Click(object sender, EventArgs e)
         {
             DoktorKayitOlSayfasi dr = new DoktorKayitOlSayfasi();
             dr.Show();
