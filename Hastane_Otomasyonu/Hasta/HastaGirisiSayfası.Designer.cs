@@ -37,6 +37,7 @@
             this.TxtSfre = new System.Windows.Forms.TextBox();
             this.BtnSifremiUnuttum = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnGeri = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.TcLabel.Location = new System.Drawing.Point(146, 135);
             this.TcLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TcLabel.Name = "TcLabel";
-            this.TcLabel.Size = new System.Drawing.Size(136, 24);
+            this.TcLabel.Size = new System.Drawing.Size(112, 19);
             this.TcLabel.TabIndex = 8;
             this.TcLabel.Text = "T.C. Kimlik No";
             this.TcLabel.Click += new System.EventHandler(this.label1_Click);
@@ -88,7 +89,7 @@
             this.SifreLabel.Location = new System.Drawing.Point(146, 196);
             this.SifreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SifreLabel.Name = "SifreLabel";
-            this.SifreLabel.Size = new System.Drawing.Size(50, 24);
+            this.SifreLabel.Size = new System.Drawing.Size(41, 19);
             this.SifreLabel.TabIndex = 9;
             this.SifreLabel.Text = "Şifre";
             this.SifreLabel.Click += new System.EventHandler(this.label2_Click);
@@ -99,7 +100,7 @@
             this.TxtTC.Location = new System.Drawing.Point(143, 159);
             this.TxtTC.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTC.Name = "TxtTC";
-            this.TxtTC.Size = new System.Drawing.Size(284, 32);
+            this.TxtTC.Size = new System.Drawing.Size(284, 27);
             this.TxtTC.TabIndex = 10;
             this.TxtTC.TextChanged += new System.EventHandler(this.TxtTC_TextChanged);
             // 
@@ -109,7 +110,7 @@
             this.TxtSfre.Location = new System.Drawing.Point(143, 221);
             this.TxtSfre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSfre.Name = "TxtSfre";
-            this.TxtSfre.Size = new System.Drawing.Size(284, 32);
+            this.TxtSfre.Size = new System.Drawing.Size(284, 27);
             this.TxtSfre.TabIndex = 11;
             this.TxtSfre.TextChanged += new System.EventHandler(this.TxtSfre_TextChanged);
             // 
@@ -139,12 +140,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // BtnGeri
+            // 
+            this.BtnGeri.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnGeri.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGeri.ForeColor = System.Drawing.Color.White;
+            this.BtnGeri.Location = new System.Drawing.Point(12, 12);
+            this.BtnGeri.Name = "BtnGeri";
+            this.BtnGeri.Size = new System.Drawing.Size(39, 38);
+            this.BtnGeri.TabIndex = 14;
+            this.BtnGeri.Text = "<";
+            this.BtnGeri.UseVisualStyleBackColor = false;
+            // 
             // HastaGirisiSayfası
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(581, 375);
+            this.Controls.Add(this.BtnGeri);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnSifremiUnuttum);
             this.Controls.Add(this.TxtSfre);
@@ -173,5 +187,6 @@
         private System.Windows.Forms.TextBox TxtSfre;
         private System.Windows.Forms.Button BtnSifremiUnuttum;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnGeri;
     }
 }

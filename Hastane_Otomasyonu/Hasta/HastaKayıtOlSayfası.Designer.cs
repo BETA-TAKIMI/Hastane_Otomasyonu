@@ -47,8 +47,8 @@
             this.TxtSfre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.MskTxtTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.checkBoxErkek = new System.Windows.Forms.CheckBox();
-            this.checkBoxKadin = new System.Windows.Forms.CheckBox();
+            this.CmbBxCnsyt = new System.Windows.Forms.ComboBox();
+            this.BtnGeri = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnHastaGirisi
@@ -56,7 +56,7 @@
             this.BtnHastaGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnHastaGirisi.Location = new System.Drawing.Point(12, 12);
+            this.BtnHastaGirisi.Location = new System.Drawing.Point(57, 14);
             this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnHastaGirisi.Name = "BtnHastaGirisi";
             this.BtnHastaGirisi.Size = new System.Drawing.Size(159, 36);
@@ -68,7 +68,7 @@
             // TxtSyd
             // 
             this.TxtSyd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSyd.Location = new System.Drawing.Point(204, 130);
+            this.TxtSyd.Location = new System.Drawing.Point(220, 157);
             this.TxtSyd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtSyd.Name = "TxtSyd";
             this.TxtSyd.Size = new System.Drawing.Size(377, 32);
@@ -78,7 +78,7 @@
             // TxtAd
             // 
             this.TxtAd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAd.Location = new System.Drawing.Point(204, 59);
+            this.TxtAd.Location = new System.Drawing.Point(220, 86);
             this.TxtAd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(377, 32);
@@ -88,7 +88,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(200, 103);
+            this.label2.Location = new System.Drawing.Point(216, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 24);
             this.label2.TabIndex = 16;
@@ -99,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(200, 32);
+            this.label1.Location = new System.Drawing.Point(216, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 24);
             this.label1.TabIndex = 15;
@@ -123,7 +123,7 @@
             // TxtYas
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtYas.Location = new System.Drawing.Point(204, 277);
+            this.TxtYas.Location = new System.Drawing.Point(220, 304);
             this.TxtYas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(377, 32);
@@ -132,7 +132,7 @@
             // TxtTc
             // 
             this.TxtTc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTc.Location = new System.Drawing.Point(204, 206);
+            this.TxtTc.Location = new System.Drawing.Point(220, 233);
             this.TxtTc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtTc.Name = "TxtTc";
             this.TxtTc.Size = new System.Drawing.Size(377, 32);
@@ -142,7 +142,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(200, 250);
+            this.label3.Location = new System.Drawing.Point(216, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 24);
             this.label3.TabIndex = 22;
@@ -153,7 +153,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(200, 178);
+            this.label4.Location = new System.Drawing.Point(216, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 24);
             this.label4.TabIndex = 21;
@@ -163,7 +163,7 @@
             // TxtHskd
             // 
             this.TxtHskd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHskd.Location = new System.Drawing.Point(204, 411);
+            this.TxtHskd.Location = new System.Drawing.Point(220, 438);
             this.TxtHskd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtHskd.Name = "TxtHskd";
             this.TxtHskd.Size = new System.Drawing.Size(377, 32);
@@ -173,7 +173,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(200, 384);
+            this.label5.Location = new System.Drawing.Point(216, 411);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 24);
             this.label5.TabIndex = 26;
@@ -184,7 +184,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(200, 313);
+            this.label6.Location = new System.Drawing.Point(216, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 24);
             this.label6.TabIndex = 25;
@@ -193,7 +193,7 @@
             // TxtMail
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMail.Location = new System.Drawing.Point(204, 555);
+            this.TxtMail.Location = new System.Drawing.Point(220, 582);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(377, 32);
@@ -203,7 +203,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(200, 528);
+            this.label7.Location = new System.Drawing.Point(216, 555);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 24);
             this.label7.TabIndex = 30;
@@ -214,7 +214,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(200, 455);
+            this.label8.Location = new System.Drawing.Point(216, 482);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 24);
             this.label8.TabIndex = 29;
@@ -223,7 +223,7 @@
             // TxtSfre
             // 
             this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSfre.Location = new System.Drawing.Point(204, 629);
+            this.TxtSfre.Location = new System.Drawing.Point(220, 656);
             this.TxtSfre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(377, 32);
@@ -234,7 +234,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(200, 602);
+            this.label9.Location = new System.Drawing.Point(216, 629);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 24);
             this.label9.TabIndex = 33;
@@ -244,34 +244,34 @@
             // MskTxtTelefon
             // 
             this.MskTxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskTxtTelefon.Location = new System.Drawing.Point(204, 489);
+            this.MskTxtTelefon.Location = new System.Drawing.Point(220, 516);
             this.MskTxtTelefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MskTxtTelefon.Mask = "(999) 000-0000";
             this.MskTxtTelefon.Name = "MskTxtTelefon";
             this.MskTxtTelefon.Size = new System.Drawing.Size(377, 32);
             this.MskTxtTelefon.TabIndex = 38;
             // 
-            // checkBoxErkek
+            // CmbBxCnsyt
             // 
-            this.checkBoxErkek.AutoSize = true;
-            this.checkBoxErkek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxErkek.Location = new System.Drawing.Point(411, 351);
-            this.checkBoxErkek.Name = "checkBoxErkek";
-            this.checkBoxErkek.Size = new System.Drawing.Size(73, 24);
-            this.checkBoxErkek.TabIndex = 59;
-            this.checkBoxErkek.Text = "Erkek";
-            this.checkBoxErkek.UseVisualStyleBackColor = true;
+            this.CmbBxCnsyt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbBxCnsyt.FormattingEnabled = true;
+            this.CmbBxCnsyt.Location = new System.Drawing.Point(220, 375);
+            this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CmbBxCnsyt.Name = "CmbBxCnsyt";
+            this.CmbBxCnsyt.Size = new System.Drawing.Size(377, 32);
+            this.CmbBxCnsyt.TabIndex = 80;
             // 
-            // checkBoxKadin
+            // BtnGeri
             // 
-            this.checkBoxKadin.AutoSize = true;
-            this.checkBoxKadin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxKadin.Location = new System.Drawing.Point(316, 351);
-            this.checkBoxKadin.Name = "checkBoxKadin";
-            this.checkBoxKadin.Size = new System.Drawing.Size(73, 24);
-            this.checkBoxKadin.TabIndex = 58;
-            this.checkBoxKadin.Text = "Kadın";
-            this.checkBoxKadin.UseVisualStyleBackColor = true;
+            this.BtnGeri.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnGeri.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGeri.ForeColor = System.Drawing.Color.White;
+            this.BtnGeri.Location = new System.Drawing.Point(12, 12);
+            this.BtnGeri.Name = "BtnGeri";
+            this.BtnGeri.Size = new System.Drawing.Size(39, 38);
+            this.BtnGeri.TabIndex = 81;
+            this.BtnGeri.Text = "<";
+            this.BtnGeri.UseVisualStyleBackColor = false;
             // 
             // HastaKayıtOlSayfası
             // 
@@ -279,8 +279,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 726);
-            this.Controls.Add(this.checkBoxErkek);
-            this.Controls.Add(this.checkBoxKadin);
+            this.Controls.Add(this.BtnGeri);
+            this.Controls.Add(this.CmbBxCnsyt);
             this.Controls.Add(this.MskTxtTelefon);
             this.Controls.Add(this.TxtSfre);
             this.Controls.Add(this.label9);
@@ -329,7 +329,7 @@
         private System.Windows.Forms.TextBox TxtSfre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox MskTxtTelefon;
-        private System.Windows.Forms.CheckBox checkBoxErkek;
-        private System.Windows.Forms.CheckBox checkBoxKadin;
+        private System.Windows.Forms.ComboBox CmbBxCnsyt;
+        private System.Windows.Forms.Button BtnGeri;
     }
 }
