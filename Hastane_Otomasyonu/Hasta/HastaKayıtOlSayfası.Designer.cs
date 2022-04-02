@@ -56,10 +56,10 @@
             this.BtnHastaGirisi.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnHastaGirisi.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHastaGirisi.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnHastaGirisi.Location = new System.Drawing.Point(57, 14);
+            this.BtnHastaGirisi.Location = new System.Drawing.Point(57, 11);
             this.BtnHastaGirisi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnHastaGirisi.Name = "BtnHastaGirisi";
-            this.BtnHastaGirisi.Size = new System.Drawing.Size(159, 36);
+            this.BtnHastaGirisi.Size = new System.Drawing.Size(159, 39);
             this.BtnHastaGirisi.TabIndex = 19;
             this.BtnHastaGirisi.Text = "Hasta Girişi";
             this.BtnHastaGirisi.UseVisualStyleBackColor = false;
