@@ -255,6 +255,9 @@
             // 
             this.CmbBxCnsyt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbBxCnsyt.FormattingEnabled = true;
+            this.CmbBxCnsyt.Items.AddRange(new object[] {
+            "Kadın",
+            "Erkek"});
             this.CmbBxCnsyt.Location = new System.Drawing.Point(220, 375);
             this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmbBxCnsyt.Name = "CmbBxCnsyt";
