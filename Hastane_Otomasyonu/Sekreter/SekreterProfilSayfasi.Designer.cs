@@ -55,6 +55,8 @@
             this.TxtHesKodu = new System.Windows.Forms.TextBox();
             this.yasLabel = new System.Windows.Forms.Label();
             this.tabRandevularim = new System.Windows.Forms.TabPage();
+            this.tabHastaKayitOlusturma = new System.Windows.Forms.TabPage();
+            this.tabYatakliServis = new System.Windows.Forms.TabPage();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -69,6 +71,8 @@
             // 
             this.tabControlHasta.Controls.Add(this.tabProfil);
             this.tabControlHasta.Controls.Add(this.tabRandevularim);
+            this.tabControlHasta.Controls.Add(this.tabHastaKayitOlusturma);
+            this.tabControlHasta.Controls.Add(this.tabYatakliServis);
             this.tabControlHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlHasta.Location = new System.Drawing.Point(12, 12);
             this.tabControlHasta.Name = "tabControlHasta";
@@ -359,8 +363,26 @@
             this.tabRandevularim.Padding = new System.Windows.Forms.Padding(3);
             this.tabRandevularim.Size = new System.Drawing.Size(740, 691);
             this.tabRandevularim.TabIndex = 1;
-            this.tabRandevularim.Text = "Randevularım";
+            this.tabRandevularim.Text = "Randevular";
             this.tabRandevularim.UseVisualStyleBackColor = true;
+            // 
+            // tabHastaKayitOlusturma
+            // 
+            this.tabHastaKayitOlusturma.Location = new System.Drawing.Point(4, 34);
+            this.tabHastaKayitOlusturma.Name = "tabHastaKayitOlusturma";
+            this.tabHastaKayitOlusturma.Size = new System.Drawing.Size(740, 691);
+            this.tabHastaKayitOlusturma.TabIndex = 2;
+            this.tabHastaKayitOlusturma.Text = "Hasta Kayıt Oluşturma";
+            this.tabHastaKayitOlusturma.UseVisualStyleBackColor = true;
+            // 
+            // tabYatakliServis
+            // 
+            this.tabYatakliServis.Location = new System.Drawing.Point(4, 34);
+            this.tabYatakliServis.Name = "tabYatakliServis";
+            this.tabYatakliServis.Size = new System.Drawing.Size(740, 691);
+            this.tabYatakliServis.TabIndex = 3;
+            this.tabYatakliServis.Text = "Yataklı Servis";
+            this.tabYatakliServis.UseVisualStyleBackColor = true;
             // 
             // SekreterProfilSayfasi
             // 
@@ -413,5 +435,7 @@
         private System.Windows.Forms.TextBox TxtHesKodu;
         private System.Windows.Forms.Label yasLabel;
         private System.Windows.Forms.TabPage tabRandevularim;
+        private System.Windows.Forms.TabPage tabHastaKayitOlusturma;
+        private System.Windows.Forms.TabPage tabYatakliServis;
     }
 }
