@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hastane_Otomasyonu.Models
 {
-    class HastaModel
+    public class HastaModel
     {
         public int Hastaıd;
         public string Hastaİsim;
@@ -19,6 +19,8 @@ namespace Hastane_Otomasyonu.Models
         public string HastaSifre;
         public string HastaCinsiyet;
 
+        public HastaModel() { 
+        }
         public HastaModel( string Hastaİsim, string HastaSoyİsim, int HastaYas, string HastaTCNo, string HastaTelefon, string HastaHesKodu, string HastaMail, string HastaSifre, string HastaCinsiyet, string text)
         {
             this.Hastaİsim = Hastaİsim;

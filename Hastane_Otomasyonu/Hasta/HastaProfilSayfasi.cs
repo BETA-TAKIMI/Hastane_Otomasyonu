@@ -10,16 +10,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using Hastane_Otomasyonu.Models;
 
 namespace Hastane_Otomasyonu
 {
+
     public partial class HastaProfilSayfasi : Form
     {
+        public HastaModel h = new HastaModel();
+
         public HastaProfilSayfasi()
         {
+           
             InitializeComponent();
-
             verilerigoster();
+            
+
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
 
@@ -32,8 +38,18 @@ namespace Hastane_Otomasyonu
         {
 
         }
-        private void verilerigoster()
+
+        public void verilerigoster()
+            
         {
+            TxtHesKodu.Text = h.HastaHesKodu;
+            TxtYas.Text = h.HastaYas.ToString();
+            //CmbBxCnsyt = h.HastaCinsiyet.ToString();
+            TxtMail.Text = h.HastaMail;
+            TxtSfre.Text = h.HastaSifre;
+            TxtTelefon.Text = h.HastaTelefon;
+            
+            /*
             baglanti.Open();
 
             SqlCommand komut = new SqlCommand("select*from tbl_hastalar ", baglanti);
@@ -52,7 +68,7 @@ namespace Hastane_Otomasyonu
 
 
             baglanti.Close();
-
+            */
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)

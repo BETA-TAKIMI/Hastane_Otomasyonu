@@ -20,6 +20,18 @@ namespace Hastane_Otomasyonu
         public HastaKayıtOlSayfası()
         {
             InitializeComponent();
+            HastaModel hasta = new HastaModel();
+
+            hasta.Hastaİsim = TxtAd.Text;
+            hasta.HastaSoyİsim = TxtAd.Text;
+            hasta.HastaYas = int.Parse(TxtYas.Text);
+            hasta.HastaTCNo = TxtTc.Text;
+            hasta.HastaTelefon = MskTxtTelefon.Text;
+            hasta.HastaHesKodu = TxtHskd.Text;
+            hasta.HastaMail = TxtMail.Text;
+            hasta.HastaSifre = TxtSfre.Text;
+            
+
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
 
@@ -50,7 +62,6 @@ namespace Hastane_Otomasyonu
 
         private void BtnKaydiTamamla_Click(object sender, EventArgs e)
         {
-            HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text,TxtMail.Text, TxtSfre.Text,CmbBxCnsyt.Text);
 
             String sorgu = "INSERT INTO tbl_hastalar(Hastaİsim,HastaSoyİsim,HastaTCNo,HastaYas,HastaCinsiyet,HastaHesKodu,HastaTelefon,HastaMail,HastaSifre) VALUES (@Hastaİsim,@HastaSoyİsim,@HastaTCNo,@HastaYas,@HastaCinsiyet,@HastaHesKodu,@HastaTelefon,@HastaMail,@HastaSifre)";
             komut = new SqlCommand(sorgu, baglanti);
@@ -67,6 +78,12 @@ namespace Hastane_Otomasyonu
             baglanti.Open();
             komut.ExecuteNonQuery();
             MessageBox.Show("Kaydınız Başarıyla Yapıldı Şifreniz:" + TxtSfre.Text);
+            HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text, TxtMail.Text, TxtSfre.Text, CmbBxCnsyt.Text);
+            
+            HastaProfilSayfasi profil = new HastaProfilSayfasi();
+            profil.h = hasta;
+            profil.Show();
+            this.Hide();
 
             baglanti.Close();
         }
