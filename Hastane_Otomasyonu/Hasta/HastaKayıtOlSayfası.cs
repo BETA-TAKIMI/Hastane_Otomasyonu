@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using Hastane_Otomasyonu.Models;
 
 namespace Hastane_Otomasyonu
 {
@@ -49,7 +50,7 @@ namespace Hastane_Otomasyonu
 
         private void BtnKaydiTamamla_Click(object sender, EventArgs e)
         {
-
+            HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text,TxtMail.Text, TxtSfre.Text,CmbBxCnsyt.Text);
 
             String sorgu = "INSERT INTO tbl_hastalar(Hastaİsim,HastaSoyİsim,HastaTCNo,HastaYas,HastaCinsiyet,HastaHesKodu,HastaTelefon,HastaMail,HastaSifre) VALUES (@Hastaİsim,@HastaSoyİsim,@HastaTCNo,@HastaYas,@HastaCinsiyet,@HastaHesKodu,@HastaTelefon,@HastaMail,@HastaSifre)";
             komut = new SqlCommand(sorgu, baglanti);
@@ -72,7 +73,7 @@ namespace Hastane_Otomasyonu
 
         private void BtnHastaGirisi_Click(object sender, EventArgs e)
         {
-           HastaGirisiSayfası frm = new  HastaGirisiSayfası();
+           HastaGirisiSayfası frm = new  HastaGirisiSayfası( );
             frm.Show();
             this.Hide();
         }

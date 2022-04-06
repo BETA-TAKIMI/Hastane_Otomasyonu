@@ -82,6 +82,7 @@
     <Compile Include="Hasta\HastaProfilSayfasi.Designer.cs">
       <DependentUpon>HastaProfilSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\HastaModel.cs" />
     <Compile Include="Sekreter\SekreterProfilSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>

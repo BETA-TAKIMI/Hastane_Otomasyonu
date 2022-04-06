@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using Hastane_Otomasyonu.Models;
+
 namespace Hastane_Otomasyonu
 {
     public partial class HastaGirisiSayfası : Form
     {
         public HastaGirisiSayfası()
         {
+            
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
