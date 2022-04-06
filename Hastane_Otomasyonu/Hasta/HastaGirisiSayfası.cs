@@ -90,5 +90,12 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
+        private void BtnGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa hst = new Anasayfa();
+            hst.Show();
+            this.Hide();
+        }
     }
 }

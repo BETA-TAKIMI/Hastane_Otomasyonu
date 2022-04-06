@@ -151,6 +151,7 @@
             this.BtnGeri.TabIndex = 14;
             this.BtnGeri.Text = "<";
             this.BtnGeri.UseVisualStyleBackColor = false;
+            this.BtnGeri.Click += new System.EventHandler(this.BtnGeri_Click);
             // 
             // HastaGirisiSayfası
             // 
