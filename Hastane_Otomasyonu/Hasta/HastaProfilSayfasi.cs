@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
-using System.Data.SqlClient;
+//using System.Data.SqlClient;
 using Hastane_Otomasyonu.Models;
 
 namespace Hastane_Otomasyonu
@@ -21,10 +21,10 @@ namespace Hastane_Otomasyonu
 
         public HastaProfilSayfasi()
         {
-            verilerigoster();
+          
             InitializeComponent();
-           
-            
+            verilerigoster();
+
 
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
@@ -39,7 +39,7 @@ namespace Hastane_Otomasyonu
 
         }
 
-        public void verilerigoster()
+        private void verilerigoster()
             
         {
             //TxtHesKodu.Text = h.HastaHesKodu;
@@ -52,7 +52,7 @@ namespace Hastane_Otomasyonu
 
             baglanti.Open();
 
-            SqlCommand komut = new SqlCommand("select*from tbl_hastalar where HastaTCNo='" +h.HastaTCNo+"'", baglanti);
+            SqlCommand komut = new SqlCommand("select*from tbl_hastalar where HastaTCNo like'%" + h.HastaTCNo + "%'", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
 
             while (oku.Read())
