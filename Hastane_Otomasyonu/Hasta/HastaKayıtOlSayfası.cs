@@ -30,7 +30,7 @@ namespace Hastane_Otomasyonu
             //hasta.HastaHesKodu = TxtHskd.Text;
             //hasta.HastaMail = TxtMail.Text;
             //hasta.HastaSifre = TxtSfre.Text;
-            
+
 
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
@@ -80,7 +80,7 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Kaydınız Başarıyla Yapıldı Şifreniz:" + TxtSfre.Text);
 
             HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text, TxtMail.Text, TxtSfre.Text, CmbBxCnsyt.Text);
-            
+
             HastaProfilSayfasi profil = new HastaProfilSayfasi();
             profil.h = hasta;
             profil.Show();
@@ -91,7 +91,7 @@ namespace Hastane_Otomasyonu
 
         private void BtnHastaGirisi_Click(object sender, EventArgs e)
         {
-           HastaGirisiSayfası frm = new  HastaGirisiSayfası( );
+            HastaGirisiSayfası frm = new HastaGirisiSayfası();
             frm.Show();
             this.Hide();
         }
