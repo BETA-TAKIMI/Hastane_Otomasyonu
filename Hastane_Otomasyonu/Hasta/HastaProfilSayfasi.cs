@@ -21,13 +21,12 @@ namespace Hastane_Otomasyonu
 
         public HastaProfilSayfasi()
         {
-          
             InitializeComponent();
             verilerigoster();
 
 
         }
-        SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
+        //SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
@@ -40,16 +39,16 @@ namespace Hastane_Otomasyonu
         }
 
         private void verilerigoster()
-            
+
         {
-            //TxtHesKodu.Text = h.HastaHesKodu;
-            //TxtYas.Text = h.HastaYas.ToString();
-            ////CmbBxCnsyt = h.HastaCinsiyet.ToString();
-            //TxtMail.Text = h.HastaMail;
-            //TxtSfre.Text = h.HastaSifre;
-            //TxtTelefon.Text = h.HastaTelefon;
+            TxtHesKodu.Text = h.HastaHesKodu;
+            TxtYas.Text = h.HastaYas.ToString();
+            CmbBxCnsyt.Text = h.HastaCinsiyet;
+            TxtMail.Text = h.HastaMail;
+            TxtSfre.Text = h.HastaSifre;
+            TxtTelefon.Text = h.HastaTelefon;
 
-
+            /*
             baglanti.Open();
 
             SqlCommand komut = new SqlCommand("select*from tbl_hastalar where HastaTCNo like'%" + h.HastaTCNo + "%'", baglanti);
@@ -68,12 +67,12 @@ namespace Hastane_Otomasyonu
 
 
             baglanti.Close();
-
+            */
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
         {
-           
+
 
         }
     }

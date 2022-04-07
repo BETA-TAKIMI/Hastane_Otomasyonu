@@ -17,7 +17,7 @@ namespace Hastane_Otomasyonu
     {
         public HastaGirisiSayfası()
         {
-            
+
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
@@ -33,29 +33,48 @@ namespace Hastane_Otomasyonu
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
-                baglanti.Open();
-                String Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
-                SqlParameter prm1 = new SqlParameter("HastaTCNo", TxtTC.Text.Trim());
-                SqlParameter prm2 = new SqlParameter("HastaSifre", TxtSfre.Text.Trim());
-                SqlCommand komut = new SqlCommand(Sql, baglanti);
-                komut.Parameters.Add(prm1);
-                komut.Parameters.Add(prm2);
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(komut);
-                da.Fill(dt);
-                if (dt.Rows.Count > 0)
+
+            baglanti.Open();
+            String Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
+            SqlParameter prm1 = new SqlParameter("HastaTCNo", TxtTC.Text.Trim());
+            SqlParameter prm2 = new SqlParameter("HastaSifre", TxtSfre.Text.Trim());
+            SqlCommand komut = new SqlCommand(Sql, baglanti);
+            komut.Parameters.Add(prm1);
+            komut.Parameters.Add(prm2);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            da.Fill(dt);
+            SqlCommand komut2 = new SqlCommand("select*from tbl_hastalar where HastaTCNo like'%" + TxtTC.Text.Trim() + "%'", baglanti);
+            HastaModel hasta = new HastaModel();
+
+            if (dt.Rows.Count > 0)
+            {
+                SqlDataReader oku = komut2.ExecuteReader();
+
+                while (oku.Read())
                 {
-                    HastaProfilSayfasi frm = new HastaProfilSayfasi();
-                    frm.Show();
-                    this.Hide();
+                    hasta.HastaTCNo = TxtTC.Text.Trim();
+                    hasta.HastaHesKodu = oku["HastaHesKodu"].ToString();
+                    hasta.HastaYas = (int)oku["HastaYas"];
+                    hasta.HastaCinsiyet = oku["HastaCinsiyet"].ToString();
+                    hasta.HastaTelefon = oku["HastaTelefon"].ToString();
+                    hasta.HastaMail = oku["HastaMail"].ToString();
+                    hasta.HastaSifre = oku["HastaSifre"].ToString();
+                    hasta.Hastaİsim = oku["Hastaİsim"].ToString();
+                    hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString();
 
                 }
-                else
-                {
+                HastaProfilSayfasi frm = new HastaProfilSayfasi();
+                frm.h = hasta;
+                frm.Show();
+                this.Hide();
+
+            }
+            else
+            {
                 MessageBox.Show("Hatalı Giriş.....");
-                }
-                baglanti.Close();
+            }
+            baglanti.Close();
 
 
         }
