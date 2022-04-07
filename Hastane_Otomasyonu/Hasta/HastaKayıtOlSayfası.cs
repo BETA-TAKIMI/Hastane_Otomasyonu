@@ -20,16 +20,16 @@ namespace Hastane_Otomasyonu
         public HastaKayıtOlSayfası()
         {
             InitializeComponent();
-            HastaModel hasta = new HastaModel();
+            //HastaModel hasta = new HastaModel();
 
-            hasta.Hastaİsim = TxtAd.Text;
-            hasta.HastaSoyİsim = TxtAd.Text;
-            hasta.HastaYas = int.Parse(TxtYas.Text);
-            hasta.HastaTCNo = TxtTc.Text;
-            hasta.HastaTelefon = MskTxtTelefon.Text;
-            hasta.HastaHesKodu = TxtHskd.Text;
-            hasta.HastaMail = TxtMail.Text;
-            hasta.HastaSifre = TxtSfre.Text;
+            //hasta.Hastaİsim = TxtAd.Text;
+            //hasta.HastaSoyİsim = TxtAd.Text;
+            //hasta.HastaYas = int.Parse(TxtYas.Text);
+            //hasta.HastaTCNo = TxtTc.Text;
+            //hasta.HastaTelefon = MskTxtTelefon.Text;
+            //hasta.HastaHesKodu = TxtHskd.Text;
+            //hasta.HastaMail = TxtMail.Text;
+            //hasta.HastaSifre = TxtSfre.Text;
             
 
         }
@@ -78,6 +78,7 @@ namespace Hastane_Otomasyonu
             baglanti.Open();
             komut.ExecuteNonQuery();
             MessageBox.Show("Kaydınız Başarıyla Yapıldı Şifreniz:" + TxtSfre.Text);
+
             HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text, TxtMail.Text, TxtSfre.Text, CmbBxCnsyt.Text);
             
             HastaProfilSayfasi profil = new HastaProfilSayfasi();

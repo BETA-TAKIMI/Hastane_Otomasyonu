@@ -21,9 +21,9 @@ namespace Hastane_Otomasyonu
 
         public HastaProfilSayfasi()
         {
-           
-            InitializeComponent();
             verilerigoster();
+            InitializeComponent();
+           
             
 
         }
@@ -42,17 +42,17 @@ namespace Hastane_Otomasyonu
         public void verilerigoster()
             
         {
-            TxtHesKodu.Text = h.HastaHesKodu;
-            TxtYas.Text = h.HastaYas.ToString();
-            //CmbBxCnsyt = h.HastaCinsiyet.ToString();
-            TxtMail.Text = h.HastaMail;
-            TxtSfre.Text = h.HastaSifre;
-            TxtTelefon.Text = h.HastaTelefon;
-            
-            /*
+            //TxtHesKodu.Text = h.HastaHesKodu;
+            //TxtYas.Text = h.HastaYas.ToString();
+            ////CmbBxCnsyt = h.HastaCinsiyet.ToString();
+            //TxtMail.Text = h.HastaMail;
+            //TxtSfre.Text = h.HastaSifre;
+            //TxtTelefon.Text = h.HastaTelefon;
+
+
             baglanti.Open();
 
-            SqlCommand komut = new SqlCommand("select*from tbl_hastalar ", baglanti);
+            SqlCommand komut = new SqlCommand("select*from tbl_hastalar where HastaTCNo='" +h.HastaTCNo+"'", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
 
             while (oku.Read())
@@ -68,7 +68,7 @@ namespace Hastane_Otomasyonu
 
 
             baglanti.Close();
-            */
+
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
