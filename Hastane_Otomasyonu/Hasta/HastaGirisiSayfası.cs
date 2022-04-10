@@ -19,9 +19,10 @@ namespace Hastane_Otomasyonu
         {
 
             InitializeComponent();
+            Console.WriteLine("hasta giriş sayfası");
         }
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
-
+        HastaModel hasta = new HastaModel();
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +32,7 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -44,16 +46,19 @@ namespace Hastane_Otomasyonu
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(komut);
             da.Fill(dt);
-            SqlCommand komut2 = new SqlCommand("select*from tbl_hastalar where HastaTCNo like'%" + TxtTC.Text.Trim() + "%'", baglanti);
-            HastaModel hasta = new HastaModel();
-
+            hasta.HastaTCNo = TxtTC.Text.Trim();
+            SqlCommand komut2 = new SqlCommand("select*from tbl_hastalar where HastaTCNo like '%" + hasta.HastaTCNo + "%'", baglanti);
+          
+            SqlDataReader oku = komut2.ExecuteReader();
             if (dt.Rows.Count > 0)
             {
-                SqlDataReader oku = komut2.ExecuteReader();
+
+
+                Console.WriteLine("hasta giriş sayfası while içerisi" + hasta.HastaTCNo);
 
                 while (oku.Read())
                 {
-                    hasta.HastaTCNo = TxtTC.Text.Trim();
+                   
                     hasta.HastaHesKodu = oku["HastaHesKodu"].ToString();
                     hasta.HastaYas = (int)oku["HastaYas"];
                     hasta.HastaCinsiyet = oku["HastaCinsiyet"].ToString();
@@ -62,10 +67,9 @@ namespace Hastane_Otomasyonu
                     hasta.HastaSifre = oku["HastaSifre"].ToString();
                     hasta.Hastaİsim = oku["Hastaİsim"].ToString();
                     hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString();
-
                 }
                 HastaProfilSayfasi frm = new HastaProfilSayfasi();
-                frm.h = hasta;
+                frm.HastaTc = TxtTC.Text.Trim();
                 frm.Show();
                 this.Hide();
 
