@@ -37,7 +37,7 @@ namespace Hastane_Otomasyonu
         {
 
             baglanti.Open();
-            String Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
+            string Sql = "select*from tbl_hastalar where HastaTCNo=@HastaTCNo AND HastaSifre=@HastaSifre";
             SqlParameter prm1 = new SqlParameter("HastaTCNo", TxtTC.Text.Trim());
             SqlParameter prm2 = new SqlParameter("HastaSifre", TxtSfre.Text.Trim());
             SqlCommand komut = new SqlCommand(Sql, baglanti);
@@ -46,16 +46,17 @@ namespace Hastane_Otomasyonu
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(komut);
             da.Fill(dt);
-            
+            baglanti.Close();
             if (dt.Rows.Count > 0)
             {
 
 
                 Console.WriteLine("hasta giriş sayfası while içerisi" + hasta.HastaTCNo);
-                hastaModelOlustur();
+                HastaModelOlustur();
                 
                 HastaProfilSayfasi frm = new HastaProfilSayfasi();
-                frm.HastaTc = hastaModelOlustur().HastaTCNo;
+                frm.HastaTc = HastaModelOlustur().HastaTCNo;
+                frm.h = HastaModelOlustur();
                 frm.Show();
                 this.Hide();
 
@@ -64,11 +65,11 @@ namespace Hastane_Otomasyonu
             {
                 MessageBox.Show("Hatalı Giriş.....");
             }
-            baglanti.Close();
+            //baglanti.Close();
 
 
         }
-        public HastaModel hastaModelOlustur()
+        public HastaModel HastaModelOlustur()
         {
             HastaModel hasta = new HastaModel();
             hasta.HastaTCNo = TxtTC.Text.Trim();
@@ -85,9 +86,11 @@ namespace Hastane_Otomasyonu
                 hasta.HastaMail = oku["HastaMail"].ToString();
                 hasta.HastaSifre = oku["HastaSifre"].ToString();
                 hasta.Hastaİsim = oku["Hastaİsim"].ToString();
-                hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString();
-            }
+                hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString(); 
+                Console.WriteLine("hasta giriş sayfası hasta model oluştur while içerisi" + hasta.HastaTCNo);
 
+            }
+            baglanti.Close();
             return hasta;
         }
         private void BtnKayitOl_Click(object sender, EventArgs e)

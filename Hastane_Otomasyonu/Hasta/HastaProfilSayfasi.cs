@@ -22,7 +22,9 @@ namespace Hastane_Otomasyonu
         public string HastaTc;
         public HastaProfilSayfasi()
         {
-            
+            Console.WriteLine("1. h TC: " + h.HastaTCNo);
+            Console.WriteLine("2. HastaTc TC: " + HastaTc);
+
             InitializeComponent();
             verilerigoster();
 
@@ -52,11 +54,15 @@ namespace Hastane_Otomasyonu
 
 
             baglanti.Open();
+            Console.WriteLine("3. h TC: " + h.HastaTCNo);
+            Console.WriteLine("4. HastaTc TC: " + HastaTc);
             h.HastaTCNo = HastaTc;
 
             SqlCommand komut = new SqlCommand("select*from tbl_hastalar where HastaTCNo like'%" + h.HastaTCNo + "%'", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
 
+            Console.WriteLine("5. h TC: " + h.HastaTCNo);
+            Console.WriteLine("6. HastaTc TC: " + HastaTc);
             while (oku.Read())
             {
                 TxtHesKodu.Text = oku["HastaHesKodu"].ToString();
