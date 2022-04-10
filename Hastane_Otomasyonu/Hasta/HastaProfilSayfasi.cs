@@ -19,7 +19,7 @@ namespace Hastane_Otomasyonu
     {
 
         public HastaModel h = new HastaModel();
-        public String HastaTc;
+        public string HastaTc;
         public HastaProfilSayfasi()
         {
             

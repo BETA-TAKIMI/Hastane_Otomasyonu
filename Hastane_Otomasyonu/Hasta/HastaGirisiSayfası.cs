@@ -46,30 +46,16 @@ namespace Hastane_Otomasyonu
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(komut);
             da.Fill(dt);
-            hasta.HastaTCNo = TxtTC.Text.Trim();
-            SqlCommand komut2 = new SqlCommand("select*from tbl_hastalar where HastaTCNo like '%" + hasta.HastaTCNo + "%'", baglanti);
-          
-            SqlDataReader oku = komut2.ExecuteReader();
+            
             if (dt.Rows.Count > 0)
             {
 
 
                 Console.WriteLine("hasta giriş sayfası while içerisi" + hasta.HastaTCNo);
-
-                while (oku.Read())
-                {
-                   
-                    hasta.HastaHesKodu = oku["HastaHesKodu"].ToString();
-                    hasta.HastaYas = (int)oku["HastaYas"];
-                    hasta.HastaCinsiyet = oku["HastaCinsiyet"].ToString();
-                    hasta.HastaTelefon = oku["HastaTelefon"].ToString();
-                    hasta.HastaMail = oku["HastaMail"].ToString();
-                    hasta.HastaSifre = oku["HastaSifre"].ToString();
-                    hasta.Hastaİsim = oku["Hastaİsim"].ToString();
-                    hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString();
-                }
+                hastaModelOlustur();
+                
                 HastaProfilSayfasi frm = new HastaProfilSayfasi();
-                frm.HastaTc = TxtTC.Text.Trim();
+                frm.HastaTc = hastaModelOlustur().HastaTCNo;
                 frm.Show();
                 this.Hide();
 
@@ -82,7 +68,28 @@ namespace Hastane_Otomasyonu
 
 
         }
+        public HastaModel hastaModelOlustur()
+        {
+            HastaModel hasta = new HastaModel();
+            hasta.HastaTCNo = TxtTC.Text.Trim();
+            SqlCommand komut2 = new SqlCommand("select*from tbl_hastalar where HastaTCNo like '%" + hasta.HastaTCNo + "%'", baglanti);
+            SqlDataReader oku = komut2.ExecuteReader();
 
+            while (oku.Read())
+            {
+
+                hasta.HastaHesKodu = oku["HastaHesKodu"].ToString();
+                hasta.HastaYas = (int)oku["HastaYas"];
+                hasta.HastaCinsiyet = oku["HastaCinsiyet"].ToString();
+                hasta.HastaTelefon = oku["HastaTelefon"].ToString();
+                hasta.HastaMail = oku["HastaMail"].ToString();
+                hasta.HastaSifre = oku["HastaSifre"].ToString();
+                hasta.Hastaİsim = oku["Hastaİsim"].ToString();
+                hasta.HastaSoyİsim = oku["HastaSoyİsim"].ToString();
+            }
+
+            return hasta;
+        }
         private void BtnKayitOl_Click(object sender, EventArgs e)
         {
             HastaKayıtOlSayfası hst = new HastaKayıtOlSayfası();

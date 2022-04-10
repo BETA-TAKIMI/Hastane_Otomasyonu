@@ -79,7 +79,7 @@ namespace Hastane_Otomasyonu
             komut.ExecuteNonQuery();
             MessageBox.Show("Kaydınız Başarıyla Yapıldı Şifreniz:" + TxtSfre.Text);
 
-            HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text, TxtMail.Text, TxtSfre.Text, CmbBxCnsyt.Text);
+            HastaModel hasta = new HastaModel(TxtAd.Text, TxtSyd.Text, int.Parse(TxtYas.Text), TxtTc.Text, MskTxtTelefon.Text, TxtHskd.Text, TxtMail.Text, TxtSfre.Text, CmbBxCnsyt.Text);
 
             HastaProfilSayfasi profil = new HastaProfilSayfasi();
             profil.h = hasta;
