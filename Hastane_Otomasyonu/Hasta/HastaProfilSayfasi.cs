@@ -14,6 +14,7 @@ namespace Hastane_Otomasyonu
     {
         public HastaProfilSayfasi()
         {
+
             InitializeComponent();
         }
 
