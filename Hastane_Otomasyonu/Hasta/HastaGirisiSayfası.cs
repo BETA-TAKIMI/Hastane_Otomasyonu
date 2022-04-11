@@ -17,6 +17,7 @@ namespace Hastane_Otomasyonu
         {
             InitializeComponent();
         }
+
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,7 +44,9 @@ namespace Hastane_Otomasyonu
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
+
                     HastaProfilSayfasi frm = new HastaProfilSayfasi();
+                    frm.tcno = TxtTC.Text;
                     frm.Show();
                     this.Hide();
 
