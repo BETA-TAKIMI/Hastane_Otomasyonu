@@ -21,7 +21,7 @@ namespace Hastane_Otomasyonu.Models
 
         public HastaModel() { 
         }
-        public HastaModel( string Hastaİsim, string HastaSoyİsim, int HastaYas, string HastaTCNo, string HastaTelefon, string HastaHesKodu, string HastaMail, string HastaSifre, string HastaCinsiyet, string text)
+        public HastaModel( string Hastaİsim, string HastaSoyİsim, int HastaYas, string HastaTCNo, string HastaTelefon, string HastaHesKodu, string HastaMail, string HastaSifre, string HastaCinsiyet)
         {
             this.Hastaİsim = Hastaİsim;
             this.HastaSoyİsim = HastaSoyİsim;
