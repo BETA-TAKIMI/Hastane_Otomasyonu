@@ -35,6 +35,7 @@ namespace Hastane_Otomasyonu
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
+                lblHastaİsimSoyisim.Text = dr["Hastaİsim"].ToString()+" " + dr["HastaSoyİsim"].ToString();
                 TxtHesKodu.Text = dr["HastaHesKodu"].ToString();
                 TxtMail.Text = dr["HastaMail"].ToString();
                 TxtYas.Text = dr["HastaYas"].ToString();
