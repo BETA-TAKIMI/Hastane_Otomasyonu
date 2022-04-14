@@ -52,6 +52,12 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor\DoktorProfilSayfasi.Designer.cs">
+      <DependentUpon>DoktorProfilSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doktor\DoktorGirisiSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,19 @@
     </Compile>
     <Compile Include="Doktor\DoktorSifremiUnuttumSayfasi.Designer.cs">
       <DependentUpon>DoktorSifremiUnuttumSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta\HastaProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta\HastaProfilSayfasi.Designer.cs">
+      <DependentUpon>HastaProfilSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HastaModel.cs" />
+    <Compile Include="Sekreter\SekreterProfilSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sekreter\SekreterProfilSayfasi.Designer.cs">
+      <DependentUpon>SekreterProfilSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Sekreter\SekreterSifremiUnuttumSayfasi.cs">
       <SubType>Form</SubType>
@@ -111,6 +130,9 @@
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doktor\DoktorProfilSayfasi.resx">
+      <DependentUpon>DoktorProfilSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doktor\DoktorGirisiSayfasi.resx">
       <DependentUpon>DoktorGirisiSayfasi.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +148,9 @@
     <EmbeddedResource Include="Hasta\HastaKayıtOlSayfası.resx">
       <DependentUpon>HastaKayıtOlSayfası.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Hasta\HastaProfilSayfasi.resx">
+      <DependentUpon>HastaProfilSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaSifremiUnuttumSayfasi.resx">
       <DependentUpon>HastaSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +163,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sekreter\SekreterProfilSayfasi.resx">
+      <DependentUpon>SekreterProfilSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sekreter\SekreterSifremiUnuttumSayfasi.resx">
       <DependentUpon>SekreterSifremiUnuttumSayfasi.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,5 +188,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

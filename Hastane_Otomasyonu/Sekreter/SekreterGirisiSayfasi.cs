@@ -31,30 +31,30 @@ namespace Hastane_Otomasyonu
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-            try
-            {
-                baglanti.Open();
-                String Sql = "select*from tbl_sekreter where SekereterTCNo=@ SekereterTCNo AND  SekereterSifre=@ SekereterSifre";
-                SqlParameter prm1 = new SqlParameter(" SekereterTCNo", TxtTC.Text.Trim());
-                SqlParameter prm2 = new SqlParameter(" SekereterSifre", TxtSfre.Text.Trim());
-                SqlCommand komut = new SqlCommand(Sql, baglanti);
-                komut.Parameters.Add(prm1);
-                komut.Parameters.Add(prm2);
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(komut);
-                da.Fill(dt);
-                //if (dt.Rows.Count > 0)
-                //{
-                //    FrmSekereterDetay frm = new FrmSekereterDetay();
-                //    frm.Show();
-                //    this.Hide();
 
-                //}
+            baglanti.Open();
+            String Sql = "select*from tbl_sekreter where SekreterTCNo=@SekreterTCNo AND SekreterSifre=@SekreterSifre";
+            SqlParameter prm1 = new SqlParameter("SekreterTCNo", TxtTC.Text.Trim());
+            SqlParameter prm2 = new SqlParameter("SekreterSifre", TxtSfre.Text.Trim());
+            SqlCommand komut = new SqlCommand(Sql, baglanti);
+            komut.Parameters.Add(prm1);
+            komut.Parameters.Add(prm2);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                SekreterProfilSayfasi frm = new SekreterProfilSayfasi();
+                frm.Show();
+                this.Hide();
+
             }
-            catch (Exception)
+            else
             {
                 MessageBox.Show("Hatalı Giriş.....");
             }
+            baglanti.Close();
+
         }
 
         private void BtnKayitOl_Click(object sender, EventArgs e)
@@ -63,6 +63,13 @@ namespace Hastane_Otomasyonu
                frm.Show();
                this.Hide();
 
+        }
+
+        private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            SekreterSifremiUnuttumSayfasi frm = new SekreterSifremiUnuttumSayfasi();
+            frm.Show();
+            this.Hide();
         }
     }
 }

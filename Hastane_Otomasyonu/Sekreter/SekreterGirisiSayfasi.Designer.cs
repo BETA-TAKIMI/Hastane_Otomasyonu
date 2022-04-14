@@ -63,6 +63,7 @@
             this.BtnSifremiUnuttum.TabIndex = 20;
             this.BtnSifremiUnuttum.Text = "Şifremi Unuttum";
             this.BtnSifremiUnuttum.UseVisualStyleBackColor = false;
+            this.BtnSifremiUnuttum.Click += new System.EventHandler(this.BtnSifremiUnuttum_Click);
             // 
             // TxtSfre
             // 
