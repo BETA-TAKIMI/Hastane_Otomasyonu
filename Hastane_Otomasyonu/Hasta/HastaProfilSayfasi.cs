@@ -56,7 +56,13 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Bilgileriniz Güncellendi...");
             baglanti.Close();
         }
-       
+
+        private void BtnCikis_Click(object sender, EventArgs e)
+        {
+            Anasayfa frm = new Anasayfa();
+            frm.Show();
+            this.Hide();
+        }
     }
     }
 
