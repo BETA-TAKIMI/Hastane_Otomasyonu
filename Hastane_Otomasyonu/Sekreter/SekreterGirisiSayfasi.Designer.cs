@@ -74,7 +74,6 @@
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(377, 32);
             this.TxtSfre.TabIndex = 19;
-            this.TxtSfre.TextChanged += new System.EventHandler(this.TxtSfre_TextChanged);
             // 
             // TxtTC
             // 
@@ -84,7 +83,6 @@
             this.TxtTC.Name = "TxtTC";
             this.TxtTC.Size = new System.Drawing.Size(377, 32);
             this.TxtTC.TabIndex = 18;
-            this.TxtTC.TextChanged += new System.EventHandler(this.TxtTC_TextChanged);
             // 
             // SifreLabel
             // 
