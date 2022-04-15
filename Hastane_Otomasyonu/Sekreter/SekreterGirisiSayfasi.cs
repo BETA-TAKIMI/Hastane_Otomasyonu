@@ -37,6 +37,7 @@ namespace Hastane_Otomasyonu
             if (dt.Rows.Count > 0)
             {
                 SekreterProfilSayfasi frm = new SekreterProfilSayfasi();
+                frm.tcno = TxtTC.Text;
                 frm.Show();
                 this.Hide();
 
