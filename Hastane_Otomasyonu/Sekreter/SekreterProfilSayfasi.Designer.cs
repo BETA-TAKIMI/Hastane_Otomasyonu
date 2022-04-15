@@ -31,12 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
-            this.CmbBxCnsyt = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BtnVazgec = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -57,6 +53,8 @@
             this.tabRandevularim = new System.Windows.Forms.TabPage();
             this.tabHastaKayitOlusturma = new System.Windows.Forms.TabPage();
             this.tabYatakliServis = new System.Windows.Forms.TabPage();
+            this.LblCinsiyet = new System.Windows.Forms.Label();
+            this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -74,20 +72,17 @@
             this.tabControlHasta.Controls.Add(this.tabHastaKayitOlusturma);
             this.tabControlHasta.Controls.Add(this.tabYatakliServis);
             this.tabControlHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlHasta.Location = new System.Drawing.Point(12, 12);
+            this.tabControlHasta.Location = new System.Drawing.Point(12, 46);
             this.tabControlHasta.Name = "tabControlHasta";
             this.tabControlHasta.SelectedIndex = 0;
-            this.tabControlHasta.Size = new System.Drawing.Size(748, 729);
+            this.tabControlHasta.Size = new System.Drawing.Size(748, 695);
             this.tabControlHasta.TabIndex = 1;
             // 
             // tabProfil
             // 
-            this.tabProfil.Controls.Add(this.CmbBxCnsyt);
-            this.tabProfil.Controls.Add(this.textBox2);
-            this.tabProfil.Controls.Add(this.label4);
-            this.tabProfil.Controls.Add(this.textBox1);
+            this.tabProfil.Controls.Add(this.LblCinsiyet);
+            this.tabProfil.Controls.Add(this.TxtSifre);
             this.tabProfil.Controls.Add(this.label2);
-            this.tabProfil.Controls.Add(this.BtnVazgec);
             this.tabProfil.Controls.Add(this.pictureBox6);
             this.tabProfil.Controls.Add(this.pictureBox5);
             this.tabProfil.Controls.Add(this.pictureBox4);
@@ -109,54 +104,19 @@
             this.tabProfil.Location = new System.Drawing.Point(4, 34);
             this.tabProfil.Name = "tabProfil";
             this.tabProfil.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfil.Size = new System.Drawing.Size(740, 691);
+            this.tabProfil.Size = new System.Drawing.Size(740, 657);
             this.tabProfil.TabIndex = 0;
             this.tabProfil.Text = "Profil";
             this.tabProfil.UseVisualStyleBackColor = true;
             // 
-            // CmbBxCnsyt
+            // TxtSifre
             // 
-            this.CmbBxCnsyt.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kadın",
-            "Erkek"});
-            this.CmbBxCnsyt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbBxCnsyt.FormattingEnabled = true;
-            this.CmbBxCnsyt.Items.AddRange(new object[] {
-            "Kadın",
-            "Erkek"});
-            this.CmbBxCnsyt.Location = new System.Drawing.Point(196, 260);
-            this.CmbBxCnsyt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CmbBxCnsyt.Name = "CmbBxCnsyt";
-            this.CmbBxCnsyt.Size = new System.Drawing.Size(377, 32);
-            this.CmbBxCnsyt.TabIndex = 103;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(196, 529);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(377, 32);
-            this.textBox2.TabIndex = 102;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(192, 503);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 24);
-            this.label4.TabIndex = 101;
-            this.label4.Text = "Şifre Tekrar";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(196, 462);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(377, 32);
-            this.textBox1.TabIndex = 100;
+            this.TxtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSifre.Location = new System.Drawing.Point(196, 462);
+            this.TxtSifre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(377, 32);
+            this.TxtSifre.TabIndex = 100;
             // 
             // label2
             // 
@@ -167,19 +127,6 @@
             this.label2.Size = new System.Drawing.Size(50, 24);
             this.label2.TabIndex = 99;
             this.label2.Text = "Şifre";
-            // 
-            // BtnVazgec
-            // 
-            this.BtnVazgec.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnVazgec.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVazgec.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnVazgec.Location = new System.Drawing.Point(196, 628);
-            this.BtnVazgec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BtnVazgec.Name = "BtnVazgec";
-            this.BtnVazgec.Size = new System.Drawing.Size(379, 49);
-            this.BtnVazgec.TabIndex = 98;
-            this.BtnVazgec.Text = "Vazgeç";
-            this.BtnVazgec.UseVisualStyleBackColor = false;
             // 
             // pictureBox6
             // 
@@ -361,7 +308,7 @@
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
             this.tabRandevularim.Name = "tabRandevularim";
             this.tabRandevularim.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRandevularim.Size = new System.Drawing.Size(740, 691);
+            this.tabRandevularim.Size = new System.Drawing.Size(740, 657);
             this.tabRandevularim.TabIndex = 1;
             this.tabRandevularim.Text = "Randevular";
             this.tabRandevularim.UseVisualStyleBackColor = true;
@@ -370,7 +317,7 @@
             // 
             this.tabHastaKayitOlusturma.Location = new System.Drawing.Point(4, 34);
             this.tabHastaKayitOlusturma.Name = "tabHastaKayitOlusturma";
-            this.tabHastaKayitOlusturma.Size = new System.Drawing.Size(740, 691);
+            this.tabHastaKayitOlusturma.Size = new System.Drawing.Size(740, 657);
             this.tabHastaKayitOlusturma.TabIndex = 2;
             this.tabHastaKayitOlusturma.Text = "Hasta Kayıt Oluşturma";
             this.tabHastaKayitOlusturma.UseVisualStyleBackColor = true;
@@ -379,10 +326,32 @@
             // 
             this.tabYatakliServis.Location = new System.Drawing.Point(4, 34);
             this.tabYatakliServis.Name = "tabYatakliServis";
-            this.tabYatakliServis.Size = new System.Drawing.Size(740, 691);
+            this.tabYatakliServis.Size = new System.Drawing.Size(740, 657);
             this.tabYatakliServis.TabIndex = 3;
             this.tabYatakliServis.Text = "Yataklı Servis";
             this.tabYatakliServis.UseVisualStyleBackColor = true;
+            // 
+            // LblCinsiyet
+            // 
+            this.LblCinsiyet.AutoSize = true;
+            this.LblCinsiyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCinsiyet.Location = new System.Drawing.Point(193, 272);
+            this.LblCinsiyet.Name = "LblCinsiyet";
+            this.LblCinsiyet.Size = new System.Drawing.Size(138, 24);
+            this.LblCinsiyet.TabIndex = 101;
+            this.LblCinsiyet.Text = "Cinsiyet Bilgisi";
+            // 
+            // BtnCikis
+            // 
+            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCikis.Location = new System.Drawing.Point(640, 6);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
+            this.BtnCikis.TabIndex = 2;
+            this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.UseVisualStyleBackColor = false;
             // 
             // SekreterProfilSayfasi
             // 
@@ -390,8 +359,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(775, 753);
+            this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControlHasta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SekreterProfilSayfasi";
             this.Text = "SekreterProfilSayfasi";
             this.tabControlHasta.ResumeLayout(false);
@@ -411,12 +381,8 @@
 
         private System.Windows.Forms.TabControl tabControlHasta;
         private System.Windows.Forms.TabPage tabProfil;
-        private System.Windows.Forms.ComboBox CmbBxCnsyt;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BtnVazgec;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -437,5 +403,7 @@
         private System.Windows.Forms.TabPage tabRandevularim;
         private System.Windows.Forms.TabPage tabHastaKayitOlusturma;
         private System.Windows.Forms.TabPage tabYatakliServis;
+        private System.Windows.Forms.Label LblCinsiyet;
+        private System.Windows.Forms.Button BtnCikis;
     }
 }

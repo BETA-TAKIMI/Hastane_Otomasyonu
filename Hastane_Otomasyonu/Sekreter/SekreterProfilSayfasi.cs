@@ -17,9 +17,6 @@ namespace Hastane_Otomasyonu
             InitializeComponent();
         }
 
-        private void BtnGuncelle_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
