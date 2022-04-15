@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
+            this.LblCinsiyet = new System.Windows.Forms.Label();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,7 @@
             this.cinsiyetLabel = new System.Windows.Forms.Label();
             this.TxtTelefon = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblIsimSoyisim = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hesKoduLabel = new System.Windows.Forms.Label();
             this.TxtSfre = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.tabRandevularim = new System.Windows.Forms.TabPage();
             this.tabHastaKayitOlusturma = new System.Windows.Forms.TabPage();
             this.tabYatakliServis = new System.Windows.Forms.TabPage();
-            this.LblCinsiyet = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
@@ -94,7 +94,7 @@
             this.tabProfil.Controls.Add(this.cinsiyetLabel);
             this.tabProfil.Controls.Add(this.TxtTelefon);
             this.tabProfil.Controls.Add(this.label3);
-            this.tabProfil.Controls.Add(this.label1);
+            this.tabProfil.Controls.Add(this.LblIsimSoyisim);
             this.tabProfil.Controls.Add(this.pictureBox1);
             this.tabProfil.Controls.Add(this.hesKoduLabel);
             this.tabProfil.Controls.Add(this.TxtSfre);
@@ -108,6 +108,16 @@
             this.tabProfil.TabIndex = 0;
             this.tabProfil.Text = "Profil";
             this.tabProfil.UseVisualStyleBackColor = true;
+            // 
+            // LblCinsiyet
+            // 
+            this.LblCinsiyet.AutoSize = true;
+            this.LblCinsiyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCinsiyet.Location = new System.Drawing.Point(193, 272);
+            this.LblCinsiyet.Name = "LblCinsiyet";
+            this.LblCinsiyet.Size = new System.Drawing.Size(138, 24);
+            this.LblCinsiyet.TabIndex = 101;
+            this.LblCinsiyet.Text = "Cinsiyet Bilgisi";
             // 
             // TxtSifre
             // 
@@ -244,15 +254,15 @@
             this.label3.TabIndex = 87;
             this.label3.Text = "Telefon";
             // 
-            // label1
+            // LblIsimSoyisim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 24);
-            this.label1.TabIndex = 86;
-            this.label1.Text = "İsim Soyisim";
+            this.LblIsimSoyisim.AutoSize = true;
+            this.LblIsimSoyisim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIsimSoyisim.Location = new System.Drawing.Point(89, 32);
+            this.LblIsimSoyisim.Name = "LblIsimSoyisim";
+            this.LblIsimSoyisim.Size = new System.Drawing.Size(139, 24);
+            this.LblIsimSoyisim.TabIndex = 86;
+            this.LblIsimSoyisim.Text = "İsim Soyisim";
             // 
             // pictureBox1
             // 
@@ -331,16 +341,6 @@
             this.tabYatakliServis.Text = "Yataklı Servis";
             this.tabYatakliServis.UseVisualStyleBackColor = true;
             // 
-            // LblCinsiyet
-            // 
-            this.LblCinsiyet.AutoSize = true;
-            this.LblCinsiyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCinsiyet.Location = new System.Drawing.Point(193, 272);
-            this.LblCinsiyet.Name = "LblCinsiyet";
-            this.LblCinsiyet.Size = new System.Drawing.Size(138, 24);
-            this.LblCinsiyet.TabIndex = 101;
-            this.LblCinsiyet.Text = "Cinsiyet Bilgisi";
-            // 
             // BtnCikis
             // 
             this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
@@ -394,7 +394,7 @@
         private System.Windows.Forms.Label cinsiyetLabel;
         private System.Windows.Forms.TextBox TxtTelefon;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblIsimSoyisim;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label hesKoduLabel;
         private System.Windows.Forms.TextBox TxtSfre;
