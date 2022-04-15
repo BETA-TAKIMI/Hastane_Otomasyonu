@@ -52,6 +52,7 @@
             this.yasLabel = new System.Windows.Forms.Label();
             this.tabRandevularim = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
+            this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -322,12 +323,25 @@
             this.LblCinsiyet.TabIndex = 101;
             this.LblCinsiyet.Text = "CinsiyetBilgisi";
             // 
+            // BtnCikis
+            // 
+            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCikis.Location = new System.Drawing.Point(638, 12);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
+            this.BtnCikis.TabIndex = 3;
+            this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.UseVisualStyleBackColor = false;
+            // 
             // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(773, 750);
+            this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControlHasta);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HastaProfilSayfasi";
@@ -371,5 +385,6 @@
         private System.Windows.Forms.Label yasLabel;
         private System.Windows.Forms.TabPage tabRandevularim;
         private System.Windows.Forms.Label LblCinsiyet;
+        private System.Windows.Forms.Button BtnCikis;
     }
 }
