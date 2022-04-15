@@ -41,7 +41,7 @@ namespace Hastane_Otomasyonu
                 TxtMail.Text = dr["HastaMail"].ToString();
                 TxtYas.Text = dr["HastaYas"].ToString();
                 TxtTelefon.Text = dr["HastaTelefon"].ToString();
-                CmbBxCnsyt.Text = dr["HastaCinsiyet"].ToString();
+                LblCinsiyet.Text = dr["HastaCinsiyet"].ToString();
                 TxtSfre.Text = dr["HastaSifre"].ToString();
             }
             baglanti.Close();
@@ -50,7 +50,7 @@ namespace Hastane_Otomasyonu
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("update tbl_hastalar set HastaHesKodu='" + TxtHesKodu.Text + "', HastaMail='" + TxtMail.Text + "', HastaYas='"+ Int32.Parse(TxtYas.Text)+ "',HastaTelefon='" + TxtTelefon.Text + "',  HastaCinsiyet='" + CmbBxCnsyt.Text + "', HastaSifre='" + TxtSfre.Text + "' where HastaTCNo=@HastaTCNo", baglanti);
+            SqlCommand komut = new SqlCommand("update tbl_hastalar set HastaHesKodu='" + TxtHesKodu.Text + "', HastaMail='" + TxtMail.Text + "', HastaYas='"+ Int32.Parse(TxtYas.Text)+ "',HastaTelefon='" + TxtTelefon.Text + "',  HastaCinsiyet='" + LblCinsiyet.Text + "', HastaSifre='" + TxtSfre.Text + "' where HastaTCNo=@HastaTCNo", baglanti);
             komut.Parameters.AddWithValue("HastaTCNo", tcno.Trim());
             komut.ExecuteNonQuery();
             MessageBox.Show("Bilgileriniz Güncellendi...");
