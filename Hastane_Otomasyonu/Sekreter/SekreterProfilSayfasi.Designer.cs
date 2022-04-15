@@ -32,7 +32,7 @@
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
-            this.TxtSifre = new System.Windows.Forms.TextBox();
+            this.TxtSfre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -82,7 +82,7 @@
             // tabProfil
             // 
             this.tabProfil.Controls.Add(this.LblCinsiyet);
-            this.tabProfil.Controls.Add(this.TxtSifre);
+            this.tabProfil.Controls.Add(this.TxtSfre);
             this.tabProfil.Controls.Add(this.label2);
             this.tabProfil.Controls.Add(this.pictureBox6);
             this.tabProfil.Controls.Add(this.pictureBox5);
@@ -122,14 +122,14 @@
             this.LblCinsiyet.TabIndex = 101;
             this.LblCinsiyet.Text = "Cinsiyet Bilgisi";
             // 
-            // TxtSifre
+            // TxtSfre
             // 
-            this.TxtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSifre.Location = new System.Drawing.Point(147, 375);
-            this.TxtSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(284, 27);
-            this.TxtSifre.TabIndex = 100;
+            this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSfre.Location = new System.Drawing.Point(147, 375);
+            this.TxtSfre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSfre.Name = "TxtSfre";
+            this.TxtSfre.Size = new System.Drawing.Size(284, 27);
+            this.TxtSfre.TabIndex = 100;
             // 
             // label2
             // 
@@ -209,6 +209,7 @@
             this.BtnGuncelle.TabIndex = 92;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // TxtMail
             // 
@@ -395,7 +396,7 @@
 
         private System.Windows.Forms.TabControl tabControlHasta;
         private System.Windows.Forms.TabPage tabProfil;
-        private System.Windows.Forms.TextBox TxtSifre;
+        private System.Windows.Forms.TextBox TxtSfre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;

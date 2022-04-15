@@ -36,8 +36,18 @@ namespace Hastane_Otomasyonu
                 TxtYas.Text = dr["SekreterYas"].ToString();
                 TxtTelefon.Text = dr["SekreterTelefon"].ToString();
                 LblCinsiyet.Text = dr["SekreterCinsiyet"].ToString();
-                TxtYas.Text = dr["SekreterSifre"].ToString();
+                TxtSfre.Text = dr["SekreterSifre"].ToString();
             }
+            baglanti.Close();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("update tbl_sekreter set SekreterHesKodu='" + TxtHesKodu.Text + "', SekreterMail='" + TxtMail.Text + "', SekreterYas='" + Int32.Parse(TxtYas.Text) + "',SekreterTelefon='" + TxtTelefon.Text + "',  SekreterCinsiyet='" + LblCinsiyet.Text + "', SekreterSifre='" + TxtSfre.Text + "' where SekreterTCNo=@SekreterTCNo", baglanti);
+            komut.Parameters.AddWithValue("SekreterTCNo", tcno.Trim());
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Bilgileriniz Güncellendi...");
             baglanti.Close();
         }
     }
