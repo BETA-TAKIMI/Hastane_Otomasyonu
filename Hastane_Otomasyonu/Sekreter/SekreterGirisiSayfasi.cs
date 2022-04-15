@@ -19,15 +19,7 @@ namespace Hastane_Otomasyonu
         }
 
         SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
-        private void TxtTC_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtSfre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
@@ -68,6 +60,13 @@ namespace Hastane_Otomasyonu
         private void BtnSifremiUnuttum_Click(object sender, EventArgs e)
         {
             SekreterSifremiUnuttumSayfasi frm = new SekreterSifremiUnuttumSayfasi();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void BtnGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa frm = new Anasayfa();
             frm.Show();
             this.Hide();
         }
