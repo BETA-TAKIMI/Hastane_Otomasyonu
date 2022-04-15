@@ -198,7 +198,7 @@
             this.BtnGuncelle.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnGuncelle.Location = new System.Drawing.Point(196, 575);
+            this.BtnGuncelle.Location = new System.Drawing.Point(197, 529);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(379, 49);
