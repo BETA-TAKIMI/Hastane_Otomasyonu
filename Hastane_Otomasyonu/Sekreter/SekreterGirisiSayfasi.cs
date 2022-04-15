@@ -71,5 +71,12 @@ namespace Hastane_Otomasyonu
             frm.Show();
             this.Hide();
         }
+
+        private void BtnGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa frm = new Anasayfa();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

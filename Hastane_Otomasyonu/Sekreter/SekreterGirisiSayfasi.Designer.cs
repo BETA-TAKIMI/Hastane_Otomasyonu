@@ -146,6 +146,7 @@
             this.BtnGeri.TabIndex = 22;
             this.BtnGeri.Text = "<";
             this.BtnGeri.UseVisualStyleBackColor = false;
+            this.BtnGeri.Click += new System.EventHandler(this.BtnGeri_Click);
             // 
             // SekreterGirisiSayfasi
             // 
