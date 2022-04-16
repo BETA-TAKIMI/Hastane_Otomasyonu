@@ -404,6 +404,7 @@
             this.BtnCikis.TabIndex = 3;
             this.BtnCikis.Text = "Çıkış Yap";
             this.BtnCikis.UseVisualStyleBackColor = false;
+            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
             // DoktorProfilSayfasi
             // 
