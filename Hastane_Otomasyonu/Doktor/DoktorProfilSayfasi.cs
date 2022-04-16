@@ -21,5 +21,6 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
     }
 }
