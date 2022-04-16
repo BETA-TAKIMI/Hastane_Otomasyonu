@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoktorProfilSayfasi));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPageProfil = new System.Windows.Forms.TabPage();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.TxtPoliklinik = new System.Windows.Forms.TextBox();
@@ -52,14 +52,14 @@
             this.TxtSfre = new System.Windows.Forms.TextBox();
             this.TxtHesKodu = new System.Windows.Forms.TextBox();
             this.yasLabel = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageRandevular = new System.Windows.Forms.TabPage();
             this.LblIsimSoyisim = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblCinsiyet = new System.Windows.Forms.Label();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabPageProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -72,49 +72,49 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPageProfil);
+            this.tabControl1.Controls.Add(this.tabPageRandevular);
             this.tabControl1.Location = new System.Drawing.Point(13, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(746, 695);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageProfil
             // 
-            this.tabPage1.Controls.Add(this.TxtSifre);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.LblCinsiyet);
-            this.tabPage1.Controls.Add(this.LblIsimSoyisim);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.pictureBox7);
-            this.tabPage1.Controls.Add(this.pictureBox8);
-            this.tabPage1.Controls.Add(this.TxtPoliklinik);
-            this.tabPage1.Controls.Add(this.poliklinikLabel);
-            this.tabPage1.Controls.Add(this.TxtUzmanlik);
-            this.tabPage1.Controls.Add(this.uzmanlikLabel);
-            this.tabPage1.Controls.Add(this.pictureBox6);
-            this.tabPage1.Controls.Add(this.pictureBox5);
-            this.tabPage1.Controls.Add(this.pictureBox4);
-            this.tabPage1.Controls.Add(this.pictureBox3);
-            this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Controls.Add(this.BtnGuncelle);
-            this.tabPage1.Controls.Add(this.TxtMail);
-            this.tabPage1.Controls.Add(this.mailLabel);
-            this.tabPage1.Controls.Add(this.cinsiyetLabel);
-            this.tabPage1.Controls.Add(this.TxtTelefon);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.hesKoduLabel);
-            this.tabPage1.Controls.Add(this.TxtSfre);
-            this.tabPage1.Controls.Add(this.TxtHesKodu);
-            this.tabPage1.Controls.Add(this.yasLabel);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(738, 666);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageProfil.Controls.Add(this.TxtSifre);
+            this.tabPageProfil.Controls.Add(this.label2);
+            this.tabPageProfil.Controls.Add(this.LblCinsiyet);
+            this.tabPageProfil.Controls.Add(this.LblIsimSoyisim);
+            this.tabPageProfil.Controls.Add(this.pictureBox1);
+            this.tabPageProfil.Controls.Add(this.pictureBox7);
+            this.tabPageProfil.Controls.Add(this.pictureBox8);
+            this.tabPageProfil.Controls.Add(this.TxtPoliklinik);
+            this.tabPageProfil.Controls.Add(this.poliklinikLabel);
+            this.tabPageProfil.Controls.Add(this.TxtUzmanlik);
+            this.tabPageProfil.Controls.Add(this.uzmanlikLabel);
+            this.tabPageProfil.Controls.Add(this.pictureBox6);
+            this.tabPageProfil.Controls.Add(this.pictureBox5);
+            this.tabPageProfil.Controls.Add(this.pictureBox4);
+            this.tabPageProfil.Controls.Add(this.pictureBox3);
+            this.tabPageProfil.Controls.Add(this.pictureBox2);
+            this.tabPageProfil.Controls.Add(this.BtnGuncelle);
+            this.tabPageProfil.Controls.Add(this.TxtMail);
+            this.tabPageProfil.Controls.Add(this.mailLabel);
+            this.tabPageProfil.Controls.Add(this.cinsiyetLabel);
+            this.tabPageProfil.Controls.Add(this.TxtTelefon);
+            this.tabPageProfil.Controls.Add(this.label3);
+            this.tabPageProfil.Controls.Add(this.hesKoduLabel);
+            this.tabPageProfil.Controls.Add(this.TxtSfre);
+            this.tabPageProfil.Controls.Add(this.TxtHesKodu);
+            this.tabPageProfil.Controls.Add(this.yasLabel);
+            this.tabPageProfil.Location = new System.Drawing.Point(4, 25);
+            this.tabPageProfil.Name = "tabPageProfil";
+            this.tabPageProfil.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProfil.Size = new System.Drawing.Size(738, 666);
+            this.tabPageProfil.TabIndex = 0;
+            this.tabPageProfil.Text = "Profil";
+            this.tabPageProfil.UseVisualStyleBackColor = true;
             // 
             // pictureBox7
             // 
@@ -330,15 +330,15 @@
             this.yasLabel.TabIndex = 73;
             this.yasLabel.Text = "Yaş";
             // 
-            // tabPage2
+            // tabPageRandevular
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(738, 666);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageRandevular.Location = new System.Drawing.Point(4, 25);
+            this.tabPageRandevular.Name = "tabPageRandevular";
+            this.tabPageRandevular.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRandevular.Size = new System.Drawing.Size(738, 666);
+            this.tabPageRandevular.TabIndex = 1;
+            this.tabPageRandevular.Text = "Randevular";
+            this.tabPageRandevular.UseVisualStyleBackColor = true;
             // 
             // LblIsimSoyisim
             // 
@@ -401,8 +401,8 @@
             this.Name = "DoktorProfilSayfasi";
             this.Text = "DoktorProfilSayfasi";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabPageProfil.ResumeLayout(false);
+            this.tabPageProfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -418,7 +418,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPageProfil;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.TextBox TxtPoliklinik;
@@ -440,7 +440,7 @@
         private System.Windows.Forms.TextBox TxtSfre;
         private System.Windows.Forms.TextBox TxtHesKodu;
         private System.Windows.Forms.Label yasLabel;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPageRandevular;
         private System.Windows.Forms.Label LblIsimSoyisim;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LblCinsiyet;
