@@ -58,6 +58,7 @@
             this.LblCinsiyet = new System.Windows.Forms.Label();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -74,6 +75,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPageProfil);
             this.tabControl1.Controls.Add(this.tabPageRandevular);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(13, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -108,10 +110,10 @@
             this.tabPageProfil.Controls.Add(this.TxtSfre);
             this.tabPageProfil.Controls.Add(this.TxtHesKodu);
             this.tabPageProfil.Controls.Add(this.yasLabel);
-            this.tabPageProfil.Location = new System.Drawing.Point(4, 25);
+            this.tabPageProfil.Location = new System.Drawing.Point(4, 29);
             this.tabPageProfil.Name = "tabPageProfil";
             this.tabPageProfil.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfil.Size = new System.Drawing.Size(738, 666);
+            this.tabPageProfil.Size = new System.Drawing.Size(738, 662);
             this.tabPageProfil.TabIndex = 0;
             this.tabPageProfil.Text = "Profil";
             this.tabPageProfil.UseVisualStyleBackColor = true;
@@ -236,7 +238,7 @@
             this.BtnGuncelle.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnGuncelle.Location = new System.Drawing.Point(215, 612);
+            this.BtnGuncelle.Location = new System.Drawing.Point(214, 608);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(379, 49);
@@ -390,12 +392,26 @@
             this.label2.TabIndex = 103;
             this.label2.Text = "Şifre";
             // 
+            // BtnCikis
+            // 
+            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCikis.Location = new System.Drawing.Point(643, 10);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
+            this.BtnCikis.TabIndex = 3;
+            this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.UseVisualStyleBackColor = false;
+            // 
             // DoktorProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(771, 722);
+            this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DoktorProfilSayfasi";
@@ -446,5 +462,6 @@
         private System.Windows.Forms.Label LblCinsiyet;
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnCikis;
     }
 }
