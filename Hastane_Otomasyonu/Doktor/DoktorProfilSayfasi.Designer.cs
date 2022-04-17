@@ -36,10 +36,7 @@
             this.LblCinsiyet = new System.Windows.Forms.Label();
             this.lblDoktorİsimSoyisim = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.TxtPoliklinik = new System.Windows.Forms.TextBox();
-            this.poliklinikLabel = new System.Windows.Forms.Label();
             this.TxtUzmanlik = new System.Windows.Forms.TextBox();
             this.uzmanlikLabel = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -62,7 +59,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPageProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -77,7 +73,7 @@
             this.tabControl1.Controls.Add(this.tabPageRandevular);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(10, 20);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(560, 625);
@@ -90,10 +86,7 @@
             this.tabPageProfil.Controls.Add(this.LblCinsiyet);
             this.tabPageProfil.Controls.Add(this.lblDoktorİsimSoyisim);
             this.tabPageProfil.Controls.Add(this.pictureBox1);
-            this.tabPageProfil.Controls.Add(this.pictureBox7);
             this.tabPageProfil.Controls.Add(this.pictureBox8);
-            this.tabPageProfil.Controls.Add(this.TxtPoliklinik);
-            this.tabPageProfil.Controls.Add(this.poliklinikLabel);
             this.tabPageProfil.Controls.Add(this.TxtUzmanlik);
             this.tabPageProfil.Controls.Add(this.uzmanlikLabel);
             this.tabPageProfil.Controls.Add(this.pictureBox6);
@@ -112,9 +105,9 @@
             this.tabPageProfil.Controls.Add(this.TxtHesKodu);
             this.tabPageProfil.Controls.Add(this.yasLabel);
             this.tabPageProfil.Location = new System.Drawing.Point(4, 29);
-            this.tabPageProfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageProfil.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageProfil.Name = "tabPageProfil";
-            this.tabPageProfil.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageProfil.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageProfil.Size = new System.Drawing.Size(552, 592);
             this.tabPageProfil.TabIndex = 0;
             this.tabPageProfil.Text = "Profil";
@@ -123,8 +116,8 @@
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSifre.Location = new System.Drawing.Point(162, 503);
-            this.TxtSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSifre.Location = new System.Drawing.Point(162, 453);
+            this.TxtSifre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(284, 27);
             this.TxtSifre.TabIndex = 104;
@@ -133,7 +126,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(159, 483);
+            this.label2.Location = new System.Drawing.Point(159, 433);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 19);
@@ -166,60 +159,29 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(107, 430);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(47, 48);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 96;
-            this.pictureBox7.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(107, 372);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(47, 48);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox8.TabIndex = 95;
             this.pictureBox8.TabStop = false;
             // 
-            // TxtPoliklinik
-            // 
-            this.TxtPoliklinik.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPoliklinik.Location = new System.Drawing.Point(161, 451);
-            this.TxtPoliklinik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TxtPoliklinik.Name = "TxtPoliklinik";
-            this.TxtPoliklinik.Size = new System.Drawing.Size(284, 27);
-            this.TxtPoliklinik.TabIndex = 94;
-            // 
-            // poliklinikLabel
-            // 
-            this.poliklinikLabel.AutoSize = true;
-            this.poliklinikLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poliklinikLabel.Location = new System.Drawing.Point(158, 430);
-            this.poliklinikLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.poliklinikLabel.Name = "poliklinikLabel";
-            this.poliklinikLabel.Size = new System.Drawing.Size(72, 19);
-            this.poliklinikLabel.TabIndex = 93;
-            this.poliklinikLabel.Text = "Poliklinik";
-            // 
             // TxtUzmanlik
             // 
             this.TxtUzmanlik.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUzmanlik.Location = new System.Drawing.Point(161, 393);
-            this.TxtUzmanlik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtUzmanlik.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUzmanlik.Name = "TxtUzmanlik";
             this.TxtUzmanlik.Size = new System.Drawing.Size(284, 27);
             this.TxtUzmanlik.TabIndex = 92;
@@ -239,7 +201,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(108, 312);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(47, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -250,7 +212,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(108, 252);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(47, 48);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -261,7 +223,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(108, 194);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(47, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -272,7 +234,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(108, 138);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -283,7 +245,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(108, 78);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -295,8 +257,8 @@
             this.BtnGuncelle.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnGuncelle.Location = new System.Drawing.Point(159, 544);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnGuncelle.Location = new System.Drawing.Point(159, 494);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(284, 40);
             this.BtnGuncelle.TabIndex = 85;
@@ -308,7 +270,7 @@
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMail.Location = new System.Drawing.Point(162, 333);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(284, 27);
             this.TxtMail.TabIndex = 84;
@@ -339,7 +301,7 @@
             // 
             this.TxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefon.Location = new System.Drawing.Point(162, 273);
-            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(284, 27);
             this.TxtTelefon.TabIndex = 81;
@@ -370,7 +332,7 @@
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtYas.Location = new System.Drawing.Point(162, 159);
-            this.TxtYas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtYas.Margin = new System.Windows.Forms.Padding(2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(284, 27);
             this.TxtYas.TabIndex = 75;
@@ -379,7 +341,7 @@
             // 
             this.TxtHesKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHesKodu.Location = new System.Drawing.Point(162, 100);
-            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2);
             this.TxtHesKodu.Name = "TxtHesKodu";
             this.TxtHesKodu.Size = new System.Drawing.Size(284, 27);
             this.TxtHesKodu.TabIndex = 74;
@@ -398,10 +360,10 @@
             // tabPageRandevular
             // 
             this.tabPageRandevular.Location = new System.Drawing.Point(4, 29);
-            this.tabPageRandevular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageRandevular.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageRandevular.Name = "tabPageRandevular";
-            this.tabPageRandevular.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPageRandevular.Size = new System.Drawing.Size(552, 532);
+            this.tabPageRandevular.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPageRandevular.Size = new System.Drawing.Size(552, 592);
             this.tabPageRandevular.TabIndex = 1;
             this.tabPageRandevular.Text = "Randevular";
             this.tabPageRandevular.UseVisualStyleBackColor = true;
@@ -412,7 +374,7 @@
             this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnCikis.Location = new System.Drawing.Point(482, 8);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(87, 28);
             this.BtnCikis.TabIndex = 3;
@@ -435,7 +397,6 @@
             this.tabPageProfil.ResumeLayout(false);
             this.tabPageProfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -450,10 +411,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageProfil;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox TxtPoliklinik;
-        private System.Windows.Forms.Label poliklinikLabel;
         private System.Windows.Forms.TextBox TxtUzmanlik;
         private System.Windows.Forms.Label uzmanlikLabel;
         private System.Windows.Forms.PictureBox pictureBox6;
