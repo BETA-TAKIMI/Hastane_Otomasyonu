@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.Sql;
+using System.Data.SqlClient;
 namespace Hastane_Otomasyonu
 {
     public partial class DoktorProfilSayfasi : Form
@@ -16,6 +17,7 @@ namespace Hastane_Otomasyonu
         {
             InitializeComponent();
         }
+        SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-TIGD7V0; Initial Catalog = Db_Hastane; Integrated Security = True");
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
@@ -27,6 +29,27 @@ namespace Hastane_Otomasyonu
             Anasayfa frm = new Anasayfa();
             frm.Show();
             this.Hide();
+        }
+        public string tcno;
+        private void DoktorProfilSayfasi_Load(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select * From tbl_doktorlar where DoktorTCNo=@DoktorTCNo", baglanti);
+            komut.Parameters.AddWithValue("DoktorTCNo", tcno.Trim());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+
+                lblDoktorİsimSoyisim.Text = dr["Doktorİsim"].ToString() + " " + dr["DoktorSoyİsim"].ToString();
+                TxtHesKodu.Text = dr["DoktorHesKodu"].ToString();
+                TxtMail.Text = dr["DoktorMail"].ToString();
+                TxtYas.Text = dr["DoktorYas"].ToString();
+                TxtTelefon.Text = dr["DoktorTelefon"].ToString();
+                LblCinsiyet.Text = dr["DoktorCinsiyet"].ToString();
+                TxtSifre.Text = dr["DoktorSifre"].ToString();
+                TxtUzmanlik.Text = dr["DoktorUzmanlıkAlan"].ToString();
+            }
+            baglanti.Close();
         }
     }
 }

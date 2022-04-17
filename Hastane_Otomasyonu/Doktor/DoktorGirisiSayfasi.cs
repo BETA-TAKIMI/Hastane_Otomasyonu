@@ -35,6 +35,7 @@ namespace Hastane_Otomasyonu
             if (dt.Rows.Count > 0)
             {
                 DoktorProfilSayfasi frm = new DoktorProfilSayfasi();
+                frm.tcno = TxtTC.Text;
                 frm.Show();
                 this.Hide();
 
