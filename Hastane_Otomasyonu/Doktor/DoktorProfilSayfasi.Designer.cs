@@ -302,6 +302,7 @@
             this.BtnGuncelle.TabIndex = 85;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click_1);
             // 
             // TxtMail
             // 

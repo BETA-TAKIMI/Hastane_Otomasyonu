@@ -51,5 +51,15 @@ namespace Hastane_Otomasyonu
             }
             baglanti.Close();
         }
+
+        private void BtnGuncelle_Click_1(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("update tbl_doktorlar set DoktorHesKodu='" + TxtHesKodu.Text + "', DoktorMail='" + TxtMail.Text + "', DoktorYas='" + Int32.Parse(TxtYas.Text) + "',DoktorTelefon='" + TxtTelefon.Text + "',  DoktorCinsiyet='" + LblCinsiyet.Text + "', DoktorSifre='" + TxtSifre.Text + "' where DoktorTCNo=@DoktorTCNo", baglanti);
+            komut.Parameters.AddWithValue("DoktorTCNo", tcno.Trim());
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Bilgileriniz Güncellendi...");
+            baglanti.Close();
+        }
     }
 }
