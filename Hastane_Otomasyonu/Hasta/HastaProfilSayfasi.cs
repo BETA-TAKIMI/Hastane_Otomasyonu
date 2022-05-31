@@ -106,10 +106,10 @@ namespace Hastane_Otomasyonu
 
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Aşağıdaki SQL sorgusu başkası tarafından randevu alınmamış olup Randevu branşı ile Randevu doktoru Comboboxlardaki gibi seçili olan doktorları listelemeye yarar. and RandevuDoktor = '" + CmbDoktor.Text + "' and RandevuDurum = 0
+            //Aşağıdaki SQL sorgusu başkası tarafından randevu alınmamış olup Randevu branşı ile Randevu doktoru Comboboxlardaki gibi seçili olan doktorları listelemeye yarar. 
 
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuBrans = '" + CmbBrans.Text + "' ", baglanti);
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuBrans = '" + CmbBrans.Text + "'and RandevuDoktor = '" + CmbDoktor.Text + "' and RandevuDurum = 0 ", baglanti);
             da.Fill(dt);
             dataGridView2.DataSource = dt;
 
@@ -120,6 +120,27 @@ namespace Hastane_Otomasyonu
         private void BtnRandevuAl_Click(object sender, EventArgs e)
         {
 
+            //Randevu almak için aslında Insert into yapmalıydık ama güncelleme mantığı ile çalışacağı için Update sorgusunu kullandık çünkü zaten aşağıdaki durumlar haricindeki tüm randevu durumları sistem tarafından atanıyor.
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Update Tbl_Randevular set RandevuDurum = 1, HastaTCNo = @p1, HastaSikayet = @p2 where Randevuid = @p3", baglanti);
+            command.Parameters.AddWithValue("@p1", LblTC.Text);
+            command.Parameters.AddWithValue("@p2", RchSikayet.Text);
+            command.Parameters.AddWithValue("@p3", txtid.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Randevu alındı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            RchSikayet.Clear();
+            txtid.Clear();
+            CmbBrans.Text = "";
+            CmbDoktor.Text = "";
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Datagridviewde seçili olan randevunun id'sini getiriyor.
+
+            int chosen = dataGridView2.SelectedCells[0].RowIndex;
+            txtid.Text = dataGridView2.Rows[chosen].Cells[0].Value.ToString();
         }
     }
     }
