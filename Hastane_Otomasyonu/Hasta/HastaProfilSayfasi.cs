@@ -86,11 +86,23 @@ namespace Hastane_Otomasyonu
         {
           
         }
-       
 
-
-
-
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            //Eklemeden önce geçmişte eklenmiş olan isimleri temizleme işlemi yapılıyor.
+            CmbDoktor.Items.Clear();
+            //Doktorlar tablosunda branşı Combobox'ta yer alan Doktor adları ve doktor soyadlarını gösterir.
+           
+            SqlCommand command3 = new SqlCommand("Select Doktorİsim, DoktorSoyİsim from tbl_doktorlar where DoktorUzmanlıkAlan = @p1", baglanti);
+            command3.Parameters.AddWithValue("@p1", CmbBrans.Text);
+            SqlDataReader dr3 = command3.ExecuteReader();
+            while (dr3.Read()) //Veri okundukça Doktor ismini gösterecek combobox' a İsim boşluk soyisim şeklinde ekleniyor.
+            {
+                CmbDoktor.Items.Add(dr3["Doktorİsim"].ToString() + " " + dr3["DoktorSoyİsim"].ToString());
+            }
+            baglanti.Close();
+        }
     }
     }
 
