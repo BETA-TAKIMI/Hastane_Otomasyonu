@@ -58,6 +58,14 @@
             this.textTC = new System.Windows.Forms.TextBox();
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.textAdSoyad = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbBoxUzmanlık = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -68,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabRandevularim.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -321,6 +330,7 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.Controls.Add(this.groupBox2);
             this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
             this.tabRandevularim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -390,6 +400,82 @@
             this.textAdSoyad.Size = new System.Drawing.Size(216, 30);
             this.textAdSoyad.TabIndex = 3;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.cmbBoxUzmanlık);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(25, 219);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(233, 417);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Randevu Paneli";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Uzmanlık:";
+            // 
+            // cmbBoxUzmanlık
+            // 
+            this.cmbBoxUzmanlık.FormattingEnabled = true;
+            this.cmbBoxUzmanlık.Location = new System.Drawing.Point(7, 59);
+            this.cmbBoxUzmanlık.Name = "cmbBoxUzmanlık";
+            this.cmbBoxUzmanlık.Size = new System.Drawing.Size(215, 33);
+            this.cmbBoxUzmanlık.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(7, 128);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(215, 33);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 25);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Doktor:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 164);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Şikayet:";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(10, 196);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(212, 171);
+            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 373);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(208, 38);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Randevu Al";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -414,6 +500,8 @@
             this.tabRandevularim.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +537,13 @@
         private System.Windows.Forms.Label lblAdSoyad;
         private System.Windows.Forms.TextBox textTC;
         private System.Windows.Forms.Label lblTc;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbBoxUzmanlık;
+        private System.Windows.Forms.Label label1;
     }
 }
