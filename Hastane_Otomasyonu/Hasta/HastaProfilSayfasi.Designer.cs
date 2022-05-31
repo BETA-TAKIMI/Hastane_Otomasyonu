@@ -71,7 +71,7 @@
             this.lbl = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -411,7 +411,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtid);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.BtnRandevuAl);
             this.groupBox2.Controls.Add(this.RchSikayet);
@@ -438,6 +438,7 @@
             this.BtnRandevuAl.TabIndex = 10;
             this.BtnRandevuAl.Text = "Randevu Al";
             this.BtnRandevuAl.UseVisualStyleBackColor = true;
+            this.BtnRandevuAl.Click += new System.EventHandler(this.BtnRandevuAl_Click);
             // 
             // RchSikayet
             // 
@@ -466,6 +467,7 @@
             this.CmbDoktor.Name = "CmbDoktor";
             this.CmbDoktor.Size = new System.Drawing.Size(162, 28);
             this.CmbDoktor.TabIndex = 7;
+            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -577,12 +579,12 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "ID:";
             // 
-            // textBox1
+            // txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(41, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 26);
-            this.textBox1.TabIndex = 12;
+            this.txtid.Location = new System.Drawing.Point(41, 24);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(129, 26);
+            this.txtid.TabIndex = 12;
             // 
             // HastaProfilSayfasi
             // 
@@ -660,7 +662,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label LblAdSoyad;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label6;
     }
 }

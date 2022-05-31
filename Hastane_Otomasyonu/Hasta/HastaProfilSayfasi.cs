@@ -103,6 +103,24 @@ namespace Hastane_Otomasyonu
             }
             baglanti.Close();
         }
+
+        private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Aşağıdaki SQL sorgusu başkası tarafından randevu alınmamış olup Randevu branşı ile Randevu doktoru Comboboxlardaki gibi seçili olan doktorları listelemeye yarar. and RandevuDoktor = '" + CmbDoktor.Text + "' and RandevuDurum = 0
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuBrans = '" + CmbBrans.Text + "' ", baglanti);
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+
+            //RandevuDurum = 0 (False) durumu dolu olmayan randevuları temsil eder.
+
+        }
+
+        private void BtnRandevuAl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
