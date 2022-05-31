@@ -70,6 +70,8 @@
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -96,7 +98,7 @@
             this.tabControlHasta.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlHasta.Name = "tabControlHasta";
             this.tabControlHasta.SelectedIndex = 0;
-            this.tabControlHasta.Size = new System.Drawing.Size(776, 572);
+            this.tabControlHasta.Size = new System.Drawing.Size(776, 632);
             this.tabControlHasta.TabIndex = 0;
             // 
             // tabProfil
@@ -355,7 +357,7 @@
             this.tabRandevularim.Margin = new System.Windows.Forms.Padding(2);
             this.tabRandevularim.Name = "tabRandevularim";
             this.tabRandevularim.Padding = new System.Windows.Forms.Padding(2);
-            this.tabRandevularim.Size = new System.Drawing.Size(768, 539);
+            this.tabRandevularim.Size = new System.Drawing.Size(768, 599);
             this.tabRandevularim.TabIndex = 1;
             this.tabRandevularim.Text = "Randevularım";
             // 
@@ -409,6 +411,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.BtnRandevuAl);
             this.groupBox2.Controls.Add(this.RchSikayet);
             this.groupBox2.Controls.Add(this.label5);
@@ -420,14 +424,14 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(175, 339);
+            this.groupBox2.Size = new System.Drawing.Size(175, 383);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
             // BtnRandevuAl
             // 
-            this.BtnRandevuAl.Location = new System.Drawing.Point(9, 303);
+            this.BtnRandevuAl.Location = new System.Drawing.Point(8, 338);
             this.BtnRandevuAl.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRandevuAl.Name = "BtnRandevuAl";
             this.BtnRandevuAl.Size = new System.Drawing.Size(156, 31);
@@ -437,7 +441,7 @@
             // 
             // RchSikayet
             // 
-            this.RchSikayet.Location = new System.Drawing.Point(8, 159);
+            this.RchSikayet.Location = new System.Drawing.Point(8, 182);
             this.RchSikayet.Margin = new System.Windows.Forms.Padding(2);
             this.RchSikayet.Name = "RchSikayet";
             this.RchSikayet.Size = new System.Drawing.Size(160, 140);
@@ -447,7 +451,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 133);
+            this.label5.Location = new System.Drawing.Point(6, 160);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 20);
@@ -457,7 +461,7 @@
             // CmbDoktor
             // 
             this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(5, 104);
+            this.CmbDoktor.Location = new System.Drawing.Point(8, 130);
             this.CmbDoktor.Margin = new System.Windows.Forms.Padding(2);
             this.CmbDoktor.Name = "CmbDoktor";
             this.CmbDoktor.Size = new System.Drawing.Size(162, 28);
@@ -466,7 +470,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 77);
+            this.label4.Location = new System.Drawing.Point(6, 108);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 20);
@@ -476,7 +480,7 @@
             // CmbBrans
             // 
             this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(5, 48);
+            this.CmbBrans.Location = new System.Drawing.Point(8, 78);
             this.CmbBrans.Margin = new System.Windows.Forms.Padding(2);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(162, 28);
@@ -486,7 +490,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 21);
+            this.label1.Location = new System.Drawing.Point(4, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 20);
@@ -563,12 +567,29 @@
             this.BtnCikis.UseVisualStyleBackColor = false;
             this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 27);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "ID:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(41, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 26);
+            this.textBox1.TabIndex = 12;
+            // 
             // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(794, 592);
+            this.ClientSize = new System.Drawing.Size(789, 665);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControlHasta);
             this.Name = "HastaProfilSayfasi";
@@ -639,5 +660,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label LblAdSoyad;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
