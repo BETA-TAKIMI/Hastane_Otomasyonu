@@ -47,8 +47,17 @@ namespace Hastane_Otomasyonu
                 LblTC.Text= dr["HastaTCNo"].ToString();
             }
             baglanti.Close();
-        }
 
+            //Geçmiş Randevu Çekme
+            DataTable dt = new DataTable();
+            SqlDataAdapter data = new SqlDataAdapter("Select * from tbl_randevular where HastaTCNo = " + tcno, baglanti);
+            data.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+           
+
+
+        }
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -69,6 +78,11 @@ namespace Hastane_Otomasyonu
         {
           
         }
+       
+
+
+
+
     }
     }
 
