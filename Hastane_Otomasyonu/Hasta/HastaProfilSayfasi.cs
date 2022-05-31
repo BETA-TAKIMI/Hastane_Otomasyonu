@@ -43,6 +43,8 @@ namespace Hastane_Otomasyonu
                 TxtTelefon.Text = dr["HastaTelefon"].ToString();
                 LblCinsiyet.Text = dr["HastaCinsiyet"].ToString();
                 TxtSfre.Text = dr["HastaSifre"].ToString();
+                LblAdSoyad.Text = dr["Hastaİsim"].ToString() + " " + dr["HastaSoyİsim"].ToString(); //İsim boşluk Soyisim yazdırma
+                LblTC.Text= dr["HastaTCNo"].ToString();
             }
             baglanti.Close();
         }
@@ -62,6 +64,10 @@ namespace Hastane_Otomasyonu
             Anasayfa frm = new Anasayfa();
             frm.Show();
             this.Hide();
+        }
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+          
         }
     }
     }
