@@ -66,6 +66,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -88,7 +89,7 @@
             this.tabControlHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlHasta.Name = "tabControlHasta";
             this.tabControlHasta.SelectedIndex = 0;
-            this.tabControlHasta.Size = new System.Drawing.Size(748, 704);
+            this.tabControlHasta.Size = new System.Drawing.Size(1036, 704);
             this.tabControlHasta.TabIndex = 0;
             // 
             // tabProfil
@@ -118,7 +119,7 @@
             this.tabProfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabProfil.Name = "tabProfil";
             this.tabProfil.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabProfil.Size = new System.Drawing.Size(740, 666);
+            this.tabProfil.Size = new System.Drawing.Size(1028, 666);
             this.tabProfil.TabIndex = 0;
             this.tabProfil.Text = "Profil";
             this.tabProfil.UseVisualStyleBackColor = true;
@@ -127,7 +128,7 @@
             // 
             this.LblCinsiyet.AutoSize = true;
             this.LblCinsiyet.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCinsiyet.Location = new System.Drawing.Point(193, 273);
+            this.LblCinsiyet.Location = new System.Drawing.Point(347, 274);
             this.LblCinsiyet.Name = "LblCinsiyet";
             this.LblCinsiyet.Size = new System.Drawing.Size(132, 24);
             this.LblCinsiyet.TabIndex = 101;
@@ -136,7 +137,7 @@
             // TxtSfre
             // 
             this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSfre.Location = new System.Drawing.Point(196, 462);
+            this.TxtSfre.Location = new System.Drawing.Point(350, 463);
             this.TxtSfre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(377, 32);
@@ -146,7 +147,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(192, 437);
+            this.label2.Location = new System.Drawing.Point(346, 438);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 24);
             this.label2.TabIndex = 99;
@@ -155,7 +156,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(124, 369);
+            this.pictureBox6.Location = new System.Drawing.Point(278, 370);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(63, 59);
@@ -166,7 +167,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(124, 303);
+            this.pictureBox5.Location = new System.Drawing.Point(278, 304);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 59);
@@ -177,7 +178,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(124, 238);
+            this.pictureBox4.Location = new System.Drawing.Point(278, 239);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 59);
@@ -188,7 +189,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(124, 171);
+            this.pictureBox3.Location = new System.Drawing.Point(278, 172);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 59);
@@ -199,7 +200,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(124, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(278, 107);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 59);
@@ -212,7 +213,7 @@
             this.BtnGuncelle.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BtnGuncelle.Location = new System.Drawing.Point(196, 528);
+            this.BtnGuncelle.Location = new System.Drawing.Point(350, 529);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(379, 49);
@@ -224,7 +225,7 @@
             // TxtMail
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMail.Location = new System.Drawing.Point(196, 396);
+            this.TxtMail.Location = new System.Drawing.Point(350, 397);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(377, 32);
@@ -234,7 +235,7 @@
             // 
             this.mailLabel.AutoSize = true;
             this.mailLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mailLabel.Location = new System.Drawing.Point(192, 370);
+            this.mailLabel.Location = new System.Drawing.Point(346, 371);
             this.mailLabel.Name = "mailLabel";
             this.mailLabel.Size = new System.Drawing.Size(46, 24);
             this.mailLabel.TabIndex = 90;
@@ -244,7 +245,7 @@
             // 
             this.cinsiyetLabel.AutoSize = true;
             this.cinsiyetLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cinsiyetLabel.Location = new System.Drawing.Point(192, 235);
+            this.cinsiyetLabel.Location = new System.Drawing.Point(346, 236);
             this.cinsiyetLabel.Name = "cinsiyetLabel";
             this.cinsiyetLabel.Size = new System.Drawing.Size(80, 24);
             this.cinsiyetLabel.TabIndex = 89;
@@ -253,7 +254,7 @@
             // TxtTelefon
             // 
             this.TxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefon.Location = new System.Drawing.Point(196, 329);
+            this.TxtTelefon.Location = new System.Drawing.Point(350, 330);
             this.TxtTelefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(377, 32);
@@ -263,7 +264,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(192, 306);
+            this.label3.Location = new System.Drawing.Point(346, 307);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 87;
@@ -294,7 +295,7 @@
             // 
             this.hesKoduLabel.AutoSize = true;
             this.hesKoduLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hesKoduLabel.Location = new System.Drawing.Point(192, 103);
+            this.hesKoduLabel.Location = new System.Drawing.Point(346, 104);
             this.hesKoduLabel.Name = "hesKoduLabel";
             this.hesKoduLabel.Size = new System.Drawing.Size(97, 24);
             this.hesKoduLabel.TabIndex = 84;
@@ -303,7 +304,7 @@
             // TxtYas
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtYas.Location = new System.Drawing.Point(196, 196);
+            this.TxtYas.Location = new System.Drawing.Point(350, 197);
             this.TxtYas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(377, 32);
@@ -312,7 +313,7 @@
             // TxtHesKodu
             // 
             this.TxtHesKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHesKodu.Location = new System.Drawing.Point(196, 130);
+            this.TxtHesKodu.Location = new System.Drawing.Point(350, 131);
             this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtHesKodu.Name = "TxtHesKodu";
             this.TxtHesKodu.Size = new System.Drawing.Size(377, 32);
@@ -322,7 +323,7 @@
             // 
             this.yasLabel.AutoSize = true;
             this.yasLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yasLabel.Location = new System.Drawing.Point(192, 170);
+            this.yasLabel.Location = new System.Drawing.Point(346, 171);
             this.yasLabel.Name = "yasLabel";
             this.yasLabel.Size = new System.Drawing.Size(42, 24);
             this.yasLabel.TabIndex = 81;
@@ -330,13 +331,14 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.Controls.Add(this.groupBox3);
             this.tabRandevularim.Controls.Add(this.groupBox2);
             this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
             this.tabRandevularim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabRandevularim.Name = "tabRandevularim";
             this.tabRandevularim.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabRandevularim.Size = new System.Drawing.Size(740, 666);
+            this.tabRandevularim.Size = new System.Drawing.Size(1028, 666);
             this.tabRandevularim.TabIndex = 1;
             this.tabRandevularim.Text = "Randevularım";
             this.tabRandevularim.UseVisualStyleBackColor = true;
@@ -346,7 +348,7 @@
             this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnCikis.Location = new System.Drawing.Point(637, 12);
+            this.BtnCikis.Location = new System.Drawing.Point(933, 11);
             this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(116, 34);
@@ -476,12 +478,21 @@
             this.button1.Text = "Randevu Al";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(265, 31);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(757, 352);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
             // HastaProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(773, 750);
+            this.ClientSize = new System.Drawing.Size(1061, 741);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControlHasta);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -545,5 +556,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbBoxUzmanlık;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
