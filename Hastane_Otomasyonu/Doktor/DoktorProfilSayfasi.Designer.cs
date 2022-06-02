@@ -364,6 +364,7 @@
             // 
             // tabPageRandevular
             // 
+            this.tabPageRandevular.BackColor = System.Drawing.Color.LightBlue;
             this.tabPageRandevular.Controls.Add(this.groupBox4);
             this.tabPageRandevular.Controls.Add(this.groupBox2);
             this.tabPageRandevular.Controls.Add(this.groupBox1);
@@ -374,7 +375,6 @@
             this.tabPageRandevular.Size = new System.Drawing.Size(1023, 765);
             this.tabPageRandevular.TabIndex = 1;
             this.tabPageRandevular.Text = "Randevular";
-            this.tabPageRandevular.UseVisualStyleBackColor = true;
             // 
             // BtnCikis
             // 
@@ -396,7 +396,7 @@
             this.groupBox1.Controls.Add(this.LblTC);
             this.groupBox1.Controls.Add(this.lbl2);
             this.groupBox1.Controls.Add(this.lbl);
-            this.groupBox1.Location = new System.Drawing.Point(16, 23);
+            this.groupBox1.Location = new System.Drawing.Point(16, 60);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -444,7 +444,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rtbRandevuDetay);
-            this.groupBox2.Location = new System.Drawing.Point(16, 294);
+            this.groupBox2.Location = new System.Drawing.Point(16, 266);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(239, 420);
             this.groupBox2.TabIndex = 5;
@@ -467,15 +467,15 @@
             this.dtRandevuDetay.Location = new System.Drawing.Point(3, 26);
             this.dtRandevuDetay.Name = "dtRandevuDetay";
             this.dtRandevuDetay.RowHeadersWidth = 51;
-            this.dtRandevuDetay.Size = new System.Drawing.Size(740, 578);
+            this.dtRandevuDetay.Size = new System.Drawing.Size(740, 606);
             this.dtRandevuDetay.TabIndex = 0;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dtRandevuDetay);
-            this.groupBox4.Location = new System.Drawing.Point(261, 51);
+            this.groupBox4.Location = new System.Drawing.Point(261, 60);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(746, 607);
+            this.groupBox4.Size = new System.Drawing.Size(746, 635);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Randevu Detay";
