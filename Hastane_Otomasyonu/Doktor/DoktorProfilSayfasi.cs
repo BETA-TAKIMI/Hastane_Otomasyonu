@@ -60,6 +60,10 @@ namespace Hastane_Otomasyonu
             dtRandevuDetay.DataSource = dt;
 
 
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from tbl_duyurular", baglanti);
+            da1.Fill(dt);
+            dataGridView1.DataSource = dt1;
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
