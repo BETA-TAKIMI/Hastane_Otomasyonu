@@ -48,6 +48,8 @@ namespace Hastane_Otomasyonu
                 LblCinsiyet.Text = dr["DoktorCinsiyet"].ToString();
                 TxtSifre.Text = dr["DoktorSifre"].ToString();
                 TxtUzmanlik.Text = dr["DoktorUzmanlıkAlan"].ToString();
+                LblAdSoyad.Text = dr["Doktorİsim"].ToString() + " " + dr["DoktorSoyİsim"].ToString(); //İsim boşluk Soyisim yazdırma
+                LblTC.Text = dr["DoktorTCNo"].ToString();
             }
             baglanti.Close();
         }
