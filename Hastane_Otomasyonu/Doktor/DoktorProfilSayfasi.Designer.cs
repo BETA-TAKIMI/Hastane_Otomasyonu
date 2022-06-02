@@ -55,16 +55,19 @@
             this.TxtHesKodu = new System.Windows.Forms.TextBox();
             this.yasLabel = new System.Windows.Forms.Label();
             this.tabPageRandevular = new System.Windows.Forms.TabPage();
-            this.BtnCikis = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dtRandevuDetay = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rtbRandevuDetay = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdSoyad = new System.Windows.Forms.Label();
             this.LblTC = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rtbRandevuDetay = new System.Windows.Forms.RichTextBox();
-            this.dtRandevuDetay = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnCikis = new System.Windows.Forms.Button();
+            this.tabPageDuyurular = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPageProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,16 +78,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageRandevular.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPageDuyurular.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPageProfil);
             this.tabControl1.Controls.Add(this.tabPageRandevular);
+            this.tabControl1.Controls.Add(this.tabPageDuyurular);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(13, 25);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -376,19 +383,44 @@
             this.tabPageRandevular.TabIndex = 1;
             this.tabPageRandevular.Text = "Randevular";
             // 
-            // BtnCikis
+            // groupBox4
             // 
-            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnCikis.Location = new System.Drawing.Point(921, 10);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BtnCikis.Name = "BtnCikis";
-            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
-            this.BtnCikis.TabIndex = 3;
-            this.BtnCikis.Text = "Çıkış Yap";
-            this.BtnCikis.UseVisualStyleBackColor = false;
-            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+            this.groupBox4.Controls.Add(this.dtRandevuDetay);
+            this.groupBox4.Location = new System.Drawing.Point(261, 60);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(746, 635);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Randevu Detay";
+            // 
+            // dtRandevuDetay
+            // 
+            this.dtRandevuDetay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtRandevuDetay.Location = new System.Drawing.Point(3, 26);
+            this.dtRandevuDetay.Name = "dtRandevuDetay";
+            this.dtRandevuDetay.RowHeadersWidth = 51;
+            this.dtRandevuDetay.Size = new System.Drawing.Size(740, 606);
+            this.dtRandevuDetay.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rtbRandevuDetay);
+            this.groupBox2.Location = new System.Drawing.Point(16, 266);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(239, 420);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Randevu Detay";
+            // 
+            // rtbRandevuDetay
+            // 
+            this.rtbRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbRandevuDetay.Location = new System.Drawing.Point(3, 26);
+            this.rtbRandevuDetay.Name = "rtbRandevuDetay";
+            this.rtbRandevuDetay.Size = new System.Drawing.Size(233, 391);
+            this.rtbRandevuDetay.TabIndex = 0;
+            this.rtbRandevuDetay.Text = "";
             // 
             // groupBox1
             // 
@@ -441,44 +473,50 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "TC No:";
             // 
-            // groupBox2
+            // BtnCikis
             // 
-            this.groupBox2.Controls.Add(this.rtbRandevuDetay);
-            this.groupBox2.Location = new System.Drawing.Point(16, 266);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(239, 420);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Randevu Detay";
+            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCikis.Location = new System.Drawing.Point(921, 10);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
+            this.BtnCikis.TabIndex = 3;
+            this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.UseVisualStyleBackColor = false;
+            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
-            // rtbRandevuDetay
+            // tabPageDuyurular
             // 
-            this.rtbRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbRandevuDetay.Location = new System.Drawing.Point(3, 26);
-            this.rtbRandevuDetay.Name = "rtbRandevuDetay";
-            this.rtbRandevuDetay.Size = new System.Drawing.Size(233, 391);
-            this.rtbRandevuDetay.TabIndex = 0;
-            this.rtbRandevuDetay.Text = "";
+            this.tabPageDuyurular.Controls.Add(this.groupBox3);
+            this.tabPageDuyurular.Location = new System.Drawing.Point(4, 34);
+            this.tabPageDuyurular.Name = "tabPageDuyurular";
+            this.tabPageDuyurular.Size = new System.Drawing.Size(1023, 765);
+            this.tabPageDuyurular.TabIndex = 2;
+            this.tabPageDuyurular.Text = "Duyurular";
+            this.tabPageDuyurular.UseVisualStyleBackColor = true;
             // 
-            // dtRandevuDetay
+            // groupBox3
             // 
-            this.dtRandevuDetay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtRandevuDetay.Location = new System.Drawing.Point(3, 26);
-            this.dtRandevuDetay.Name = "dtRandevuDetay";
-            this.dtRandevuDetay.RowHeadersWidth = 51;
-            this.dtRandevuDetay.Size = new System.Drawing.Size(740, 606);
-            this.dtRandevuDetay.TabIndex = 0;
+            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Location = new System.Drawing.Point(19, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(985, 724);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Duyurular";
             // 
-            // groupBox4
+            // dataGridView1
             // 
-            this.groupBox4.Controls.Add(this.dtRandevuDetay);
-            this.groupBox4.Location = new System.Drawing.Point(261, 60);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(746, 635);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Randevu Detay";
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(979, 695);
+            this.dataGridView1.TabIndex = 0;
             // 
             // DoktorProfilSayfasi
             // 
@@ -488,7 +526,7 @@
             this.ClientSize = new System.Drawing.Size(1056, 827);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DoktorProfilSayfasi";
             this.Text = "DoktorProfilSayfasi";
             this.Load += new System.EventHandler(this.DoktorProfilSayfasi_Load);
@@ -503,11 +541,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPageRandevular.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).EndInit();
-            this.groupBox4.ResumeLayout(false);
+            this.tabPageDuyurular.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -550,5 +591,8 @@
         private System.Windows.Forms.DataGridView dtRandevuDetay;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox rtbRandevuDetay;
+        private System.Windows.Forms.TabPage tabPageDuyurular;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
