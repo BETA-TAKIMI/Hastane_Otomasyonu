@@ -52,6 +52,14 @@ namespace Hastane_Otomasyonu
                 LblTC.Text = dr["DoktorTCNo"].ToString();
             }
             baglanti.Close();
+
+            //Bu doktora ait randevu listesini getiren sorgu aşağıdadır.
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuDoktor = '" + LblAdSoyad.Text + "'", baglanti);
+            da.Fill(dt);
+            dtRandevuDetay.DataSource = dt;
+
+
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
@@ -68,5 +76,6 @@ namespace Hastane_Otomasyonu
         {
 
         }
+
     }
 }
