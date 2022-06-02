@@ -61,5 +61,10 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Bilgileriniz Güncellendi...");
             baglanti.Close();
         }
+
+        private void dtRandevuDetay_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
