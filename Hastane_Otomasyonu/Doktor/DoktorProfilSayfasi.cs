@@ -62,7 +62,7 @@ namespace Hastane_Otomasyonu
 
             DataTable dt1 = new DataTable();
             SqlDataAdapter da1 = new SqlDataAdapter("Select * from tbl_duyurular", baglanti);
-            da1.Fill(dt);
+            da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
         }
 
