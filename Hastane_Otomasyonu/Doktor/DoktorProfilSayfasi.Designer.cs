@@ -507,11 +507,11 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(14, 17);
+            this.groupBox3.Location = new System.Drawing.Point(2, 2);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(739, 588);
+            this.groupBox3.Size = new System.Drawing.Size(739, 514);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Duyurular";
@@ -525,7 +525,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(735, 565);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 491);
             this.dataGridView1.TabIndex = 0;
             // 
             // BtnCikis
