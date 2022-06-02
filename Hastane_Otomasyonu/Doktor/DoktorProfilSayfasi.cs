@@ -76,6 +76,11 @@ namespace Hastane_Otomasyonu
         {
 
         }
-
+       
+        private void dtRandevuDetay_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int chosen = dtRandevuDetay.SelectedCells[0].RowIndex;
+            rtbRandevuDetay.Text = dtRandevuDetay.Rows[chosen].Cells[7].Value.ToString();
+        }
     }
 }

@@ -94,7 +94,7 @@
             this.tabControl1.Controls.Add(this.tabPageDuyurular);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(10, 20);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(773, 652);
@@ -126,9 +126,9 @@
             this.tabPageProfil.Controls.Add(this.TxtHesKodu);
             this.tabPageProfil.Controls.Add(this.yasLabel);
             this.tabPageProfil.Location = new System.Drawing.Point(4, 29);
-            this.tabPageProfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageProfil.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageProfil.Name = "tabPageProfil";
-            this.tabPageProfil.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageProfil.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageProfil.Size = new System.Drawing.Size(765, 619);
             this.tabPageProfil.TabIndex = 0;
             this.tabPageProfil.Text = "Profil";
@@ -138,7 +138,7 @@
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSifre.Location = new System.Drawing.Point(262, 459);
-            this.TxtSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSifre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(284, 27);
             this.TxtSifre.TabIndex = 104;
@@ -180,7 +180,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -191,7 +191,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(208, 378);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(47, 48);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -202,7 +202,7 @@
             // 
             this.TxtUzmanlik.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUzmanlik.Location = new System.Drawing.Point(262, 399);
-            this.TxtUzmanlik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtUzmanlik.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUzmanlik.Name = "TxtUzmanlik";
             this.TxtUzmanlik.Size = new System.Drawing.Size(284, 27);
             this.TxtUzmanlik.TabIndex = 92;
@@ -222,7 +222,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(208, 318);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(47, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -233,7 +233,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(208, 258);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(47, 48);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -244,7 +244,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(208, 200);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(47, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -255,7 +255,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(208, 144);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -266,7 +266,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(208, 84);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -279,7 +279,7 @@
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnGuncelle.Location = new System.Drawing.Point(260, 500);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(284, 40);
             this.BtnGuncelle.TabIndex = 85;
@@ -291,7 +291,7 @@
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMail.Location = new System.Drawing.Point(262, 339);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(284, 27);
             this.TxtMail.TabIndex = 84;
@@ -322,7 +322,7 @@
             // 
             this.TxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefon.Location = new System.Drawing.Point(262, 279);
-            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(284, 27);
             this.TxtTelefon.TabIndex = 81;
@@ -353,7 +353,7 @@
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtYas.Location = new System.Drawing.Point(262, 165);
-            this.TxtYas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtYas.Margin = new System.Windows.Forms.Padding(2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(284, 27);
             this.TxtYas.TabIndex = 75;
@@ -362,7 +362,7 @@
             // 
             this.TxtHesKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHesKodu.Location = new System.Drawing.Point(262, 106);
-            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2);
             this.TxtHesKodu.Name = "TxtHesKodu";
             this.TxtHesKodu.Size = new System.Drawing.Size(284, 27);
             this.TxtHesKodu.TabIndex = 74;
@@ -385,9 +385,9 @@
             this.tabPageRandevular.Controls.Add(this.groupBox2);
             this.tabPageRandevular.Controls.Add(this.groupBox1);
             this.tabPageRandevular.Location = new System.Drawing.Point(4, 29);
-            this.tabPageRandevular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageRandevular.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageRandevular.Name = "tabPageRandevular";
-            this.tabPageRandevular.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageRandevular.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageRandevular.Size = new System.Drawing.Size(765, 619);
             this.tabPageRandevular.TabIndex = 1;
             this.tabPageRandevular.Text = "Randevular";
@@ -396,9 +396,9 @@
             // 
             this.groupBox4.Controls.Add(this.dtRandevuDetay);
             this.groupBox4.Location = new System.Drawing.Point(196, 49);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(560, 516);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -409,19 +409,20 @@
             this.dtRandevuDetay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtRandevuDetay.Location = new System.Drawing.Point(2, 21);
-            this.dtRandevuDetay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtRandevuDetay.Margin = new System.Windows.Forms.Padding(2);
             this.dtRandevuDetay.Name = "dtRandevuDetay";
             this.dtRandevuDetay.RowHeadersWidth = 51;
             this.dtRandevuDetay.Size = new System.Drawing.Size(556, 493);
             this.dtRandevuDetay.TabIndex = 0;
+            this.dtRandevuDetay.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtRandevuDetay_CellClick_1);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rtbRandevuDetay);
             this.groupBox2.Location = new System.Drawing.Point(12, 216);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(179, 341);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
@@ -431,7 +432,7 @@
             // 
             this.rtbRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbRandevuDetay.Location = new System.Drawing.Point(2, 21);
-            this.rtbRandevuDetay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbRandevuDetay.Margin = new System.Windows.Forms.Padding(2);
             this.rtbRandevuDetay.Name = "rtbRandevuDetay";
             this.rtbRandevuDetay.Size = new System.Drawing.Size(175, 318);
             this.rtbRandevuDetay.TabIndex = 0;
@@ -444,9 +445,9 @@
             this.groupBox1.Controls.Add(this.lbl2);
             this.groupBox1.Controls.Add(this.lbl);
             this.groupBox1.Location = new System.Drawing.Point(12, 49);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(177, 143);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -496,7 +497,7 @@
             // 
             this.tabPageDuyurular.Controls.Add(this.groupBox3);
             this.tabPageDuyurular.Location = new System.Drawing.Point(4, 29);
-            this.tabPageDuyurular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageDuyurular.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageDuyurular.Name = "tabPageDuyurular";
             this.tabPageDuyurular.Size = new System.Drawing.Size(765, 619);
             this.tabPageDuyurular.TabIndex = 2;
@@ -507,9 +508,9 @@
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Location = new System.Drawing.Point(14, 17);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(739, 588);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -521,7 +522,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 21);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(735, 565);
@@ -533,7 +534,7 @@
             this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnCikis.Location = new System.Drawing.Point(691, 8);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(87, 28);
             this.BtnCikis.TabIndex = 3;
