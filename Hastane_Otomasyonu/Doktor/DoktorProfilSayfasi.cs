@@ -48,8 +48,18 @@ namespace Hastane_Otomasyonu
                 LblCinsiyet.Text = dr["DoktorCinsiyet"].ToString();
                 TxtSifre.Text = dr["DoktorSifre"].ToString();
                 TxtUzmanlik.Text = dr["DoktorUzmanlıkAlan"].ToString();
+                LblAdSoyad.Text = dr["Doktorİsim"].ToString() + " " + dr["DoktorSoyİsim"].ToString(); //İsim boşluk Soyisim yazdırma
+                LblTC.Text = dr["DoktorTCNo"].ToString();
             }
             baglanti.Close();
+
+            //Bu doktora ait randevu listesini getiren sorgu aşağıdadır.
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuDoktor = '" + LblAdSoyad.Text + "'", baglanti);
+            da.Fill(dt);
+            dtRandevuDetay.DataSource = dt;
+
+
         }
 
         private void BtnGuncelle_Click_1(object sender, EventArgs e)
@@ -65,6 +75,12 @@ namespace Hastane_Otomasyonu
         private void dtRandevuDetay_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+       
+        private void dtRandevuDetay_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int chosen = dtRandevuDetay.SelectedCells[0].RowIndex;
+            rtbRandevuDetay.Text = dtRandevuDetay.Rows[chosen].Cells[7].Value.ToString();
         }
     }
 }
