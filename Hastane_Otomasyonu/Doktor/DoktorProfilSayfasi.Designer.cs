@@ -61,6 +61,10 @@
             this.LblTC = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rtbRandevuDetay = new System.Windows.Forms.RichTextBox();
+            this.dtRandevuDetay = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPageProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +76,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageRandevular.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -357,6 +364,8 @@
             // 
             // tabPageRandevular
             // 
+            this.tabPageRandevular.Controls.Add(this.groupBox4);
+            this.tabPageRandevular.Controls.Add(this.groupBox2);
             this.tabPageRandevular.Controls.Add(this.groupBox1);
             this.tabPageRandevular.Location = new System.Drawing.Point(4, 34);
             this.tabPageRandevular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -432,6 +441,45 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "TC No:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rtbRandevuDetay);
+            this.groupBox2.Location = new System.Drawing.Point(16, 294);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(239, 420);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Randevu Detay";
+            // 
+            // rtbRandevuDetay
+            // 
+            this.rtbRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbRandevuDetay.Location = new System.Drawing.Point(3, 26);
+            this.rtbRandevuDetay.Name = "rtbRandevuDetay";
+            this.rtbRandevuDetay.Size = new System.Drawing.Size(233, 391);
+            this.rtbRandevuDetay.TabIndex = 0;
+            this.rtbRandevuDetay.Text = "";
+            // 
+            // dtRandevuDetay
+            // 
+            this.dtRandevuDetay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtRandevuDetay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtRandevuDetay.Location = new System.Drawing.Point(3, 26);
+            this.dtRandevuDetay.Name = "dtRandevuDetay";
+            this.dtRandevuDetay.RowHeadersWidth = 51;
+            this.dtRandevuDetay.Size = new System.Drawing.Size(740, 578);
+            this.dtRandevuDetay.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dtRandevuDetay);
+            this.groupBox4.Location = new System.Drawing.Point(261, 51);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(746, 607);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Randevu Detay";
+            // 
             // DoktorProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,6 +505,9 @@
             this.tabPageRandevular.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtRandevuDetay)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,5 +546,9 @@
         private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dtRandevuDetay;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RichTextBox rtbRandevuDetay;
     }
 }
