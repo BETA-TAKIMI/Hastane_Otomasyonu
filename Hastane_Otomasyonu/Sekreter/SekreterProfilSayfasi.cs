@@ -57,5 +57,7 @@ namespace Hastane_Otomasyonu
             frm.Show();
             this.Hide();
         }
+
+       
     }
 }

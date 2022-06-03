@@ -52,13 +52,28 @@
             this.TxtHesKodu = new System.Windows.Forms.TextBox();
             this.yasLabel = new System.Windows.Forms.Label();
             this.tabRandevularim = new System.Windows.Forms.TabPage();
-            this.tabDuyuruOluşturma = new System.Windows.Forms.TabPage();
-            this.BtnCikis = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.maskTC = new System.Windows.Forms.MaskedTextBox();
+            this.cmbDoctor = new System.Windows.Forms.ComboBox();
+            this.cmbBranch = new System.Windows.Forms.ComboBox();
+            this.maskTime = new System.Windows.Forms.MaskedTextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.maskDate = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTC = new System.Windows.Forms.Label();
+            this.tabDuyuruOluşturma = new System.Windows.Forms.TabPage();
+            this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -68,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabRandevularim.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -323,6 +339,7 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.Controls.Add(this.groupBox3);
             this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
             this.tabRandevularim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -333,29 +350,150 @@
             this.tabRandevularim.Text = "Randevular";
             this.tabRandevularim.UseVisualStyleBackColor = true;
             // 
-            // tabDuyuruOluşturma
+            // groupBox3
             // 
-            this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 34);
-            this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabDuyuruOluşturma.Name = "tabDuyuruOluşturma";
-            this.tabDuyuruOluşturma.Size = new System.Drawing.Size(1034, 657);
-            this.tabDuyuruOluşturma.TabIndex = 3;
-            this.tabDuyuruOluşturma.Text = "Duyuru Oluşturma";
-            this.tabDuyuruOluşturma.UseVisualStyleBackColor = true;
+            this.groupBox3.Controls.Add(this.btnKaydet);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.checkBox1);
+            this.groupBox3.Controls.Add(this.maskTC);
+            this.groupBox3.Controls.Add(this.cmbDoctor);
+            this.groupBox3.Controls.Add(this.cmbBranch);
+            this.groupBox3.Controls.Add(this.maskTime);
+            this.groupBox3.Controls.Add(this.txtID);
+            this.groupBox3.Controls.Add(this.maskDate);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Location = new System.Drawing.Point(6, 198);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(398, 443);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Randevu Paneli";
             // 
-            // BtnCikis
+            // btnKaydet
             // 
-            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnCikis.Location = new System.Drawing.Point(934, 8);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BtnCikis.Name = "BtnCikis";
-            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
-            this.BtnCikis.TabIndex = 2;
-            this.BtnCikis.Text = "Çıkış Yap";
-            this.BtnCikis.UseVisualStyleBackColor = false;
-            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+            this.btnKaydet.Location = new System.Drawing.Point(158, 363);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(220, 43);
+            this.btnKaydet.TabIndex = 2;
+            this.btnKaydet.Text = "KAYDET";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 283);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(133, 25);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "TC Kimlik No:";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(158, 330);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(92, 29);
+            this.checkBox1.TabIndex = 17;
+            this.checkBox1.Text = "Durum";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // maskTC
+            // 
+            this.maskTC.Location = new System.Drawing.Point(158, 280);
+            this.maskTC.Mask = "00000000000";
+            this.maskTC.Name = "maskTC";
+            this.maskTC.Size = new System.Drawing.Size(220, 30);
+            this.maskTC.TabIndex = 16;
+            // 
+            // cmbDoctor
+            // 
+            this.cmbDoctor.FormattingEnabled = true;
+            this.cmbDoctor.Location = new System.Drawing.Point(158, 242);
+            this.cmbDoctor.Name = "cmbDoctor";
+            this.cmbDoctor.Size = new System.Drawing.Size(220, 33);
+            this.cmbDoctor.TabIndex = 15;
+            // 
+            // cmbBranch
+            // 
+            this.cmbBranch.FormattingEnabled = true;
+            this.cmbBranch.Location = new System.Drawing.Point(158, 205);
+            this.cmbBranch.Name = "cmbBranch";
+            this.cmbBranch.Size = new System.Drawing.Size(220, 33);
+            this.cmbBranch.TabIndex = 14;
+            // 
+            // maskTime
+            // 
+            this.maskTime.Location = new System.Drawing.Point(158, 164);
+            this.maskTime.Mask = "00:00";
+            this.maskTime.Name = "maskTime";
+            this.maskTime.Size = new System.Drawing.Size(220, 30);
+            this.maskTime.TabIndex = 13;
+            this.maskTime.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(158, 86);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(220, 30);
+            this.txtID.TabIndex = 12;
+            // 
+            // maskDate
+            // 
+            this.maskDate.Location = new System.Drawing.Point(158, 127);
+            this.maskDate.Mask = "00/00/0000";
+            this.maskDate.Name = "maskDate";
+            this.maskDate.Size = new System.Drawing.Size(220, 30);
+            this.maskDate.TabIndex = 11;
+            this.maskDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 245);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 25);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Doktor:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(76, 167);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Saat:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(66, 208);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 25);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Branş:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(98, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 25);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "id:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(71, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 25);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Tarih:";
             // 
             // groupBox1
             // 
@@ -363,9 +501,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.lblTC);
-            this.groupBox1.Location = new System.Drawing.Point(6, 5);
+            this.groupBox1.Location = new System.Drawing.Point(6, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 153);
+            this.groupBox1.Size = new System.Drawing.Size(398, 153);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sekreter Bilgileri";
@@ -406,6 +544,30 @@
             this.lblTC.TabIndex = 2;
             this.lblTC.Text = "00000000000";
             // 
+            // tabDuyuruOluşturma
+            // 
+            this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 34);
+            this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabDuyuruOluşturma.Name = "tabDuyuruOluşturma";
+            this.tabDuyuruOluşturma.Size = new System.Drawing.Size(1034, 657);
+            this.tabDuyuruOluşturma.TabIndex = 3;
+            this.tabDuyuruOluşturma.Text = "Duyuru Oluşturma";
+            this.tabDuyuruOluşturma.UseVisualStyleBackColor = true;
+            // 
+            // BtnCikis
+            // 
+            this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnCikis.Location = new System.Drawing.Point(934, 8);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(116, 34);
+            this.BtnCikis.TabIndex = 2;
+            this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.UseVisualStyleBackColor = false;
+            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -414,7 +576,7 @@
             this.ClientSize = new System.Drawing.Size(1056, 750);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.tabControlHasta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SekreterProfilSayfasi";
             this.Text = "SekreterProfilSayfasi";
             this.Load += new System.EventHandler(this.SekreterProfilSayfasi_Load);
@@ -428,6 +590,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabRandevularim.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -466,5 +630,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTC;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.MaskedTextBox maskTC;
+        private System.Windows.Forms.ComboBox cmbDoctor;
+        private System.Windows.Forms.ComboBox cmbBranch;
+        private System.Windows.Forms.MaskedTextBox maskTime;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.MaskedTextBox maskDate;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
