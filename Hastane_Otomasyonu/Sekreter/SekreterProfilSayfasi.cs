@@ -41,6 +41,13 @@ namespace Hastane_Otomasyonu
                 lblTC.Text = dr["SekreterTCNo"].ToString();
             }
             baglanti.Close();
+
+            //Branşları Datagridview' e aktarma
+
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from tbl_Branslar", baglanti);
+            da1.Fill(dt1);
+            dtBrans.DataSource = dt1;
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
