@@ -48,6 +48,13 @@ namespace Hastane_Otomasyonu
             SqlDataAdapter da1 = new SqlDataAdapter("Select * from tbl_Branslar", baglanti);
             da1.Fill(dt1);
             dtBrans.DataSource = dt1;
+
+            //Doktorları Datagridview' e aktarma (Doktorların isimlerini ad boşluk soyad şeklinde Doktorlar sütunu içerisine yazar
+
+            DataTable dt2 = new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter("Select (Doktorİsim + ' ' + DoktorSoyİsim) as Doktorlar, DoktorUzmanlıkAlan from tbl_doktorlar", baglanti);
+            da2.Fill(dt2);
+            dtDoktor.DataSource = dt2;
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
