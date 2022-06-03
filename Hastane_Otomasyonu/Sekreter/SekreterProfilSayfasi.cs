@@ -37,6 +37,8 @@ namespace Hastane_Otomasyonu
                 TxtTelefon.Text = dr["SekreterTelefon"].ToString();
                 LblCinsiyet.Text = dr["SekreterCinsiyet"].ToString();
                 TxtSfre.Text = dr["SekreterSifre"].ToString();
+                lblAdSoyad.Text= dr["Sekreterİsim"].ToString() + " " + dr["SekreterSoyİsim"].ToString();
+                lblTC.Text = dr["SekreterTCNo"].ToString();
             }
             baglanti.Close();
         }
