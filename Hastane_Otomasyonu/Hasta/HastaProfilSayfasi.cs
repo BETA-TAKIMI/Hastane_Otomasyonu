@@ -122,7 +122,7 @@ namespace Hastane_Otomasyonu
 
             //Randevu almak için aslında Insert into yapmalıydık ama güncelleme mantığı ile çalışacağı için Update sorgusunu kullandık çünkü zaten aşağıdaki durumlar haricindeki tüm randevu durumları sistem tarafından atanıyor.
             baglanti.Open();
-            SqlCommand command = new SqlCommand("Update Tbl_Randevular set RandevuDurum = 1, HastaTCNo = @p1, HastaSikayet = @p2 where Randevuid = @p3", baglanti);
+            SqlCommand command = new SqlCommand("Update tbl_randevular set RandevuDurum = 1, HastaTCNo = @p1, HastaSikayet = @p2 where Randevuid = @p3", baglanti);
             command.Parameters.AddWithValue("@p1", LblTC.Text);
             command.Parameters.AddWithValue("@p2", RchSikayet.Text);
             command.Parameters.AddWithValue("@p3", txtid.Text);
