@@ -55,6 +55,16 @@ namespace Hastane_Otomasyonu
             SqlDataAdapter da2 = new SqlDataAdapter("Select (Doktorİsim + ' ' + DoktorSoyİsim) as Doktorlar, DoktorUzmanlıkAlan from tbl_doktorlar", baglanti);
             da2.Fill(dt2);
             dtDoktor.DataSource = dt2;
+
+            //Comboboxa Branşları aktarma
+            baglanti.Open();
+            SqlCommand command2 = new SqlCommand("Select BransAd from tbl_Branslar", baglanti);
+            SqlDataReader dr2 = command2.ExecuteReader();
+            while (dr2.Read())
+            {
+                cmbBranch.Items.Add(dr2[0]);
+            }
+            baglanti.Close();
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
