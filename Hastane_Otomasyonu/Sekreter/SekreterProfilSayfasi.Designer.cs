@@ -78,6 +78,9 @@
             this.dtBrans = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dtDoktor = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnDuyuru = new System.Windows.Forms.Button();
+            this.rtbDuyuru = new System.Windows.Forms.RichTextBox();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -89,10 +92,12 @@
             this.tabRandevularim.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabDuyuruOluşturma.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtBrans)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -556,6 +561,7 @@
             // 
             // tabDuyuruOluşturma
             // 
+            this.tabDuyuruOluşturma.Controls.Add(this.groupBox2);
             this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 34);
             this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabDuyuruOluşturma.Name = "tabDuyuruOluşturma";
@@ -620,6 +626,34 @@
             this.dtDoktor.Size = new System.Drawing.Size(597, 295);
             this.dtDoktor.TabIndex = 0;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnDuyuru);
+            this.groupBox2.Controls.Add(this.rtbDuyuru);
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1015, 218);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Duyuru Oluştur";
+            // 
+            // btnDuyuru
+            // 
+            this.btnDuyuru.Location = new System.Drawing.Point(414, 159);
+            this.btnDuyuru.Name = "btnDuyuru";
+            this.btnDuyuru.Size = new System.Drawing.Size(163, 43);
+            this.btnDuyuru.TabIndex = 1;
+            this.btnDuyuru.Text = "OLUŞTUR";
+            this.btnDuyuru.UseVisualStyleBackColor = true;
+            // 
+            // rtbDuyuru
+            // 
+            this.rtbDuyuru.Location = new System.Drawing.Point(7, 31);
+            this.rtbDuyuru.Name = "rtbDuyuru";
+            this.rtbDuyuru.Size = new System.Drawing.Size(1002, 122);
+            this.rtbDuyuru.TabIndex = 0;
+            this.rtbDuyuru.Text = "";
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -646,10 +680,12 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabDuyuruOluşturma.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtBrans)).EndInit();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -705,5 +741,8 @@
         private System.Windows.Forms.DataGridView dtDoktor;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dtBrans;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnDuyuru;
+        private System.Windows.Forms.RichTextBox rtbDuyuru;
     }
 }
