@@ -54,6 +54,11 @@
             this.tabRandevularim = new System.Windows.Forms.TabPage();
             this.tabDuyuruOluşturma = new System.Windows.Forms.TabPage();
             this.BtnCikis = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -62,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabRandevularim.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -316,6 +323,7 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
             this.tabRandevularim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabRandevularim.Name = "tabRandevularim";
@@ -349,6 +357,55 @@
             this.BtnCikis.UseVisualStyleBackColor = false;
             this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblAdSoyad);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lblTC);
+            this.groupBox1.Location = new System.Drawing.Point(6, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(302, 153);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sekreter Bilgileri";
+            // 
+            // lblAdSoyad
+            // 
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(145, 102);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(83, 25);
+            this.lblAdSoyad.TabIndex = 4;
+            this.lblAdSoyad.Text = "Null Null";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "TC Kimlik No:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(43, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Ad Soyad:";
+            // 
+            // lblTC
+            // 
+            this.lblTC.AutoSize = true;
+            this.lblTC.Location = new System.Drawing.Point(145, 61);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(133, 25);
+            this.lblTC.TabIndex = 2;
+            this.lblTC.Text = "00000000000";
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -370,6 +427,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabRandevularim.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -401,5 +461,10 @@
         private System.Windows.Forms.TabPage tabDuyuruOluşturma;
         private System.Windows.Forms.Label LblCinsiyet;
         private System.Windows.Forms.Button BtnCikis;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblAdSoyad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTC;
     }
 }
