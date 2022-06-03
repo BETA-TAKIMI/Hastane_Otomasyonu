@@ -356,6 +356,7 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.BackColor = System.Drawing.Color.LightBlue;
             this.tabRandevularim.Controls.Add(this.groupBox5);
             this.tabRandevularim.Controls.Add(this.groupBox4);
             this.tabRandevularim.Controls.Add(this.groupBox3);
@@ -367,7 +368,6 @@
             this.tabRandevularim.Size = new System.Drawing.Size(1034, 657);
             this.tabRandevularim.TabIndex = 1;
             this.tabRandevularim.Text = "Randevular";
-            this.tabRandevularim.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -565,6 +565,7 @@
             // 
             // tabDuyuruOluşturma
             // 
+            this.tabDuyuruOluşturma.BackColor = System.Drawing.Color.LightBlue;
             this.tabDuyuruOluşturma.Controls.Add(this.groupBox6);
             this.tabDuyuruOluşturma.Controls.Add(this.groupBox2);
             this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 34);
@@ -572,8 +573,7 @@
             this.tabDuyuruOluşturma.Name = "tabDuyuruOluşturma";
             this.tabDuyuruOluşturma.Size = new System.Drawing.Size(1034, 657);
             this.tabDuyuruOluşturma.TabIndex = 3;
-            this.tabDuyuruOluşturma.Text = "Duyuru Oluşturma";
-            this.tabDuyuruOluşturma.UseVisualStyleBackColor = true;
+            this.tabDuyuruOluşturma.Text = "Duyurular";
             // 
             // BtnCikis
             // 
