@@ -97,5 +97,20 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Randevu oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+
+        private void cmbBranch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Branş Comboboxına tıklanınca direkt ilgili branşa ait doktorlar listelensin
+            baglanti.Open();
+            cmbDoctor.Items.Clear();
+            SqlCommand command3 = new SqlCommand("Select Doktorİsim, DoktorSoyİsim from tbl_doktorlar where DoktorUzmanlıkAlan = @p1", baglanti);
+            command3.Parameters.AddWithValue("@p1", cmbBranch.Text);
+            SqlDataReader dr3 = command3.ExecuteReader();
+            while (dr3.Read())
+            {
+                cmbDoctor.Items.Add(dr3[0] + " " + dr3[1]);
+            }
+            baglanti.Close();
+        }
     }
 }

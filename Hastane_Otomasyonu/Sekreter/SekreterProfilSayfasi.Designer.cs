@@ -508,6 +508,7 @@
             this.cmbBranch.Name = "cmbBranch";
             this.cmbBranch.Size = new System.Drawing.Size(166, 28);
             this.cmbBranch.TabIndex = 14;
+            this.cmbBranch.SelectedIndexChanged += new System.EventHandler(this.cmbBranch_SelectedIndexChanged);
             // 
             // maskTime
             // 
