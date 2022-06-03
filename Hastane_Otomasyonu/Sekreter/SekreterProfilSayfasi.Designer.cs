@@ -74,6 +74,10 @@
             this.lblTC = new System.Windows.Forms.Label();
             this.tabDuyuruOluşturma = new System.Windows.Forms.TabPage();
             this.BtnCikis = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dtBrans = new System.Windows.Forms.DataGridView();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dtDoktor = new System.Windows.Forms.DataGridView();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -85,6 +89,10 @@
             this.tabRandevularim.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBrans)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -339,6 +347,8 @@
             // 
             // tabRandevularim
             // 
+            this.tabRandevularim.Controls.Add(this.groupBox5);
+            this.tabRandevularim.Controls.Add(this.groupBox4);
             this.tabRandevularim.Controls.Add(this.groupBox3);
             this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 34);
@@ -568,6 +578,48 @@
             this.BtnCikis.UseVisualStyleBackColor = false;
             this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dtBrans);
+            this.groupBox4.Location = new System.Drawing.Point(419, 21);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(609, 301);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Branşlar";
+            // 
+            // dtBrans
+            // 
+            this.dtBrans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtBrans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtBrans.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtBrans.Location = new System.Drawing.Point(3, 26);
+            this.dtBrans.Name = "dtBrans";
+            this.dtBrans.RowHeadersWidth = 51;
+            this.dtBrans.Size = new System.Drawing.Size(603, 272);
+            this.dtBrans.TabIndex = 0;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dtDoktor);
+            this.groupBox5.Location = new System.Drawing.Point(422, 328);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(603, 324);
+            this.groupBox5.TabIndex = 5;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Doktorlar";
+            // 
+            // dtDoktor
+            // 
+            this.dtDoktor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtDoktor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtDoktor.Location = new System.Drawing.Point(3, 26);
+            this.dtDoktor.Name = "dtDoktor";
+            this.dtDoktor.RowHeadersWidth = 51;
+            this.dtDoktor.Size = new System.Drawing.Size(597, 295);
+            this.dtDoktor.TabIndex = 0;
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -594,6 +646,10 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtBrans)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -645,5 +701,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dtDoktor;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dtBrans;
     }
 }
