@@ -74,6 +74,18 @@ namespace Hastane_Otomasyonu
             this.Hide();
         }
 
-       
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) values (@p1, @p2, @p3, @p4)", baglanti);
+            command.Parameters.AddWithValue("@p1", maskDate.Text);
+            command.Parameters.AddWithValue("@p2", maskTime.Text);
+            command.Parameters.AddWithValue("@p3", cmbBranch.Text);
+            command.Parameters.AddWithValue("@p4", cmbDoctor.Text);
+            command.ExecuteNonQuery();
+           baglanti.Close();
+            MessageBox.Show("Randevu oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
     }
 }
