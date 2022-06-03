@@ -81,6 +81,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnDuyuru = new System.Windows.Forms.Button();
             this.rtbDuyuru = new System.Windows.Forms.RichTextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -98,6 +100,8 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -561,6 +565,7 @@
             // 
             // tabDuyuruOluşturma
             // 
+            this.tabDuyuruOluşturma.Controls.Add(this.groupBox6);
             this.tabDuyuruOluşturma.Controls.Add(this.groupBox2);
             this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 34);
             this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -654,6 +659,27 @@
             this.rtbDuyuru.TabIndex = 0;
             this.rtbDuyuru.Text = "";
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.dataGridView1);
+            this.groupBox6.Location = new System.Drawing.Point(10, 227);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1018, 427);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Duyurular";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1012, 398);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -686,6 +712,8 @@
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtDoktor)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -744,5 +772,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnDuyuru;
         private System.Windows.Forms.RichTextBox rtbDuyuru;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
