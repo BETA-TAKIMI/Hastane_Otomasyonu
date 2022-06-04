@@ -110,6 +110,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPageRandevuListeleme = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -133,6 +135,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPageBranşOluşturma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPageRandevuListeleme.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -142,6 +146,7 @@
             this.tabControlHasta.Controls.Add(this.tabDuyuruOluşturma);
             this.tabControlHasta.Controls.Add(this.tabPageDoktorOluşturma);
             this.tabControlHasta.Controls.Add(this.tabPageBranşOluşturma);
+            this.tabControlHasta.Controls.Add(this.tabPageRandevuListeleme);
             this.tabControlHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlHasta.Location = new System.Drawing.Point(12, 46);
             this.tabControlHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1010,6 +1015,28 @@
             this.dataGridView3.Size = new System.Drawing.Size(1025, 335);
             this.dataGridView3.TabIndex = 37;
             // 
+            // tabPageRandevuListeleme
+            // 
+            this.tabPageRandevuListeleme.Controls.Add(this.dataGridView4);
+            this.tabPageRandevuListeleme.Location = new System.Drawing.Point(4, 34);
+            this.tabPageRandevuListeleme.Name = "tabPageRandevuListeleme";
+            this.tabPageRandevuListeleme.Size = new System.Drawing.Size(1035, 657);
+            this.tabPageRandevuListeleme.TabIndex = 6;
+            this.tabPageRandevuListeleme.Text = "Randevu Listeleme";
+            this.tabPageRandevuListeleme.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 51;
+            this.dataGridView4.Size = new System.Drawing.Size(1035, 657);
+            this.dataGridView4.TabIndex = 1;
+            // 
             // SekreterProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1050,6 +1077,8 @@
             this.tabPageBranşOluşturma.ResumeLayout(false);
             this.tabPageBranşOluşturma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPageRandevuListeleme.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1136,5 +1165,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TabPage tabPageRandevuListeleme;
+        private System.Windows.Forms.DataGridView dataGridView4;
     }
 }
