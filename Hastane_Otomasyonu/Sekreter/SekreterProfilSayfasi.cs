@@ -56,6 +56,7 @@ namespace Hastane_Otomasyonu
             da2.Fill(dt2);
             dtDoktor.DataSource = dt2;
 
+
             //Comboboxa Branşları aktarma
             baglanti.Open();
             SqlCommand command2 = new SqlCommand("Select BransAd from tbl_Branslar", baglanti);
@@ -70,6 +71,25 @@ namespace Hastane_Otomasyonu
             SqlDataAdapter da3 = new SqlDataAdapter("Select * from tbl_duyurular", baglanti);
             da3.Fill(dt3);
             dataGridView1.DataSource = dt3;
+
+            //Doktorları Datagridview' e aktarma
+
+            DataTable dt4 = new DataTable();
+            SqlDataAdapter da4 = new SqlDataAdapter("Select * from tbl_doktorlar", baglanti);
+            da4.Fill(dt4);
+            dataGridViewDoktor.DataSource = dt4;
+
+            //Formun ilk açılışında comboboxlara branşları aktarma
+            baglanti.Open();
+            SqlCommand command3 = new SqlCommand("Select BransAd from tbl_Branslar", baglanti);
+            SqlDataReader dr3 = command3.ExecuteReader();
+            while (dr3.Read())
+            {
+                comboBox1.Items.Add(dr3[0]);
+            }
+            baglanti.Close();
+
+
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
@@ -130,6 +150,71 @@ namespace Hastane_Otomasyonu
             rtbDuyuru.Clear();
         }
 
-       
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            //Doktor ekleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_doktorlar (Doktorİsim, DoktorSoyİsim, DoktorUzmanlıkAlan, DoktorTCNo, DoktorSifre) values (@p1, @p2, @p3, @p4, @p5)", baglanti);
+            command.Parameters.AddWithValue("@p1", txtFirstName.Text);
+            command.Parameters.AddWithValue("@p2", txtLastName.Text);
+            command.Parameters.AddWithValue("@p3", comboBox1.Text);
+            command.Parameters.AddWithValue("@p4", maskedTextBox1.Text);
+            command.Parameters.AddWithValue("@p5", txtPassword.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Doktor eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
+
+        private void dataGridViewDoktor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Datagridviewde bir alana tıklandığında içerisindeki bilgilerin textboxlara aktarılması
+            int chosen = dataGridViewDoktor.SelectedCells[0].RowIndex;
+            txtFirstName.Text = dataGridViewDoktor.Rows[chosen].Cells[1].Value.ToString();
+            txtLastName.Text = dataGridViewDoktor.Rows[chosen].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridViewDoktor.Rows[chosen].Cells[9].Value.ToString();
+            maskedTextBox1.Text = dataGridViewDoktor.Rows[chosen].Cells[3].Value.ToString();
+            txtPassword.Text = dataGridViewDoktor.Rows[chosen].Cells[10].Value.ToString();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //Doktor silme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Delete from tbl_doktorlar where DoktorTCNo = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", maskedTextBox1.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Seçilen doktor silindi.");
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //TC Kimlik Numarası maskedtextbox' ta bulunan doktoru güncelleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Update tbl_doktorlar set Doktorİsim = @p1, DoktorSoyİsim = @p2, DoktorUzmanlıkAlan = @p3, DoktorSifre = @p5 where DoktorTCNo = @p4", baglanti);
+            command.Parameters.AddWithValue("@p1", txtFirstName.Text);
+            command.Parameters.AddWithValue("@p2", txtLastName.Text);
+            command.Parameters.AddWithValue("@p3", comboBox1.Text);
+            command.Parameters.AddWithValue("@p4", maskedTextBox1.Text);
+            command.Parameters.AddWithValue("@p5", txtPassword.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Doktor güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
     }
 }
