@@ -150,6 +150,24 @@ namespace Hastane_Otomasyonu
             rtbDuyuru.Clear();
         }
 
-       
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            //Doktor ekleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_doktorlar (Doktorİsim, DoktorSoyİsim, DoktorUzmanlıkAlan, DoktorTCNo, DoktorSifre) values (@p1, @p2, @p3, @p4, @p5)", baglanti);
+            command.Parameters.AddWithValue("@p1", txtFirstName.Text);
+            command.Parameters.AddWithValue("@p2", txtLastName.Text);
+            command.Parameters.AddWithValue("@p3", comboBox1.Text);
+            command.Parameters.AddWithValue("@p4", maskedTextBox1.Text);
+            command.Parameters.AddWithValue("@p5", txtPassword.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Doktor eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
     }
 }
