@@ -180,5 +180,21 @@ namespace Hastane_Otomasyonu
             maskedTextBox1.Text = dataGridViewDoktor.Rows[chosen].Cells[3].Value.ToString();
             txtPassword.Text = dataGridViewDoktor.Rows[chosen].Cells[10].Value.ToString();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //Doktor silme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Delete from tbl_doktorlar where DoktorTCNo = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", maskedTextBox1.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Seçilen doktor silindi.");
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
     }
 }
