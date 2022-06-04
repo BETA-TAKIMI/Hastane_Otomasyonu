@@ -196,5 +196,25 @@ namespace Hastane_Otomasyonu
             maskedTextBox1.Clear();
             txtPassword.Clear();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //TC Kimlik Numarası maskedtextbox' ta bulunan doktoru güncelleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Update tbl_doktorlar set Doktorİsim = @p1, DoktorSoyİsim = @p2, DoktorUzmanlıkAlan = @p3, DoktorSifre = @p5 where DoktorTCNo = @p4", baglanti);
+            command.Parameters.AddWithValue("@p1", txtFirstName.Text);
+            command.Parameters.AddWithValue("@p2", txtLastName.Text);
+            command.Parameters.AddWithValue("@p3", comboBox1.Text);
+            command.Parameters.AddWithValue("@p4", maskedTextBox1.Text);
+            command.Parameters.AddWithValue("@p5", txtPassword.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Doktor güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            comboBox1.Text = "";
+            maskedTextBox1.Clear();
+            txtPassword.Clear();
+        }
     }
 }
