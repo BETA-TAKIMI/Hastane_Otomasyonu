@@ -129,5 +129,7 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Duyuru oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             rtbDuyuru.Clear();
         }
+
+        
     }
 }
