@@ -79,6 +79,15 @@ namespace Hastane_Otomasyonu
             da4.Fill(dt4);
             dataGridViewDoktor.DataSource = dt4;
 
+            //Formun ilk açılışında comboboxlara branşları aktarma
+            baglanti.Open();
+            SqlCommand command3 = new SqlCommand("Select BransAd from tbl_Branslar", baglanti);
+            SqlDataReader dr3 = command3.ExecuteReader();
+            while (dr3.Read())
+            {
+                comboBox1.Items.Add(dr3[0]);
+            }
+            baglanti.Close();
 
 
         }
