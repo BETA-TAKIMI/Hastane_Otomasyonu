@@ -56,6 +56,7 @@ namespace Hastane_Otomasyonu
             da2.Fill(dt2);
             dtDoktor.DataSource = dt2;
 
+
             //Comboboxa Branşları aktarma
             baglanti.Open();
             SqlCommand command2 = new SqlCommand("Select BransAd from tbl_Branslar", baglanti);
@@ -70,6 +71,16 @@ namespace Hastane_Otomasyonu
             SqlDataAdapter da3 = new SqlDataAdapter("Select * from tbl_duyurular", baglanti);
             da3.Fill(dt3);
             dataGridView1.DataSource = dt3;
+
+            //Doktorları Datagridview' e aktarma
+
+            DataTable dt4 = new DataTable();
+            SqlDataAdapter da4 = new SqlDataAdapter("Select * from tbl_doktorlar", baglanti);
+            da4.Fill(dt4);
+            dataGridViewDoktor.DataSource = dt4;
+
+
+
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
