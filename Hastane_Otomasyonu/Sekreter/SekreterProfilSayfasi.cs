@@ -65,6 +65,11 @@ namespace Hastane_Otomasyonu
                 cmbBranch.Items.Add(dr2[0]);
             }
             baglanti.Close();
+            //duyuruları çekme
+            DataTable dt3 = new DataTable();
+            SqlDataAdapter da3 = new SqlDataAdapter("Select * from tbl_duyurular", baglanti);
+            da3.Fill(dt3);
+            dataGridView1.DataSource = dt3;
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
