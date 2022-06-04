@@ -112,5 +112,17 @@ namespace Hastane_Otomasyonu
             }
             baglanti.Close();
         }
+
+        private void btnDuyuru_Click(object sender, EventArgs e)
+        {
+            //Duyuru oluşturma
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_duyurular (Duyuru) values (@p1)", baglanti);
+            command.Parameters.AddWithValue("@p1", rtbDuyuru.Text);
+            command.ExecuteNonQuery();
+           baglanti.Close();
+            MessageBox.Show("Duyuru oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            rtbDuyuru.Clear();
+        }
     }
 }

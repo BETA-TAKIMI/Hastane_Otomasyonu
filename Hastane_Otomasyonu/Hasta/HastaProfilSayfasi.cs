@@ -142,6 +142,7 @@ namespace Hastane_Otomasyonu
             int chosen = dataGridView2.SelectedCells[0].RowIndex;
             txtid.Text = dataGridView2.Rows[chosen].Cells[0].Value.ToString();
         }
+
     }
     }
 
