@@ -84,6 +84,7 @@
             this.btnDuyuru = new System.Windows.Forms.Button();
             this.rtbDuyuru = new System.Windows.Forms.RichTextBox();
             this.tabPageDoktorOluşturma = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -98,8 +99,17 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.tabPageBranşOluşturma = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.txtBrans = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -121,6 +131,8 @@
             this.groupBox2.SuspendLayout();
             this.tabPageDoktorOluşturma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPageBranşOluşturma.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -129,6 +141,7 @@
             this.tabControlHasta.Controls.Add(this.tabRandevularim);
             this.tabControlHasta.Controls.Add(this.tabDuyuruOluşturma);
             this.tabControlHasta.Controls.Add(this.tabPageDoktorOluşturma);
+            this.tabControlHasta.Controls.Add(this.tabPageBranşOluşturma);
             this.tabControlHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlHasta.Location = new System.Drawing.Point(12, 46);
             this.tabControlHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -738,6 +751,17 @@
             this.tabPageDoktorOluşturma.Text = "Doktor Kaydı Oluşturma";
             this.tabPageDoktorOluşturma.UseVisualStyleBackColor = true;
             // 
+            // dataGridView2
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(-4, 270);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(1040, 287);
+            this.dataGridView2.TabIndex = 25;
+            // 
             // btnBack
             // 
             this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -752,9 +776,9 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUpdate.Location = new System.Drawing.Point(898, 58);
+            this.btnUpdate.Location = new System.Drawing.Point(883, 58);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(111, 48);
+            this.btnUpdate.Size = new System.Drawing.Size(126, 48);
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "GÜNCELLE";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -764,7 +788,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.Location = new System.Drawing.Point(781, 58);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(111, 48);
+            this.btnDelete.Size = new System.Drawing.Size(96, 48);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "SİL";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -872,6 +896,96 @@
             this.label15.TabIndex = 10;
             this.label15.Text = "Ad:";
             // 
+            // tabPageBranşOluşturma
+            // 
+            this.tabPageBranşOluşturma.Controls.Add(this.dataGridView3);
+            this.tabPageBranşOluşturma.Controls.Add(this.button1);
+            this.tabPageBranşOluşturma.Controls.Add(this.button2);
+            this.tabPageBranşOluşturma.Controls.Add(this.button3);
+            this.tabPageBranşOluşturma.Controls.Add(this.button4);
+            this.tabPageBranşOluşturma.Controls.Add(this.txtBrans);
+            this.tabPageBranşOluşturma.Controls.Add(this.textBox1);
+            this.tabPageBranşOluşturma.Controls.Add(this.label16);
+            this.tabPageBranşOluşturma.Controls.Add(this.label17);
+            this.tabPageBranşOluşturma.Location = new System.Drawing.Point(4, 34);
+            this.tabPageBranşOluşturma.Name = "tabPageBranşOluşturma";
+            this.tabPageBranşOluşturma.Size = new System.Drawing.Size(1035, 657);
+            this.tabPageBranşOluşturma.TabIndex = 5;
+            this.tabPageBranşOluşturma.Text = "Branş Oluşturma";
+            this.tabPageBranşOluşturma.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(695, 74);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 73);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "GERİ DÖN";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(827, 74);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 73);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "GÜNCELLE";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(551, 74);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(116, 73);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "SİL";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Location = new System.Drawing.Point(429, 74);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 73);
+            this.button4.TabIndex = 33;
+            this.button4.Text = "EKLE";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // txtBrans
+            // 
+            this.txtBrans.Location = new System.Drawing.Point(154, 117);
+            this.txtBrans.Name = "txtBrans";
+            this.txtBrans.Size = new System.Drawing.Size(237, 30);
+            this.txtBrans.TabIndex = 32;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(154, 81);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(237, 30);
+            this.textBox1.TabIndex = 31;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(72, 120);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 25);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Branş:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(107, 84);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(33, 25);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "id:";
+            // 
             // BtnCikis
             // 
             this.BtnCikis.BackColor = System.Drawing.Color.DodgerBlue;
@@ -886,16 +1000,15 @@
             this.BtnCikis.UseVisualStyleBackColor = false;
             this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
-            // dataGridView2
+            // dataGridView3
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(-3, 185);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(1040, 287);
-            this.dataGridView2.TabIndex = 25;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 217);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.Size = new System.Drawing.Size(1025, 335);
+            this.dataGridView3.TabIndex = 37;
             // 
             // SekreterProfilSayfasi
             // 
@@ -934,6 +1047,9 @@
             this.tabPageDoktorOluşturma.ResumeLayout(false);
             this.tabPageDoktorOluşturma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPageBranşOluşturma.ResumeLayout(false);
+            this.tabPageBranşOluşturma.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1010,5 +1126,15 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TabPage tabPageBranşOluşturma;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtBrans;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }

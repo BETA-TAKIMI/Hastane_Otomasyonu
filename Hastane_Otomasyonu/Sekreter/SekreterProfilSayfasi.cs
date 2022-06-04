@@ -130,6 +130,6 @@ namespace Hastane_Otomasyonu
             rtbDuyuru.Clear();
         }
 
-        
+       
     }
 }
