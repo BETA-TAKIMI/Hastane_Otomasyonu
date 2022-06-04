@@ -169,5 +169,16 @@ namespace Hastane_Otomasyonu
             maskedTextBox1.Clear();
             txtPassword.Clear();
         }
+
+        private void dataGridViewDoktor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Datagridviewde bir alana tıklandığında içerisindeki bilgilerin textboxlara aktarılması
+            int chosen = dataGridViewDoktor.SelectedCells[0].RowIndex;
+            txtFirstName.Text = dataGridViewDoktor.Rows[chosen].Cells[1].Value.ToString();
+            txtLastName.Text = dataGridViewDoktor.Rows[chosen].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridViewDoktor.Rows[chosen].Cells[9].Value.ToString();
+            maskedTextBox1.Text = dataGridViewDoktor.Rows[chosen].Cells[3].Value.ToString();
+            txtPassword.Text = dataGridViewDoktor.Rows[chosen].Cells[10].Value.ToString();
+        }
     }
 }
