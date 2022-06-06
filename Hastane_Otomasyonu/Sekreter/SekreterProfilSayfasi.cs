@@ -222,5 +222,16 @@ namespace Hastane_Otomasyonu
             maskedTextBox1.Clear();
             txtPassword.Clear();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_Branslar (BransAd) values (@p1)", baglanti);
+            command.Parameters.AddWithValue("@p1", txtBrans.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Branş eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtBrans.Clear();
+        }
     }
 }
