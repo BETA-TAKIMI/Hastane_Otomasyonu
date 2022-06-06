@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
@@ -106,7 +106,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtBrans = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textID = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPageRandevuListeleme = new System.Windows.Forms.TabPage();
@@ -777,8 +777,8 @@
             // 
             // dataGridViewDoktor
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDoktor.Location = new System.Drawing.Point(-3, 219);
             this.dataGridViewDoktor.Margin = new System.Windows.Forms.Padding(2);
@@ -947,7 +947,7 @@
             this.tabPageBranşOluşturma.Controls.Add(this.button3);
             this.tabPageBranşOluşturma.Controls.Add(this.button4);
             this.tabPageBranşOluşturma.Controls.Add(this.txtBrans);
-            this.tabPageBranşOluşturma.Controls.Add(this.textBox1);
+            this.tabPageBranşOluşturma.Controls.Add(this.textID);
             this.tabPageBranşOluşturma.Controls.Add(this.label16);
             this.tabPageBranşOluşturma.Controls.Add(this.label17);
             this.tabPageBranşOluşturma.Location = new System.Drawing.Point(4, 29);
@@ -1002,6 +1002,7 @@
             this.button3.TabIndex = 34;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -1023,13 +1024,13 @@
             this.txtBrans.Size = new System.Drawing.Size(179, 26);
             this.txtBrans.TabIndex = 32;
             // 
-            // textBox1
+            // textID
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 26);
-            this.textBox1.TabIndex = 31;
+            this.textID.Location = new System.Drawing.Point(116, 66);
+            this.textID.Margin = new System.Windows.Forms.Padding(2);
+            this.textID.Name = "textID";
+            this.textID.Size = new System.Drawing.Size(179, 26);
+            this.textID.TabIndex = 31;
             // 
             // label16
             // 
@@ -1210,7 +1211,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtBrans;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textID;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridViewBrans;

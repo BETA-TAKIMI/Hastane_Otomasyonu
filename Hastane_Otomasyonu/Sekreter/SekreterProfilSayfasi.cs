@@ -242,5 +242,18 @@ namespace Hastane_Otomasyonu
             txtID.Text = dataGridViewBrans.Rows[chosen].Cells[0].Value.ToString();
             txtBrans.Text = dataGridViewBrans.Rows[chosen].Cells[1].Value.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Baranş silme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Delete from tbl_Branslar where Brasnid = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", txtID.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Seçilen branş silindi.");
+            txtID.Clear();
+            txtBrans.Clear();
+        }
     }
 }
