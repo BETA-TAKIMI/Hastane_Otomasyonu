@@ -89,6 +89,12 @@ namespace Hastane_Otomasyonu
             }
             baglanti.Close();
 
+            //Barnşalrı Datagridview' e aktarma
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_Branslar", baglanti);
+            da.Fill(dt);
+            dataGridViewBrans.DataSource = dt;
+
 
         }
 
@@ -215,6 +221,53 @@ namespace Hastane_Otomasyonu
             comboBox1.Text = "";
             maskedTextBox1.Clear();
             txtPassword.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Insert into tbl_Branslar (BransAd) values (@p1)", baglanti);
+            command.Parameters.AddWithValue("@p1", txtBrans.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Branş eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtBrans.Clear();
+        }
+
+        private void dataGridViewBrans_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //Datagridviewde bir alana tıklandığında içerisindeki bilgilerin textboxlara aktarılması
+            int chosen = dataGridViewBrans.SelectedCells[0].RowIndex;
+            txtID.Text = dataGridViewBrans.Rows[chosen].Cells[0].Value.ToString();
+            txtBrans.Text = dataGridViewBrans.Rows[chosen].Cells[1].Value.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Baranş silme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Delete from tbl_Branslar where Brasnid = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", txtID.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Seçilen branş silindi.");
+            txtID.Clear();
+            txtBrans.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //ID' si txtID' de bulunan branşı güncelleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Update tbl_Branslar set BransAd = @p2 where Brasnid = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", txtID.Text);
+            command.Parameters.AddWithValue("@p2", txtBrans.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Branş güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtID.Clear();
+            txtBrans.Clear();
         }
     }
 }

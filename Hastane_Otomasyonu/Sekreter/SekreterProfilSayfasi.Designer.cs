@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
@@ -100,13 +100,13 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.tabPageBranşOluşturma = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewBrans = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtBrans = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textID = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPageRandevuListeleme = new System.Windows.Forms.TabPage();
@@ -134,7 +134,7 @@
             this.tabPageDoktorOluşturma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoktor)).BeginInit();
             this.tabPageBranşOluşturma.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrans)).BeginInit();
             this.tabPageRandevuListeleme.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
@@ -149,7 +149,7 @@
             this.tabControlHasta.Controls.Add(this.tabPageRandevuListeleme);
             this.tabControlHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlHasta.Location = new System.Drawing.Point(9, 37);
-            this.tabControlHasta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlHasta.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlHasta.Name = "tabControlHasta";
             this.tabControlHasta.SelectedIndex = 0;
             this.tabControlHasta.Size = new System.Drawing.Size(782, 565);
@@ -179,9 +179,9 @@
             this.tabProfil.Controls.Add(this.yasLabel);
             this.tabProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabProfil.Location = new System.Drawing.Point(4, 29);
-            this.tabProfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProfil.Margin = new System.Windows.Forms.Padding(2);
             this.tabProfil.Name = "tabProfil";
-            this.tabProfil.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabProfil.Padding = new System.Windows.Forms.Padding(2);
             this.tabProfil.Size = new System.Drawing.Size(774, 532);
             this.tabProfil.TabIndex = 0;
             this.tabProfil.Text = "Profil";
@@ -202,7 +202,7 @@
             // 
             this.TxtSfre.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSfre.Location = new System.Drawing.Point(262, 375);
-            this.TxtSfre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSfre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSfre.Name = "TxtSfre";
             this.TxtSfre.Size = new System.Drawing.Size(284, 27);
             this.TxtSfre.TabIndex = 100;
@@ -222,7 +222,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(208, 300);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(47, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -233,7 +233,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(208, 246);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(47, 48);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -244,7 +244,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(208, 193);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(47, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -255,7 +255,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(208, 139);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -266,7 +266,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(208, 86);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -279,7 +279,7 @@
             this.BtnGuncelle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.BtnGuncelle.Location = new System.Drawing.Point(262, 430);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(284, 40);
             this.BtnGuncelle.TabIndex = 92;
@@ -291,7 +291,7 @@
             // 
             this.TxtMail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMail.Location = new System.Drawing.Point(262, 322);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(284, 27);
             this.TxtMail.TabIndex = 91;
@@ -322,7 +322,7 @@
             // 
             this.TxtTelefon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefon.Location = new System.Drawing.Point(262, 267);
-            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(284, 27);
             this.TxtTelefon.TabIndex = 88;
@@ -353,7 +353,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(15, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -375,7 +375,7 @@
             // 
             this.TxtYas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtYas.Location = new System.Drawing.Point(262, 159);
-            this.TxtYas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtYas.Margin = new System.Windows.Forms.Padding(2);
             this.TxtYas.Name = "TxtYas";
             this.TxtYas.Size = new System.Drawing.Size(284, 27);
             this.TxtYas.TabIndex = 83;
@@ -384,7 +384,7 @@
             // 
             this.TxtHesKodu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHesKodu.Location = new System.Drawing.Point(262, 106);
-            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtHesKodu.Margin = new System.Windows.Forms.Padding(2);
             this.TxtHesKodu.Name = "TxtHesKodu";
             this.TxtHesKodu.Size = new System.Drawing.Size(284, 27);
             this.TxtHesKodu.TabIndex = 82;
@@ -408,9 +408,9 @@
             this.tabRandevularim.Controls.Add(this.groupBox3);
             this.tabRandevularim.Controls.Add(this.groupBox1);
             this.tabRandevularim.Location = new System.Drawing.Point(4, 29);
-            this.tabRandevularim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabRandevularim.Margin = new System.Windows.Forms.Padding(2);
             this.tabRandevularim.Name = "tabRandevularim";
-            this.tabRandevularim.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabRandevularim.Padding = new System.Windows.Forms.Padding(2);
             this.tabRandevularim.Size = new System.Drawing.Size(774, 532);
             this.tabRandevularim.TabIndex = 1;
             this.tabRandevularim.Text = "Randevular";
@@ -419,9 +419,9 @@
             // 
             this.groupBox5.Controls.Add(this.dtDoktor);
             this.groupBox5.Location = new System.Drawing.Point(316, 266);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(452, 263);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
@@ -433,7 +433,7 @@
             this.dtDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtDoktor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtDoktor.Location = new System.Drawing.Point(2, 21);
-            this.dtDoktor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtDoktor.Margin = new System.Windows.Forms.Padding(2);
             this.dtDoktor.Name = "dtDoktor";
             this.dtDoktor.RowHeadersWidth = 51;
             this.dtDoktor.Size = new System.Drawing.Size(448, 240);
@@ -443,9 +443,9 @@
             // 
             this.groupBox4.Controls.Add(this.dtBrans);
             this.groupBox4.Location = new System.Drawing.Point(314, 17);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(457, 245);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
@@ -457,7 +457,7 @@
             this.dtBrans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtBrans.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtBrans.Location = new System.Drawing.Point(2, 21);
-            this.dtBrans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtBrans.Margin = new System.Windows.Forms.Padding(2);
             this.dtBrans.Name = "dtBrans";
             this.dtBrans.RowHeadersWidth = 51;
             this.dtBrans.Size = new System.Drawing.Size(453, 222);
@@ -480,9 +480,9 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Location = new System.Drawing.Point(4, 161);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(298, 360);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -491,7 +491,7 @@
             // btnKaydet
             // 
             this.btnKaydet.Location = new System.Drawing.Point(118, 295);
-            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(165, 35);
             this.btnKaydet.TabIndex = 2;
@@ -513,7 +513,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(118, 268);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(76, 24);
             this.checkBox1.TabIndex = 17;
@@ -523,7 +523,7 @@
             // maskTC
             // 
             this.maskTC.Location = new System.Drawing.Point(118, 228);
-            this.maskTC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskTC.Margin = new System.Windows.Forms.Padding(2);
             this.maskTC.Mask = "00000000000";
             this.maskTC.Name = "maskTC";
             this.maskTC.Size = new System.Drawing.Size(166, 26);
@@ -533,7 +533,7 @@
             // 
             this.cmbDoctor.FormattingEnabled = true;
             this.cmbDoctor.Location = new System.Drawing.Point(118, 197);
-            this.cmbDoctor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbDoctor.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(166, 28);
             this.cmbDoctor.TabIndex = 15;
@@ -542,7 +542,7 @@
             // 
             this.cmbBranch.FormattingEnabled = true;
             this.cmbBranch.Location = new System.Drawing.Point(118, 167);
-            this.cmbBranch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbBranch.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBranch.Name = "cmbBranch";
             this.cmbBranch.Size = new System.Drawing.Size(166, 28);
             this.cmbBranch.TabIndex = 14;
@@ -551,7 +551,7 @@
             // maskTime
             // 
             this.maskTime.Location = new System.Drawing.Point(118, 133);
-            this.maskTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskTime.Margin = new System.Windows.Forms.Padding(2);
             this.maskTime.Mask = "00:00";
             this.maskTime.Name = "maskTime";
             this.maskTime.Size = new System.Drawing.Size(166, 26);
@@ -561,7 +561,7 @@
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(118, 70);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(166, 26);
             this.txtID.TabIndex = 12;
@@ -569,7 +569,7 @@
             // maskDate
             // 
             this.maskDate.Location = new System.Drawing.Point(118, 103);
-            this.maskDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskDate.Margin = new System.Windows.Forms.Padding(2);
             this.maskDate.Mask = "00/00/0000";
             this.maskDate.Name = "maskDate";
             this.maskDate.Size = new System.Drawing.Size(166, 26);
@@ -633,9 +633,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.lblTC);
             this.groupBox1.Location = new System.Drawing.Point(4, 17);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(298, 124);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -687,7 +687,7 @@
             this.tabDuyuruOluşturma.Controls.Add(this.groupBox6);
             this.tabDuyuruOluşturma.Controls.Add(this.groupBox2);
             this.tabDuyuruOluşturma.Location = new System.Drawing.Point(4, 29);
-            this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDuyuruOluşturma.Margin = new System.Windows.Forms.Padding(2);
             this.tabDuyuruOluşturma.Name = "tabDuyuruOluşturma";
             this.tabDuyuruOluşturma.Size = new System.Drawing.Size(774, 532);
             this.tabDuyuruOluşturma.TabIndex = 3;
@@ -697,9 +697,9 @@
             // 
             this.groupBox6.Controls.Add(this.dataGridView1);
             this.groupBox6.Location = new System.Drawing.Point(8, 184);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(764, 347);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
@@ -711,7 +711,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 21);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(760, 324);
@@ -722,9 +722,9 @@
             this.groupBox2.Controls.Add(this.btnDuyuru);
             this.groupBox2.Controls.Add(this.rtbDuyuru);
             this.groupBox2.Location = new System.Drawing.Point(2, 2);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(761, 177);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -733,7 +733,7 @@
             // btnDuyuru
             // 
             this.btnDuyuru.Location = new System.Drawing.Point(310, 129);
-            this.btnDuyuru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDuyuru.Margin = new System.Windows.Forms.Padding(2);
             this.btnDuyuru.Name = "btnDuyuru";
             this.btnDuyuru.Size = new System.Drawing.Size(122, 35);
             this.btnDuyuru.TabIndex = 1;
@@ -744,7 +744,7 @@
             // rtbDuyuru
             // 
             this.rtbDuyuru.Location = new System.Drawing.Point(5, 25);
-            this.rtbDuyuru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbDuyuru.Margin = new System.Windows.Forms.Padding(2);
             this.rtbDuyuru.Name = "rtbDuyuru";
             this.rtbDuyuru.Size = new System.Drawing.Size(752, 100);
             this.rtbDuyuru.TabIndex = 0;
@@ -768,7 +768,7 @@
             this.tabPageDoktorOluşturma.Controls.Add(this.label14);
             this.tabPageDoktorOluşturma.Controls.Add(this.label15);
             this.tabPageDoktorOluşturma.Location = new System.Drawing.Point(4, 29);
-            this.tabPageDoktorOluşturma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageDoktorOluşturma.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageDoktorOluşturma.Name = "tabPageDoktorOluşturma";
             this.tabPageDoktorOluşturma.Size = new System.Drawing.Size(774, 532);
             this.tabPageDoktorOluşturma.TabIndex = 4;
@@ -777,11 +777,11 @@
             // 
             // dataGridViewDoktor
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDoktor.Location = new System.Drawing.Point(-3, 219);
-            this.dataGridViewDoktor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewDoktor.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewDoktor.Name = "dataGridViewDoktor";
             this.dataGridViewDoktor.RowHeadersWidth = 51;
             this.dataGridViewDoktor.Size = new System.Drawing.Size(780, 233);
@@ -793,7 +793,7 @@
             this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnBack.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBack.Location = new System.Drawing.Point(498, 91);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(259, 39);
             this.btnBack.TabIndex = 23;
@@ -804,7 +804,7 @@
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdate.Location = new System.Drawing.Point(662, 47);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 39);
             this.btnUpdate.TabIndex = 22;
@@ -816,7 +816,7 @@
             // 
             this.btnDelete.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.Location = new System.Drawing.Point(586, 47);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(72, 39);
             this.btnDelete.TabIndex = 21;
@@ -828,7 +828,7 @@
             // 
             this.btnInsert.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnInsert.Location = new System.Drawing.Point(498, 47);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(83, 39);
             this.btnInsert.TabIndex = 20;
@@ -840,7 +840,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPassword.Location = new System.Drawing.Point(312, 88);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(160, 29);
             this.txtPassword.TabIndex = 19;
@@ -850,7 +850,7 @@
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox1.Location = new System.Drawing.Point(312, 58);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox1.Mask = "00000000000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(160, 29);
@@ -861,7 +861,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(75, 107);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 30);
             this.comboBox1.TabIndex = 15;
@@ -870,7 +870,7 @@
             // 
             this.txtLastName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtLastName.Location = new System.Drawing.Point(75, 77);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(160, 29);
             this.txtLastName.TabIndex = 13;
@@ -879,7 +879,7 @@
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtFirstName.Location = new System.Drawing.Point(75, 47);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(160, 29);
             this.txtFirstName.TabIndex = 11;
@@ -941,39 +941,40 @@
             // 
             // tabPageBranşOluşturma
             // 
-            this.tabPageBranşOluşturma.Controls.Add(this.dataGridView3);
+            this.tabPageBranşOluşturma.Controls.Add(this.dataGridViewBrans);
             this.tabPageBranşOluşturma.Controls.Add(this.button1);
             this.tabPageBranşOluşturma.Controls.Add(this.button2);
             this.tabPageBranşOluşturma.Controls.Add(this.button3);
             this.tabPageBranşOluşturma.Controls.Add(this.button4);
             this.tabPageBranşOluşturma.Controls.Add(this.txtBrans);
-            this.tabPageBranşOluşturma.Controls.Add(this.textBox1);
+            this.tabPageBranşOluşturma.Controls.Add(this.textID);
             this.tabPageBranşOluşturma.Controls.Add(this.label16);
             this.tabPageBranşOluşturma.Controls.Add(this.label17);
             this.tabPageBranşOluşturma.Location = new System.Drawing.Point(4, 29);
-            this.tabPageBranşOluşturma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageBranşOluşturma.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageBranşOluşturma.Name = "tabPageBranşOluşturma";
             this.tabPageBranşOluşturma.Size = new System.Drawing.Size(774, 532);
             this.tabPageBranşOluşturma.TabIndex = 5;
             this.tabPageBranşOluşturma.Text = "Branş Oluşturma";
             this.tabPageBranşOluşturma.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dataGridViewBrans
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(2, 176);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(769, 272);
-            this.dataGridView3.TabIndex = 37;
+            this.dataGridViewBrans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewBrans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBrans.Location = new System.Drawing.Point(2, 176);
+            this.dataGridViewBrans.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewBrans.Name = "dataGridViewBrans";
+            this.dataGridViewBrans.RowHeadersWidth = 51;
+            this.dataGridViewBrans.Size = new System.Drawing.Size(769, 272);
+            this.dataGridViewBrans.TabIndex = 37;
+            this.dataGridViewBrans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBrans_CellClick);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(521, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 59);
             this.button1.TabIndex = 36;
@@ -984,50 +985,53 @@
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(620, 60);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 59);
             this.button2.TabIndex = 35;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.Location = new System.Drawing.Point(413, 60);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 59);
             this.button3.TabIndex = 34;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.Location = new System.Drawing.Point(322, 60);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 59);
             this.button4.TabIndex = 33;
             this.button4.Text = "EKLE";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txtBrans
             // 
             this.txtBrans.Location = new System.Drawing.Point(116, 95);
-            this.txtBrans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrans.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrans.Name = "txtBrans";
             this.txtBrans.Size = new System.Drawing.Size(179, 26);
             this.txtBrans.TabIndex = 32;
             // 
-            // textBox1
+            // textID
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 26);
-            this.textBox1.TabIndex = 31;
+            this.textID.Location = new System.Drawing.Point(116, 66);
+            this.textID.Margin = new System.Windows.Forms.Padding(2);
+            this.textID.Name = "textID";
+            this.textID.Size = new System.Drawing.Size(179, 26);
+            this.textID.TabIndex = 31;
             // 
             // label16
             // 
@@ -1053,7 +1057,7 @@
             // 
             this.tabPageRandevuListeleme.Controls.Add(this.dataGridView4);
             this.tabPageRandevuListeleme.Location = new System.Drawing.Point(4, 29);
-            this.tabPageRandevuListeleme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageRandevuListeleme.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageRandevuListeleme.Name = "tabPageRandevuListeleme";
             this.tabPageRandevuListeleme.Size = new System.Drawing.Size(774, 532);
             this.tabPageRandevuListeleme.TabIndex = 6;
@@ -1077,7 +1081,7 @@
             this.BtnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikis.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnCikis.Location = new System.Drawing.Point(700, 6);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(87, 28);
             this.BtnCikis.TabIndex = 2;
@@ -1123,7 +1127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoktor)).EndInit();
             this.tabPageBranşOluşturma.ResumeLayout(false);
             this.tabPageBranşOluşturma.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrans)).EndInit();
             this.tabPageRandevuListeleme.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
@@ -1208,10 +1212,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtBrans;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textID;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridViewBrans;
         private System.Windows.Forms.TabPage tabPageRandevuListeleme;
         private System.Windows.Forms.DataGridView dataGridView4;
     }
