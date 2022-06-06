@@ -90,10 +90,16 @@ namespace Hastane_Otomasyonu
             baglanti.Close();
 
             //Barnşalrı Datagridview' e aktarma
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_Branslar", baglanti);
-            da.Fill(dt);
-            dataGridViewBrans.DataSource = dt;
+            DataTable dt5 = new DataTable();
+            SqlDataAdapter da5 = new SqlDataAdapter("Select * from tbl_Branslar", baglanti);
+            da5.Fill(dt5);
+            dataGridViewBrans.DataSource = dt5;
+
+            //Randevu lisetesi Datagridview' e aktarma
+            DataTable dt6 = new DataTable();
+            SqlDataAdapter da6 = new SqlDataAdapter("Select * from tbl_randevular", baglanti);
+            da6.Fill(dt6);
+            dataGridViewRandevuListele.DataSource = dt6;
 
 
         }

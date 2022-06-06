@@ -110,7 +110,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPageRandevuListeleme = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewRandevuListele = new System.Windows.Forms.DataGridView();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.tabControlHasta.SuspendLayout();
             this.tabProfil.SuspendLayout();
@@ -136,7 +136,7 @@
             this.tabPageBranşOluşturma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrans)).BeginInit();
             this.tabPageRandevuListeleme.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRandevuListele)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlHasta
@@ -1055,7 +1055,7 @@
             // 
             // tabPageRandevuListeleme
             // 
-            this.tabPageRandevuListeleme.Controls.Add(this.dataGridView4);
+            this.tabPageRandevuListeleme.Controls.Add(this.dataGridViewRandevuListele);
             this.tabPageRandevuListeleme.Location = new System.Drawing.Point(4, 29);
             this.tabPageRandevuListeleme.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageRandevuListeleme.Name = "tabPageRandevuListeleme";
@@ -1064,16 +1064,16 @@
             this.tabPageRandevuListeleme.Text = "Randevu Listeleme";
             this.tabPageRandevuListeleme.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
+            // dataGridViewRandevuListele
             // 
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.Size = new System.Drawing.Size(774, 532);
-            this.dataGridView4.TabIndex = 1;
+            this.dataGridViewRandevuListele.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewRandevuListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRandevuListele.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewRandevuListele.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewRandevuListele.Name = "dataGridViewRandevuListele";
+            this.dataGridViewRandevuListele.RowHeadersWidth = 51;
+            this.dataGridViewRandevuListele.Size = new System.Drawing.Size(774, 532);
+            this.dataGridViewRandevuListele.TabIndex = 1;
             // 
             // BtnCikis
             // 
@@ -1129,7 +1129,7 @@
             this.tabPageBranşOluşturma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrans)).EndInit();
             this.tabPageRandevuListeleme.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRandevuListele)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1217,6 +1217,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridViewBrans;
         private System.Windows.Forms.TabPage tabPageRandevuListeleme;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridViewRandevuListele;
     }
 }
