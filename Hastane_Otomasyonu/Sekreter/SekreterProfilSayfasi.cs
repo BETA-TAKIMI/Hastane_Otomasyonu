@@ -255,5 +255,19 @@ namespace Hastane_Otomasyonu
             txtID.Clear();
             txtBrans.Clear();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //ID' si txtID' de bulunan branşı güncelleme
+            baglanti.Open();
+            SqlCommand command = new SqlCommand("Update tbl_Branslar set BransAd = @p2 where Brasnid = @p1", baglanti);
+            command.Parameters.AddWithValue("@p1", txtID.Text);
+            command.Parameters.AddWithValue("@p2", txtBrans.Text);
+            command.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Branş güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtID.Clear();
+            txtBrans.Clear();
+        }
     }
 }
