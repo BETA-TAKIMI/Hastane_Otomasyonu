@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
@@ -777,8 +777,8 @@
             // 
             // dataGridViewDoktor
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDoktor.Location = new System.Drawing.Point(-3, 219);
             this.dataGridViewDoktor.Margin = new System.Windows.Forms.Padding(2);
@@ -968,6 +968,7 @@
             this.dataGridViewBrans.RowHeadersWidth = 51;
             this.dataGridViewBrans.Size = new System.Drawing.Size(769, 272);
             this.dataGridViewBrans.TabIndex = 37;
+            this.dataGridViewBrans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBrans_CellClick);
             // 
             // button1
             // 

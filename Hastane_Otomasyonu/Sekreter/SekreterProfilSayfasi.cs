@@ -233,5 +233,14 @@ namespace Hastane_Otomasyonu
             MessageBox.Show("Branş eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             txtBrans.Clear();
         }
+
+        private void dataGridViewBrans_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //Datagridviewde bir alana tıklandığında içerisindeki bilgilerin textboxlara aktarılması
+            int chosen = dataGridViewBrans.SelectedCells[0].RowIndex;
+            txtID.Text = dataGridViewBrans.Rows[chosen].Cells[0].Value.ToString();
+            txtBrans.Text = dataGridViewBrans.Rows[chosen].Cells[1].Value.ToString();
+        }
     }
 }
