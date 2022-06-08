@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterProfilSayfasi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlHasta = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.LblCinsiyet = new System.Windows.Forms.Label();
@@ -100,7 +100,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.tabPageBranşOluşturma = new System.Windows.Forms.TabPage();
             this.dataGridViewBrans = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -757,8 +756,8 @@
             // 
             // dataGridViewDoktor
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridViewDoktor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewDoktor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDoktor.Location = new System.Drawing.Point(-4, 270);
             this.dataGridViewDoktor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -905,7 +904,6 @@
             // tabPageBranşOluşturma
             // 
             this.tabPageBranşOluşturma.Controls.Add(this.dataGridViewBrans);
-            this.tabPageBranşOluşturma.Controls.Add(this.button1);
             this.tabPageBranşOluşturma.Controls.Add(this.button2);
             this.tabPageBranşOluşturma.Controls.Add(this.button3);
             this.tabPageBranşOluşturma.Controls.Add(this.button4);
@@ -929,28 +927,17 @@
             this.dataGridViewBrans.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewBrans.Name = "dataGridViewBrans";
             this.dataGridViewBrans.RowHeadersWidth = 51;
-            this.dataGridViewBrans.Size = new System.Drawing.Size(1025, 335);
+            this.dataGridViewBrans.Size = new System.Drawing.Size(1036, 438);
             this.dataGridViewBrans.TabIndex = 37;
             this.dataGridViewBrans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBrans_CellClick);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(695, 74);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 73);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "GERİ DÖN";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(827, 74);
+            this.button2.Location = new System.Drawing.Point(815, 81);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 73);
+            this.button2.Size = new System.Drawing.Size(136, 66);
             this.button2.TabIndex = 35;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
@@ -959,10 +946,10 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(551, 74);
+            this.button3.Location = new System.Drawing.Point(625, 81);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 73);
+            this.button3.Size = new System.Drawing.Size(136, 65);
             this.button3.TabIndex = 34;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = true;
@@ -971,10 +958,10 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(429, 74);
+            this.button4.Location = new System.Drawing.Point(429, 81);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 73);
+            this.button4.Size = new System.Drawing.Size(138, 66);
             this.button4.TabIndex = 33;
             this.button4.Text = "EKLE";
             this.button4.UseVisualStyleBackColor = true;
@@ -1169,7 +1156,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridViewDoktor;
         private System.Windows.Forms.TabPage tabPageBranşOluşturma;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
